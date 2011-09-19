@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Kreon:bold&amp;text=Keith%20Smiley">
     <link rel="stylesheet" type="text/css" href="/_/css/resume.css">
     <!--[if lt IE 9]>
-    <script src="/_/js/html5shim.js"></script>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0">
   </head>
