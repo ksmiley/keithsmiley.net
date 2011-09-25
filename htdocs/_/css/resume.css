@@ -223,6 +223,10 @@ section article {
   line-height: 1.15;
 }
 
+section article .location {
+  color: #888;
+}
+
 section#experience {
   width: 595px;
   float: left;
@@ -232,11 +236,11 @@ section#experience {
 }
 
 section#experience header {
-  margin-bottom: 3px;
+  margin-bottom: 1px;
 }
 
 section#experience article header h2 {
-  font-size: 150%;
+  font-size: 160%;
   font-weight: bold;
   display: inline;
   color: #000;
@@ -245,33 +249,46 @@ section#experience article header h2 {
 
 section#experience article header .location {
   display: inline;
-  color: #777;
   white-space: nowrap;
 }
 
-section#experience article header .time-range {
-
+section#experience article > ul {
+  margin-bottom: 3px;
 }
 
-section#experience article .job-title,
-section#experience article .body p .time-range {
-  float: left;
-  margin-right: 7px;
+section#experience article > ul > li {
+  list-style: none;
+  padding-left: 1em;
+}
+
+section#experience article > ul > li:before {
+  content: '›';
+  font-size: 130%;
+  font-weight: bold;
+  color: #356aa0;
+  margin-left: -0.5em;
+}
+
+section#experience article > ul > li .time-range {
+  word-spacing: -0.1em;
+}
+
+section#experience article > ul > li .time-range:after {
+  content: ': ';
+  word-spacing: 0;
+}
+
+section#experience article > ul > li .time-range time {
+  word-spacing: 0;
+}
+
+section#experience article > ul > li .job-title {
   font-weight: bold;
 }
 
-section#experience article .body {
-  line-height: 1.3;
-  font-size: 105%;
-  margin-left: 25px;
-}
-
-section#experience article .body p {
-  margin-top: 2px;
-}
-
-section#education article .location {
-  color: #777;
+section#experience article > p {
+  line-height: 1.4;
+  font-size: 110%;
 }
 
 section#education article p {
@@ -349,7 +366,8 @@ section#awards dd {
   body > header address {
     position: static;
     height: auto;
-    width: 40%;
+    /*width: 40%;*/
+    width: 12em;
     margin: 0 auto;
   }
 
@@ -361,10 +379,6 @@ section#awards dd {
     border-bottom: 1px solid #aaa;
     margin-bottom: 20px;
     overflow: hidden;
-  }
-
-  section#experience article .body {
-    margin: 0;
   }
   
   section#skills ul {
@@ -381,5 +395,9 @@ section#awards dd {
   body {
     border: 0;
     box-shadow: none;
+  }
+  
+  section article .location {
+    color: #bbb;
   }
 }
