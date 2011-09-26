@@ -259,7 +259,10 @@
       <?php $selfUrl = 'http://keithsmiley.net/cv/' . ($fullView ? 'full' : ''); ?>
       Latest version always available at <a href="<?php echo $selfUrl; ?>"><?php echo $selfUrl; ?></a>
     </footer>
-    <!-- If you've made it this far, you probably know how to find my e-mail address. Why not drop me a note? -->
+    <!--
+      E-mail address is obfuscated to (hopefully) deter spam. But if you've made
+      it this far, you probably know how to decipher it. Why not drop me a note?
+    -->
     <script>
       var c=':', u='k', h='keithsmiley.net', a='@', p='mailto',
         e = document.getElementById("email");
