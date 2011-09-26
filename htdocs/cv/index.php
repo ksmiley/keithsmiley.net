@@ -214,9 +214,9 @@
           <h2>In the toolkit</h2>
           <ul>
             <li>Java</li>
-            <li>Adobe Creative Suite (especially Photoshop, InDesign and Illustrator)</li>
             <li>Final Cut Pro</li>
             <li>Photo Mechanic</li>
+            <li>Adobe Creative Suite (especially Photoshop, InDesign and Illustrator)</li>
           </ul>
         </article>
         <article>
