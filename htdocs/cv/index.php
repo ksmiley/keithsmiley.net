@@ -157,8 +157,8 @@
         </header>
         <ul>
           <li>
-            <span class="job-title">Photography Intern</span>
             <span class="time-range"><time datetime="2006-06-01">June</time> &ndash; <time datetime="2006-08-15">Augusta 2006</time></span>
+            <span class="job-title">Photography Intern</span>
           </li>
         </ul>
         <p>
