@@ -258,6 +258,10 @@
         </article>
       </section>
     </div>
+    <footer>
+      Latest version always available at http://keithsmiley.net/cv/<?php echo $fullView ? 'full' : ''; ?>
+    </footer>
+    <!-- If you've made it this far, you probably know how to find my e-mail address. Why not drop me a note?  -->
     <script>
       var c=':', u='k', h='keithsmiley.net', a='@', p='mailto',
         e = document.getElementById("email");

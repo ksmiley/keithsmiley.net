@@ -197,8 +197,13 @@ body > header .email {
   font-weight: bold;
 }
 
-body > header .social .type {
-
+/* Footer has source URL and should only be visible when printing. */
+body > footer {
+  display: none;
+  clear: both;
+  border-top: 1px solid #333333;
+  padding-top: 10px;
+  text-align: center;
 }
 
 div.rail {
@@ -399,5 +404,9 @@ section#awards dd {
   
   section article .location {
     color: #bbb;
+  }
+  
+  body > footer {
+    display: block;
   }
 }
