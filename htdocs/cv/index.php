@@ -255,7 +255,8 @@
       </section>
     </div>
     <footer>
-      Latest version always available at http://keithsmiley.net/cv/<?php echo $fullView ? 'full' : ''; ?>
+      <?php $selfUrl = 'http://keithsmiley.net/cv/' . ($fullView ? 'full' : ''); ?>
+      Latest version always available at <a href="<?php echo $selfUrl; ?>"><?php echo $selfUrl; ?></a>
     </footer>
     <!-- If you've made it this far, you probably know how to find my e-mail address. Why not drop me a note? -->
     <script>

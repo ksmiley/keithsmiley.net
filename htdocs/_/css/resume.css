@@ -206,6 +206,10 @@ body > footer {
   text-align: center;
 }
 
+body > footer > a {
+  font-weight: bold;
+}
+
 div.rail {
   width: 210px;
   float: left;
