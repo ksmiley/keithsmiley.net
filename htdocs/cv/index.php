@@ -1,3 +1,4 @@
+<?php $fullView = (isset($_GET['a']) && $_GET['a'] == 'full') ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -15,7 +16,7 @@
       <h1><a class="fn url" rel="me" href="http://keithsmiley.net/">Keith Smiley</a></h1>
       <div class="rail">
         <address>
-<?php if (isset($_GET['a']) && $_GET['a'] == 'full'): ?>
+<?php if ($fullView): ?>
           <div class="adr">
             <span class="type">Home</span>
             <span class="street-address">xxxxx</span>
@@ -27,7 +28,7 @@
           </div>
 <?php endif; ?>
           <a class="email" id="email" href="mailto:k.AT.keithsmiley.DOT.net">k.AT.keithsmiley.DOT.net</a>
-<?php if (isset($_GET['a']) && $_GET['a'] == 'full'): ?>
+<?php if ($fullView): ?>
           <div class="tel">(xxx) xxx-xxxx
 <?php endif; ?>
           <div class="social">
