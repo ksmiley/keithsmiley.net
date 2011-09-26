@@ -55,12 +55,13 @@
           </li>
         </ul>
         <p>
-          Develop and support applications across the full software stack,
-          from backend data processing up to frontend user-experience design.
+          Develop and support web applications throughout the software stack,
+          from backend data processing to client-side styling and scripting.
           Responsibilities include contributing to a Drupal-based CMS that
-          supports web-first publishing for Morris newspapers, maintaining
-          and improving a proprietary programming language, and providing
-          support for external customers who use our classifieds products.
+          integrates with publishing for Morris newspapers, maintaining and
+          improving an in-house programming language, analyzing performance on
+          LAMP systems, and providing support for external customers who use our
+          classifieds products.
         </p>
       </article>
       <article>
