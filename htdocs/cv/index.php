@@ -145,10 +145,6 @@
           the top college newspapers in the country and the Kentucky Press
           Association’s General Excellence award.
         </p>
-        <p>
-          Served as the managing editor, as a photographer and as the photo
-          editor on the 2005-2006 staff that also won the Pacemaker award.
-        </p>
       </article>
       <article>
         <header>
