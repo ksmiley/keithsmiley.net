@@ -225,7 +225,7 @@ section > h1 {
 
 section article {
   margin-bottom: 15px;
-  line-height: 1.15;
+  line-height: 1.1  ;
 }
 
 section article .location {
@@ -267,11 +267,11 @@ section#experience article > ul > li {
 }
 
 section#experience article > ul > li:before {
-  content: '›';
+  content: '› ';
   font-size: 130%;
   font-weight: bold;
   color: #356aa0;
-  margin-left: -0.5em;
+  margin-left: -0.6em;
 }
 
 section#experience article > ul > li .time-range {
@@ -401,7 +401,12 @@ section#awards dd {
     border: 0;
     box-shadow: none;
   }
-  
+
+  body > header address a, section a,
+  body > header:hover address a, section:hover a {
+    border-bottom: 0;
+  }
+
   section article .location {
     color: #bbb;
   }
