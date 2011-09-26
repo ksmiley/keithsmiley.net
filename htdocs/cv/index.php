@@ -195,6 +195,43 @@
       <section id="skills">
         <h1>Relevant Skills</h1>
         <article>
+          <h2>Used often</h2>
+          <ul>
+            <li>PHP</li>
+            <li>JavaScript</li>
+            <li>jQuery</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Perl</li>
+            <li>Shell scripting</li>
+            <li>C</li>
+            <li>SQL</li>
+            <li>LAMP Architecture</li>
+            <li>Drupal</li>
+          </ul>
+        </article>
+        <article>
+          <h2>In the toolkit</h2>
+          <ul>
+            <li>Java</li>
+            <li>Adobe Creative Suite (especially Photoshop, InDesign and Illustrator)</li>
+            <li>Final Cut Pro</li>
+            <li>Photo Mechanic</li>
+          </ul>
+        </article>
+        <article>
+          <h2>Have experience</h2>
+          <ul>
+            <li>WordPress</li>
+            <li>C++</li>
+            <li>Flash/ActionScript</li>
+            <li>Oracle</li>
+            <li>FileMaker Pro</li>
+            <li>QuarkXPress</li>
+            <li>Soundslides</li>
+          </ul>
+        </article>
+        <!--<article>
           <h2>Languages</h2>
           <ul>
             <li>PHP</li>
@@ -239,7 +276,7 @@
             <li>QuarkXPress</li>
             <li>Final Cut Pro</li>
           </ul>
-        </article>
+        </article>-->
       </section>
       <section id="awards">
         <h1>Awards and Honors</h1>
