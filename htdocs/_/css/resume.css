@@ -103,6 +103,20 @@ input, select {
 
 /* end reset */
 
+ul > li {
+  list-style: none;
+  padding-left: 1em;
+}
+
+ul > li:before {
+  content: '› ';
+  font-size: 130%;
+  font-weight: bold;
+/*  color: #356aa0;*/
+  color: #333;
+  margin-left: -0.6em;
+}
+
 address {
   font-style: normal;
 }
@@ -112,9 +126,9 @@ a {
   text-decoration: none;
 }
 
-body > header:hover address a, section:hover a {
+/*body > header:hover address a, section:hover a {
   border-bottom: 1px solid #bbb;
-}
+}*/
 
 html {
   height: 100%;
@@ -265,7 +279,7 @@ section#experience article > ul {
   margin-bottom: 3px;
 }
 
-section#experience article > ul > li {
+/*section#experience article > ul > li {
   list-style: none;
   padding-left: 1em;
 }
@@ -276,7 +290,7 @@ section#experience article > ul > li:before {
   font-weight: bold;
   color: #356aa0;
   margin-left: -0.6em;
-}
+}*/
 
 section#experience article > ul > li .time-range {
   word-spacing: -0.1em;
@@ -304,7 +318,7 @@ section#education article p {
   margin-top: 2px;
 }
 
-section#skills ul {
+/*section#skills ul {
   list-style-position: outside;
   list-style-type: square;
   margin-top: 2px;
@@ -312,7 +326,7 @@ section#skills ul {
 
 section#skills ul li {
   margin-left: 12pt;
-}
+}*/
 
 section#awards dt {
   font-weight: bold;
