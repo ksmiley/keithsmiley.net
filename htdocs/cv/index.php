@@ -231,52 +231,6 @@
             <li>Soundslides</li>
           </ul>
         </article>
-        <!--<article>
-          <h2>Languages</h2>
-          <ul>
-            <li>PHP</li>
-            <li>Perl</li>
-            <li>JavaScript</li>
-            <li>Java</li>
-            <li>SQL</li>
-            <li>C</li>
-            <li>C++</li>
-          </ul>
-        </article>
-        <article>
-          <h2>Web technologies</h2>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>jQuery</li>
-            <li>AJAX</li>
-            <li>Flash/ActionScript</li>
-          </ul>
-        </article>
-        <article>
-          <h2>Databases</h2>
-          <ul>
-            <li>MySQL</li>
-            <li>Oracle</li>
-            <li>FileMaker Pro</li>
-          </ul>
-        </article>
-        <article>
-          <h2>Server software</h2>
-          <ul>
-            <li>Drupal CMS</li>
-            <li>Apache web server</li>
-            <li>Squid caching proxy</li>
-          </ul>
-        </article>
-        <article>
-          <h2>Publishing software</h2>
-          <ul>
-            <li>Adobe Creative Suite (especially Photoshop, InDesign and Illustrator)</li>
-            <li>QuarkXPress</li>
-            <li>Final Cut Pro</li>
-          </ul>
-        </article>-->
       </section>
       <section id="awards">
         <h1>Awards and Honors</h1>
