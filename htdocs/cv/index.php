@@ -188,7 +188,7 @@
           <div class="location"><span class="locality">Lexington</span>, <abbr class="region" title="Kentucky">Ky.</abbr></div>
           <p>
             Graduated with bachelor’s degrees in computer science
-            and print journalism, and a 3.66 GPA.
+            and print journalism.
           </p>
         </article>
       </section>
