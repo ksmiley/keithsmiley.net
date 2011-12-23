@@ -139,12 +139,12 @@
           </li>
         </ul>
         <p>
-          Responsibilities as editor of the 17,000-circulation independent daily
-          newspaper included short- and long-term story planning, overseeing
-          daily news gathering and production, and managing a staff of more
-          than 40. The 2007-2008 staff received the Pacemaker award recognizing
-          the top college newspapers in the country and the Kentucky Press
-          Association’s General Excellence award.
+          Oversaw daily news gathering and production, planned short- and
+          long-term stories, and managed a staff of more than 40 as editor of
+          the 17,000-circulation independent daily newspaper. The 2007-2008
+          staff received the Pacemaker award recognizing the top college
+          newspapers in the country and the Kentucky Press Association’s
+          General Excellence award.
         </p>
       </article>
       <article>
