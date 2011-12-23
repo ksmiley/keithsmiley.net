@@ -126,10 +126,6 @@ a {
   text-decoration: none;
 }
 
-/*body > header:hover address a, section:hover a {
-  border-bottom: 1px solid #bbb;
-}*/
-
 html {
   height: 100%;
   overflow-y: scroll;
@@ -420,8 +416,7 @@ section#awards dd {
     box-shadow: none;
   }
 
-  body > header address a, section a,
-  body > header:hover address a, section:hover a {
+  body > header address a, section a {
     border-bottom: 0;
   }
 
