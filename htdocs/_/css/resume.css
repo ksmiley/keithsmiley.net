@@ -1,212 +1,898 @@
-/* 
-html5doctor.com Reset Stylesheet
-v1.6.1
-Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com 
-Twitter: @rich_clark
+/*@import "normalize.css";*/
+/*@import "frameless.less";*/
+/*
+*
+*  Golden Grid System (1.01)	<http://goldengridsystem.com/>
+*  by Joni Korpi 				<http://jonikorpi.com/>
+*  licensed under MIT			<http://opensource.org/licenses/mit-license.php>
+*	
 */
-
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+/*
+*
+*  Margin, padding, and border resets
+*  except for form elements
+*
+*/
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
-
+/*
+*
+*  Consistency fixes
+*  adopted from http://necolas.github.com/normalize.css/
+*
+*/
+html {
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
 body {
-    line-height:1;
+  min-height: 100%;
+  font-size: 100%;
 }
-
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section { 
-	display:block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+audio,
+canvas,
+video {
+  display: block;
 }
-
-nav ul {
-    list-style:none;
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
 }
-
-blockquote, q {
-    quotes:none;
+sup {
+  top: -0.5em;
 }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content:'';
-    content:none;
+sub {
+  bottom: -0.25em;
 }
-
-a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
-
-/* change colours to suit your needs */
-ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
+b,
+strong {
+  font-weight: bold;
 }
-
-/* change colours to suit your needs */
-mark {
-    background-color:#ff9;
-    color:#000; 
-    font-style:italic;
-    font-weight:bold;
+abbr[title] {
+  border-bottom: 1px dotted;
 }
-
-del {
-    text-decoration: line-through;
+input,
+textarea,
+button,
+select {
+  margin: 0;
+  font-size: 100%;
+  line-height: normal;
+  vertical-align: baseline;
 }
-
-/*abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
-}*/
-
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+textarea {
+  overflow: auto;
+}
 table {
-    border-collapse:collapse;
-    border-spacing:0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-
-/* change border colour to suit your needs */
-hr {
-    display:block;
-    height:1px;
-    border:0;   
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
+/*
+*
+*  Simple fluid media
+*
+*/
+figure {
+  position: relative;
 }
-
-input, select {
-    vertical-align:middle;
+figure img,
+figure object,
+figure embed,
+figure video {
+  max-width: 100%;
+  display: block;
 }
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+/*
+*
+*	Zoomable baseline grid
+*	type size presets
+*
+*/
+body {
+  /* 16px / 22px */
 
-/* end reset */
+  font-size: 1em;
+  line-height: 1.375em;
+}
+.small {
+  /* 14px / 18px */
 
+  font-size: 0.875em;
+  line-height: 1.2571428571428573em;
+}
+.normal,
+h3 {
+  /* 16px / 22px */
+
+  font-size: 1em;
+  line-height: 1.375em;
+  /* 24 */
+
+}
+.large {
+  /* 26 / 36px */
+
+  font-size: 1.625em;
+  line-height: 1.2692307692307692em;
+}
+.huge {
+  /* 42px / 48px */
+
+  font-size: 2.625em;
+  line-height: 1.0476190476190477em;
+}
+.massive {
+  /* 68px / 72px */
+
+  font-size: 4.25em;
+  line-height: 0.9705882352941176em;
+}
+.gigantic {
+  /* 110px / 120px */
+
+  font-size: 6.875em;
+  line-height: 1em;
+}
+/*  Font Awesome
+    the iconic font designed for use with Twitter Bootstrap
+    -------------------------------------------------------
+    The full suite of pictographic icons, examples, and documentation
+    can be found at: http://fortawesome.github.com/Font-Awesome/
+
+    License
+    -------------------------------------------------------
+    The Font Awesome webfont, CSS, and LESS files are licensed under CC BY 3.0:
+    http://creativecommons.org/licenses/by/3.0/ A mention of
+    'Font Awesome - http://fortawesome.github.com/Font-Awesome' in human-readable
+    source code is considered acceptable attribution (most common on the web).
+    If human readable source code is not available to the end user, a mention in
+    an 'About' or 'Credits' screen is considered acceptable (most common in desktop
+    or mobile software).
+
+    Contact
+    -------------------------------------------------------
+    Email: dave@davegandy.com
+    Twitter: http://twitter.com/fortaweso_me
+    Work: http://lemonwi.se co-founder
+
+    */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../font/fontawesome-webfont.eot');
+  src: url('../font/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('../font/fontawesome-webfont.woff') format('woff'), url('../font/fontawesome-webfont.ttf') format('truetype'), url('../font/fontawesome-webfont.svgz#FontAwesomeRegular') format('svg'), url('../font/fontawesome-webfont.svg#FontAwesomeRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* sprites.less reset */
+[class^="icon-"],
+[class*=" icon-"] {
+  display: inline;
+  width: auto;
+  height: auto;
+  line-height: inherit;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0% 0%;
+  background-repeat: repeat;
+}
+li[class^="icon-"],
+li[class*=" icon-"] {
+  display: block;
+}
+/*  Font Awesome styles
+    ------------------------------------------------------- */
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+}
+a [class^="icon-"],
+a [class*=" icon-"] {
+  display: inline-block;
+  text-decoration: inherit;
+}
+/* makes the font 33% larger relative to the icon container */
+.icon-large:before {
+  vertical-align: top;
+  font-size: 1.3333333333333333em;
+}
+.btn [class^="icon-"],
+.btn [class*=" icon-"] {
+  /* keeps button heights with and without icons the same */
+
+  line-height: .9em;
+}
+li [class^="icon-"],
+li [class*=" icon-"] {
+  display: inline-block;
+  width: 1.25em;
+  text-align: center;
+}
+li .icon-large[class^="icon-"],
+li .icon-large[class*=" icon-"] {
+  /* 1.5 increased font size for icon-large * 1.25 width */
+
+  width: 1.875em;
+}
+li[class^="icon-"],
+li[class*=" icon-"] {
+  margin-left: 0;
+  list-style-type: none;
+}
+li[class^="icon-"]:before,
+li[class*=" icon-"]:before {
+  text-indent: -2em;
+  text-align: center;
+}
+li[class^="icon-"].icon-large:before,
+li[class*=" icon-"].icon-large:before {
+  text-indent: -1.3333333333333333em;
+}
+/*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+    readers do not read off random characters that represent icons */
+.icon-glass:before {
+  content: "\f000";
+}
+.icon-music:before {
+  content: "\f001";
+}
+.icon-search:before {
+  content: "\f002";
+}
+.icon-envelope:before {
+  content: "\f003";
+}
+.icon-heart:before {
+  content: "\f004";
+}
+.icon-star:before {
+  content: "\f005";
+}
+.icon-star-empty:before {
+  content: "\f006";
+}
+.icon-user:before {
+  content: "\f007";
+}
+.icon-film:before {
+  content: "\f008";
+}
+.icon-th-large:before {
+  content: "\f009";
+}
+.icon-th:before {
+  content: "\f00a";
+}
+.icon-th-list:before {
+  content: "\f00b";
+}
+.icon-ok:before {
+  content: "\f00c";
+}
+.icon-remove:before {
+  content: "\f00d";
+}
+.icon-zoom-in:before {
+  content: "\f00e";
+}
+.icon-zoom-out:before {
+  content: "\f010";
+}
+.icon-off:before {
+  content: "\f011";
+}
+.icon-signal:before {
+  content: "\f012";
+}
+.icon-cog:before {
+  content: "\f013";
+}
+.icon-trash:before {
+  content: "\f014";
+}
+.icon-home:before {
+  content: "\f015";
+}
+.icon-file:before {
+  content: "\f016";
+}
+.icon-time:before {
+  content: "\f017";
+}
+.icon-road:before {
+  content: "\f018";
+}
+.icon-download-alt:before {
+  content: "\f019";
+}
+.icon-download:before {
+  content: "\f01a";
+}
+.icon-upload:before {
+  content: "\f01b";
+}
+.icon-inbox:before {
+  content: "\f01c";
+}
+.icon-play-circle:before {
+  content: "\f01d";
+}
+.icon-repeat:before {
+  content: "\f01e";
+}
+/* \f020 is not a valid unicode character. all shifted one down */
+.icon-refresh:before {
+  content: "\f021";
+}
+.icon-list-alt:before {
+  content: "\f022";
+}
+.icon-lock:before {
+  content: "\f023";
+}
+.icon-flag:before {
+  content: "\f024";
+}
+.icon-headphones:before {
+  content: "\f025";
+}
+.icon-volume-off:before {
+  content: "\f026";
+}
+.icon-volume-down:before {
+  content: "\f027";
+}
+.icon-volume-up:before {
+  content: "\f028";
+}
+.icon-qrcode:before {
+  content: "\f029";
+}
+.icon-barcode:before {
+  content: "\f02a";
+}
+.icon-tag:before {
+  content: "\f02b";
+}
+.icon-tags:before {
+  content: "\f02c";
+}
+.icon-book:before {
+  content: "\f02d";
+}
+.icon-bookmark:before {
+  content: "\f02e";
+}
+.icon-print:before {
+  content: "\f02f";
+}
+.icon-camera:before {
+  content: "\f030";
+}
+.icon-font:before {
+  content: "\f031";
+}
+.icon-bold:before {
+  content: "\f032";
+}
+.icon-italic:before {
+  content: "\f033";
+}
+.icon-text-height:before {
+  content: "\f034";
+}
+.icon-text-width:before {
+  content: "\f035";
+}
+.icon-align-left:before {
+  content: "\f036";
+}
+.icon-align-center:before {
+  content: "\f037";
+}
+.icon-align-right:before {
+  content: "\f038";
+}
+.icon-align-justify:before {
+  content: "\f039";
+}
+.icon-list:before {
+  content: "\f03a";
+}
+.icon-indent-left:before {
+  content: "\f03b";
+}
+.icon-indent-right:before {
+  content: "\f03c";
+}
+.icon-facetime-video:before {
+  content: "\f03d";
+}
+.icon-picture:before {
+  content: "\f03e";
+}
+.icon-pencil:before {
+  content: "\f040";
+}
+.icon-map-marker:before {
+  content: "\f041";
+}
+.icon-adjust:before {
+  content: "\f042";
+}
+.icon-tint:before {
+  content: "\f043";
+}
+.icon-edit:before {
+  content: "\f044";
+}
+.icon-share:before {
+  content: "\f045";
+}
+.icon-check:before {
+  content: "\f046";
+}
+.icon-move:before {
+  content: "\f047";
+}
+.icon-step-backward:before {
+  content: "\f048";
+}
+.icon-fast-backward:before {
+  content: "\f049";
+}
+.icon-backward:before {
+  content: "\f04a";
+}
+.icon-play:before {
+  content: "\f04b";
+}
+.icon-pause:before {
+  content: "\f04c";
+}
+.icon-stop:before {
+  content: "\f04d";
+}
+.icon-forward:before {
+  content: "\f04e";
+}
+.icon-fast-forward:before {
+  content: "\f050";
+}
+.icon-step-forward:before {
+  content: "\f051";
+}
+.icon-eject:before {
+  content: "\f052";
+}
+.icon-chevron-left:before {
+  content: "\f053";
+}
+.icon-chevron-right:before {
+  content: "\f054";
+}
+.icon-plus-sign:before {
+  content: "\f055";
+}
+.icon-minus-sign:before {
+  content: "\f056";
+}
+.icon-remove-sign:before {
+  content: "\f057";
+}
+.icon-ok-sign:before {
+  content: "\f058";
+}
+.icon-question-sign:before {
+  content: "\f059";
+}
+.icon-info-sign:before {
+  content: "\f05a";
+}
+.icon-screenshot:before {
+  content: "\f05b";
+}
+.icon-remove-circle:before {
+  content: "\f05c";
+}
+.icon-ok-circle:before {
+  content: "\f05d";
+}
+.icon-ban-circle:before {
+  content: "\f05e";
+}
+.icon-arrow-left:before {
+  content: "\f060";
+}
+.icon-arrow-right:before {
+  content: "\f061";
+}
+.icon-arrow-up:before {
+  content: "\f062";
+}
+.icon-arrow-down:before {
+  content: "\f063";
+}
+.icon-share-alt:before {
+  content: "\f064";
+}
+.icon-resize-full:before {
+  content: "\f065";
+}
+.icon-resize-small:before {
+  content: "\f066";
+}
+.icon-plus:before {
+  content: "\f067";
+}
+.icon-minus:before {
+  content: "\f068";
+}
+.icon-asterisk:before {
+  content: "\f069";
+}
+.icon-exclamation-sign:before {
+  content: "\f06a";
+}
+.icon-gift:before {
+  content: "\f06b";
+}
+.icon-leaf:before {
+  content: "\f06c";
+}
+.icon-fire:before {
+  content: "\f06d";
+}
+.icon-eye-open:before {
+  content: "\f06e";
+}
+.icon-eye-close:before {
+  content: "\f070";
+}
+.icon-warning-sign:before {
+  content: "\f071";
+}
+.icon-plane:before {
+  content: "\f072";
+}
+.icon-calendar:before {
+  content: "\f073";
+}
+.icon-random:before {
+  content: "\f074";
+}
+.icon-comment:before {
+  content: "\f075";
+}
+.icon-magnet:before {
+  content: "\f076";
+}
+.icon-chevron-up:before {
+  content: "\f077";
+}
+.icon-chevron-down:before {
+  content: "\f078";
+}
+.icon-retweet:before {
+  content: "\f079";
+}
+.icon-shopping-cart:before {
+  content: "\f07a";
+}
+.icon-folder-close:before {
+  content: "\f07b";
+}
+.icon-folder-open:before {
+  content: "\f07c";
+}
+.icon-resize-vertical:before {
+  content: "\f07d";
+}
+.icon-resize-horizontal:before {
+  content: "\f07e";
+}
+.icon-bar-chart:before {
+  content: "\f080";
+}
+.icon-twitter-sign:before {
+  content: "\f081";
+}
+.icon-facebook-sign:before {
+  content: "\f082";
+}
+.icon-camera-retro:before {
+  content: "\f083";
+}
+.icon-key:before {
+  content: "\f084";
+}
+.icon-cogs:before {
+  content: "\f085";
+}
+.icon-comments:before {
+  content: "\f086";
+}
+.icon-thumbs-up:before {
+  content: "\f087";
+}
+.icon-thumbs-down:before {
+  content: "\f088";
+}
+.icon-star-half:before {
+  content: "\f089";
+}
+.icon-heart-empty:before {
+  content: "\f08a";
+}
+.icon-signout:before {
+  content: "\f08b";
+}
+.icon-linkedin-sign:before {
+  content: "\f08c";
+}
+.icon-pushpin:before {
+  content: "\f08d";
+}
+.icon-external-link:before {
+  content: "\f08e";
+}
+.icon-signin:before {
+  content: "\f090";
+}
+.icon-trophy:before {
+  content: "\f091";
+}
+.icon-github-sign:before {
+  content: "\f092";
+}
+.icon-upload-alt:before {
+  content: "\f093";
+}
+.icon-lemon:before {
+  content: "\f094";
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before {
+  content: "\0020";
+  display: table;
+  height: 0;
+  overflow: hidden;
+}
+.clearfix:after {
+  content: "\0020";
+  display: table;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
 ul > li {
   list-style: none;
   padding-left: 1em;
 }
-
 ul > li:before {
   content: '› ';
-  font-size: 130%;
+  font-size: 1.3333333333333333em;
   font-weight: bold;
-/*  color: #356aa0;*/
-  color: #333;
+  color: #545454;
   margin-left: -0.6em;
 }
-
+.fontface ul > li:before {
+  content: "\f054  ";
+  font-size: 0.75em;
+  vertical-align: top;
+  font-family: FontAwesome;
+  font-weight: normal;
+}
 address {
   font-style: normal;
 }
-
 a {
-  color: inherit;
+  color: #143352;
   text-decoration: none;
 }
-
-html {
-  height: 100%;
-  overflow-y: scroll;
-  background: #356aa0; /* Old browsers */
-  background: -moz-linear-gradient(top, #356aa0 0%, #407ebc 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#356aa0), color-stop(100%,#407ebc)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #356aa0 0%,#407ebc 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #356aa0 0%,#407ebc 100%); /* Opera11.10+ */
-  background: -ms-linear-gradient(top, #356aa0 0%,#407ebc 100%); /* IE10+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#356aa0', endColorstr='#407ebc',GradientType=0 ); /* IE6-9 */
-  background: linear-gradient(top, #356aa0 0%,#407ebc 100%); /* W3C */
-  background-attachment: fixed;
+address abbr[title],
+.location abbr[title] {
+  border-bottom: 0;
 }
-
 body {
-  width: 850px;
-  background-color: #fefefe;
-  box-shadow: 0 0 5px #555;
-  overflow: hidden;
-  margin: 0 auto;
-  padding: 20px 20px 0 20px;
-  border-left: 1px solid #333;
-  border-right: 1px solid #333;
-  border-bottom: 1px solid #333;
-  font: small Helmet, Freesans, sans-serif;
-  color: #222;
-}
+  font-family: Helmet, Freesans, sans-serif;
+  /*  line-height: 1.4em;*/
 
+  color: #000000;
+  margin: 1em 5.555555555555555%;
+  padding-bottom: 1em;
+}
+h1 {
+  /*  font-size: 1.5em;*/
+
+  /* 26 / 36px */
+
+  font-size: 1.625em;
+  line-height: 1.2692307692307692em;
+  font-family: georgia, serif;
+  font-weight: bold;
+}
+.fontface h1 {
+  font-family: Kreon;
+  font-weight: 400;
+}
+section {
+  margin-bottom: 0.5em;
+}
+section  > h1,
+.fontface section  > h1 {
+  border-bottom: 1px solid #737373;
+  color: #4d4d4d;
+  padding: 0 1em;
+  margin: 1.5em 0 1em;
+  /* 16px / 22px */
+
+  font-size: 1em;
+  line-height: 1.375em;
+  /* 24 */
+
+  /*    font-size: 1em;*/
+
+  font-family: sans-serif;
+  font-weight: bold;
+}
+article {
+  margin-bottom: 1em;
+}
+article .location {
+  color: #888;
+  font-size: 0.875em;
+}
+/* Header block has name and contact information. */
 body > header {
-  padding-bottom: 12px;
-  margin-bottom: 14px;
-  border-bottom: 4px double #333;
-  height: 80px;
-  position: relative;
-}
+  /*  .width(4);*/
 
+  /*  margin: 0 auto;*/
+
+  padding-bottom: 0.75em;
+  /*  padding: 0 6px 12px;*/
+
+  margin-bottom: 1em;
+  border-bottom: 4px double #545454;
+  /* Half the text in the header are links, which looks odd with color. */
+
+}
+body > header a {
+  color: inherit;
+}
 body > header h1 {
-  height: 80px;
-  width: 595px;
-  padding-right: 20px;
-  margin-right: 20px;
-  border-right: 1px solid #888;
-  font-size: 75px;
+  /* 42px / 48px */
+
+  font-size: 2.625em;
+  line-height: 1.0476190476190477em;
+  font-weight: bold;
+}
+.fontface body > header h1 {
   font-family: 'Kreon', serif;
-  text-align: right;
-  position: relative;
-  top: 0;
-  left: 0;
-  float: left;
+  font-weight: 700;
 }
-
-body > header h1 a {
-  display: block;
-  position: absolute;
-  right: 0.25em;
-  bottom: -0.25em;
-}
-
 body > header address {
-  position: absolute;
-  bottom: 10px;
-}
+  zoom: 1;
+  /* 14px / 18px */
 
-body > header .tel .type,
-body > header .adr .type {
+  font-size: 0.875em;
+  line-height: 1.2571428571428573em;
+  margin: 0.25em 1.5em 0;
+}
+body > header address:before {
+  content: "\0020";
+  display: table;
+  height: 0;
+  overflow: hidden;
+}
+body > header address:after {
+  content: "\0020";
+  display: table;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+body > header i[class*="icon-"] {
+  color: #143352;
+}
+body > header .type {
   display: none;
 }
-
 body > header .adr {
-  margin-bottom: 4px;
+  margin-bottom: 0.25em;
 }
-
-body > header .social {
-  margin-top: 4px;
-}
-
 body > header .tel,
 body > header .email {
   font-weight: bold;
 }
-
+body > header .social {
+  margin-top: 0.5em;
+  overflow: hidden;
+}
+body > header .social div {
+  margin-right: 1em;
+  float: left;
+}
+body > header .social div:last-child {
+  margin-right: 0;
+}
 /* Footer has source URL and should only be visible when printing. */
 body > footer {
   display: none;
@@ -215,216 +901,336 @@ body > footer {
   padding-top: 10px;
   text-align: center;
 }
-
-body > footer > a {
-  font-weight: bold;
-}
-
-div.rail {
-  width: 210px;
-  float: left;
-}
-
-section {
-  margin-bottom: 10px;
-}
-
-section > h1 {
-  text-align: center;
-  text-decoration: underline;
-  font: 130% serif;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-section article {
-  margin-bottom: 15px;
-  line-height: 1.1  ;
-}
-
-section article .location {
-  color: #888;
-}
-
 section#experience {
-  width: 595px;
-  float: left;
-  padding-right: 20px;
-  margin-right: 20px;
-  border-right: 1px solid #888;
-}
+  /* Tighten up space around dashes in the time ranges. */
 
+}
 section#experience header {
-  margin-bottom: 1px;
+  margin-bottom: 0.3333333333333333em;
 }
-
-section#experience article header h2 {
-  font-size: 160%;
-  font-weight: bold;
+section#experience article header h1 {
   display: inline;
   color: #000;
   margin-right: 6px;
 }
-
 section#experience article header .location {
   display: inline;
+  /* City and state should always display on same line. Either both are next
+       to the company name or both break to the next line. */
+
   white-space: nowrap;
 }
-
 section#experience article > ul {
-  margin-bottom: 3px;
+  /* 14px / 18px */
+
+  font-size: 0.875em;
+  line-height: 1.2571428571428573em;
+  margin-bottom: 0.3333333333333333px;
 }
-
-/*section#experience article > ul > li {
-  list-style: none;
-  padding-left: 1em;
+section#experience article > ul > li {
+  margin: 0.2em 0;
 }
-
-section#experience article > ul > li:before {
-  content: '› ';
-  font-size: 130%;
-  font-weight: bold;
-  color: #356aa0;
-  margin-left: -0.6em;
-}*/
-
 section#experience article > ul > li .time-range {
   word-spacing: -0.1em;
 }
-
 section#experience article > ul > li .time-range:after {
   content: ': ';
   word-spacing: 0;
 }
-
 section#experience article > ul > li .time-range time {
   word-spacing: 0;
 }
-
 section#experience article > ul > li .job-title {
   font-weight: bold;
-}
+  /* Time and job title are usually on the same line, but a few wrap on mobile
+       screens. In that case the entire job title should jump down a line. */
 
-section#experience article > p {
-  line-height: 1.4;
-  font-size: 110%;
+  white-space: nowrap;
 }
-
 section#education article p {
-  margin-top: 2px;
+  margin-top: 0.125em;
 }
-
-/*section#skills ul {
-  list-style-position: outside;
-  list-style-type: square;
-  margin-top: 2px;
+section#education article h1 {
+  display: inline;
 }
+section#education article .location {
+  display: inline;
+  /* City and state should always display on same line. Either both are next
+       to the company name or both break to the next line. */
 
-section#skills ul li {
-  margin-left: 12pt;
-}*/
+  white-space: nowrap;
+}
+section#education article .time-range {
+  /* 14px / 18px */
 
+  font-size: 0.875em;
+  line-height: 1.2571428571428573em;
+  /*    font-size: (@font-size - 2)/@em;*/
+
+}
+section#skills h2 {
+  /* 16px / 22px */
+
+  font-size: 1em;
+  line-height: 1.375em;
+  /* 24 */
+
+  /*    font-size: 1em;*/
+
+}
+section#skills ul {
+  overflow: hidden;
+  /*    font-size: (@font-size - 2)/@em;*/
+
+}
+section#skills li {
+  float: left;
+  margin-right: 10px;
+}
+section#skills li:last-child {
+  margin-right: 0;
+}
 section#awards dt {
   font-weight: bold;
-  margin-top: 6px;
+  margin-top: 0.3333333333333333em;
 }
-
 section#awards dd {
   margin-top: 1px;
 }
-
-@media screen and (max-width: 891px) {
-  body {
-    width: auto;
-    border: 0;
-    margin: 0;
-  }
-
-  section#experience, 
-  body > header h1 {
-    width: 70%;
-    margin-right: 2%;
-    padding-right: 2%;
-  }
-  
-  div.rail {
-    width: 25%;
-  }
-}
-
-@media screen and (max-width: 675px) {
-  body {
-    padding: 10px;
-  }
-  body > header h1 {
-    font-size: 60px;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  section#experience,
-  div.rail,
-  body > header h1 {
-    margin-right: 0;
-    padding-right: 0;
-    border-right: 0;
-    float: none;
-    width: auto;
-  }
-
-  body > header h1 {
-    text-align: center;
-    height: auto;
-    font-size: 50px;
-  }
-
-  body > header h1 a {
-    position: static;
-  }
-
-  body > header address {
-    position: static;
-    height: auto;
-    /*width: 40%;*/
-    width: 12em;
-    margin: 0 auto;
-  }
-
-  body > header {
-    height: auto;
-  }
-
-  section {
-    border-bottom: 1px solid #aaa;
-    margin-bottom: 20px;
-    overflow: hidden;
-  }
-  
-  section#skills ul {
-    overflow: hidden;
-  }
-
-  section#skills ul li {
-    float: left;
-    margin-right: 10px;
-  }
-}
-
+/* Format for printer. Reveal footer with permalink and darken some colors. */
 @media print {
   body {
-    border: 0;
-    box-shadow: none;
+    padding: 0;
   }
-
-  body > header address a, section a {
+  body > header address a,
+  section a {
     border-bottom: 0;
   }
-
   section article .location {
     color: #bbb;
   }
-  
   body > footer {
     display: block;
+  }
+}
+/*// 480px. Small tablet or mobile in landscape.
+@media only screen and (min-width: 480px) {
+  body > header h1 {
+    font-size: 4em;
+    font-weight: 400;
+  }
+  
+  section#experience article header h1 {
+    font-size: 2em;
+    font-weight: normal;
+    line-height: 1.2em;
+  }
+  
+  section#education article h1 {
+    font-size: 2em;
+    line-height: 1.2em
+  }
+}
+
+// 600px
+@media only screen and (min-width: 600px) {
+
+}*/
+@media only screen and (min-width: 768px) {
+  body > header {
+    overflow: hidden;
+  }
+}
+@media only screen and (min-width: 992px) {
+  
+}
+@media only screen and (min-width: 1382px) {
+  
+}
+/*
+*
+*  Four-column grid active
+*  ----------------------------------------
+*  Margin   | #  1   2   3   4   |   Margin
+*  5.55555% | %  25  50  75  100 | 5.55555%
+*
+*/
+/*header, #twoway {
+  margin: 0 @column;
+}
+
+h1, h2 {
+  margin: (24/26*1em) 0 (36/26*1em);
+}
+
+h2 {
+  font-weight: normal;
+}
+
+h3 {
+  margin: (24/@em) 0 (24/@em);
+}*/
+/*
+*  Simple elastic gutters
+*  Note: box-sizing will not work in IE6-7
+*/
+/*.wrapper {
+  padding: 0 (@line/2)/@em;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      box-sizing: border-box;
+}
+*/
+/*
+*
+*  Fixes for IE6-8
+*  http://jonikorpi.com/leaving-old-IE-behind/
+*
+*/
+/* @media screen and (min-width: 480px) */
+@media screen and (min-width: 30em) {
+  body > header h1 {
+    /*    font-size: 4em;*/
+  
+    /* 68px / 72px */
+  
+    font-size: 4.25em;
+    line-height: 0.9705882352941176em;
+    font-weight: 400;
+  }
+  section#experience article header h1 {
+    /*font-size: 2em;
+          line-height: 1.2em;*/
+  
+    /* 42px / 48px */
+  
+    font-size: 2.625em;
+    line-height: 1.0476190476190477em;
+    font-weight: normal;
+  }
+  section#education article h1 {
+    /* 42px / 48px */
+  
+    font-size: 2.625em;
+    line-height: 1.0476190476190477em;
+    /*font-size: 2em;
+          line-height: 1.2em*/
+  
+  }
+}
+/* @media screen and (min-width: 640px) */
+@media screen and (min-width: 40em) {
+  body {
+    /* Zoom baseline grid to 17/16 = 1.0625 */
+  
+    font-size: 1.0625em;
+  }
+  /*  h1 {
+      .huge();
+      margin: (48/42*1em) 0 (24/42*1em);
+    }*/
+}
+/*
+*
+*  Eight-column grid active
+*  ----------------------------------------------------------------------
+*  Margin   | #  1     2     3     4     5     6     7     8   |   Margin
+*  5.55555% | %  12.5  25.0  37.5  50.0  62.5  75.0  87.5  100 | 5.55555%
+*	
+*
+*/
+/* @media screen and (min-width: 720px) */
+@media screen and (min-width: 45em) {
+  body {
+    /* Reset baseline grid to 16/16 = 1 */
+  
+    font-size: 1em;
+  }
+  /*  #twoway .wrapper {
+      float: left;
+      width: 50%;
+    }*/
+}
+/* @media screen and (min-width: 888px) */
+@media screen and (min-width: 55.5em) {
+  body {
+    /* Zoom baseline grid to 17/16 = 1.0625 */
+  
+    font-size: 1.0625em;
+  }
+}
+/* @media screen and (min-width: 984px) */
+@media screen and (min-width: 61.5em) {
+  body {
+    /* Reset baseline grid to 16/16 = 1.0 */
+  
+    font-size: 1em;
+  }
+  /*  header, #twoway {
+      margin: 0 @column*3;
+    }*/
+}
+/* @media screen and (min-width: 1200px) */
+@media screen and (min-width: 75em) {
+  body {
+    /* Zoom baseline grid to 17/16 = 1.0625 */
+  
+    font-size: 1.0625em;
+  }
+}
+/* @media screen and (min-width: 1392px) */
+@media screen and (min-width: 87em) {
+  body {
+    /* Reset baseline grid to 16/16 = 1.0 */
+  
+    font-size: 1em;
+  }
+  /*  header, #twoway {
+      margin: 0 @column*5;
+    }*/
+}
+/* @media screen and (min-width: 1680px) */
+@media screen and (min-width: 105em) {
+  body {
+    /* Zoom baseline grid to 17/16 = 1.0625 */
+  
+    font-size: 1.0625em;
+  }
+}
+/*
+*
+*  Sixteen-column grid active
+*  ----------------------------------------------------------------------------------------------------------------------
+*  Margin   | #  1     2     3     4     5     6     7     8     9     10    11    12    13    14    15    16  |   Margin
+*  5.55555% | %  6.25  12.5  18.75 25.0  31.25 37.5  43.75 50.0  56.25 62.5  68.75 75.0  81.25 87.5  93.75 100 | 5.55555%
+*	
+*
+*/
+/* @media screen and (min-width: 1872px) */
+@media screen and (min-width: 117em) {
+  /*  header, #twoway {
+      margin: 0 @column*1;
+    }
+    
+    header .wrapper {
+      width: 37.5%;
+      margin-left: 25%;
+    }
+    
+    #twoway .wrapper {
+      width: 25%;
+    }
+    
+    #twoway .wrapper:first-child {
+      margin-left: 25%;
+    }*/
+}
+/* @media screen and (min-width: 2080px) */
+@media screen and (min-width: 130em) {
+  body {
+    /* Zoom baseline grid to 18/16 = 1.125 */
+  
+    font-size: 1.125em;
+    max-width: 160em;
   }
 }
