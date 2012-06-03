@@ -8,17 +8,19 @@
     <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0">
     <meta name="cleartype" value="true">
     <title>Keith Smiley's Résumé</title>
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Kreon:bold&amp;text=Keith%20Smiley">
-    <!-- <link rel="stylesheet" type="text/css" href="/_/css/normalize.css"> -->
-    <!-- <link rel="stylesheet" type="text/css" href="/_/css/resume.css"> -->
-  	<!-- <link rel="stylesheet/less" type="text/css" href="/_/css/frameless.less"> -->
-  	<link rel="stylesheet/less" type="text/css" href="/_/css/resume.less">
-  	<script src="/_/js/less-1.3.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Kreon:300,400,700">
+    <!-- <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Kreon:bold&amp;text=Keith%20Smiley"> -->
+    <link rel="stylesheet" type="text/css" href="/_/css/resume.css">
+  	<!-- <link rel="stylesheet/less" type="text/css" href="/_/css/resume.less">
+    <script src="/_/js/less-1.3.0.min.js"></script> -->
   	<script src="/_/js/modernizr-2.5.3.min.js"></script>
+    <script src="/_/js/GGS.js"></script>
   </head>
   <body lang="en">
     <header class="vcard">
-      <h1><a class="fn url" rel="me" href="http://keithsmiley.net/">Keith Smiley</a></h1>
+      <div class="wrapper">
+        <h1><a class="fn url" rel="me" href="http://keithsmiley.net/">Keith Smiley</a></h1>
+      </div>
       <div class="rail">
         <address>
 <?php if ($fullView): ?>
@@ -83,7 +85,7 @@
       </article>
       <article>
         <header>
-          <h1 class="fn org"><a href="http://comm.uky.edu/">University of Kentucky Department of Communication</a></h2>
+          <h1 class="fn org"><a href="http://comm.uky.edu/">University of Kentucky</a></h2>
           <div class="location"><span class="locality">Lexington</span>, <abbr class="region" title="Kentucky">Ky.</abbr></div>
         </header>
         <ul>
@@ -94,12 +96,12 @@
         </ul>
         <p>
           Created databases and web applications to support faculty research
-          and classroom instruction. Projects included designing and developing
-          a Flash-based tool to support HIV prevention campaigns in rural areas,
-          adapting research surveys for use on mobile devices, improving the
-          department’s web content management software, and planning the
-          expansion of a system that records and analyzes 400 hours of
-          television daily.
+          and classroom instruction in the Department of Communication. Projects
+          included designing and developing a Flash-based tool to support HIV 
+          prevention campaigns in rural areas, adapting research surveys for use
+          on mobile devices, improving the department’s web content management 
+          software, and planning the expansion of a system that records and 
+          analyzes 400 hours of television daily.
         </p>
       </article>
       <article>
@@ -200,9 +202,11 @@
       <section id="education">
         <h1>Education</h1>
         <article>
-          <div class="time-range"><time datetime="2004-08-10">August 2004</time> &ndash; <time datetime="2009-12-10">December 2009</time></div>
-          <h1><a href="http://www.uky.edu/">University of Kentucky</a></h1>
-          <div class="location"><span class="locality">Lexington</span>, <abbr class="region" title="Kentucky">Ky.</abbr></div>
+          <header>
+            <div class="time-range"><time datetime="2004-08-10">August 2004</time> &ndash; <time datetime="2009-12-10">December 2009</time></div>
+            <h1><a href="http://www.uky.edu/">University of Kentucky</a></h1>
+            <div class="location"><span class="locality">Lexington</span>, <abbr class="region" title="Kentucky">Ky.</abbr></div>
+          </header>
           <p>
             Graduated with bachelor’s degrees in computer science
             and print journalism.
