@@ -1,17 +1,22 @@
-<?php $fullView = (isset($_GET['a']) && $_GET['a'] == 'full') ?>
+<?php $fullView = 1; // (isset($_GET['a']) && $_GET['a'] == 'full') ?>
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 9]><html class="ie"><![endif]-->
+<!--[if gte IE 9]><!--><html><!--<![endif]-->
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0">
+    <meta name="cleartype" value="true">
     <title>Keith Smiley's Résumé</title>
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Kreon:bold&amp;text=Keith%20Smiley">
-    <link rel="stylesheet" type="text/css" href="/_/css/resume.css">
-    <!--[if lt IE 9]>
-    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0">
+    <!-- <link rel="stylesheet" type="text/css" href="/_/css/normalize.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="/_/css/resume.css"> -->
+  	<!-- <link rel="stylesheet/less" type="text/css" href="/_/css/frameless.less"> -->
+  	<link rel="stylesheet/less" type="text/css" href="/_/css/resume.less">
+  	<script src="/_/js/less-1.3.0.min.js"></script>
+  	<script src="/_/js/modernizr-2.5.3.min.js"></script>
   </head>
-  <body>
+  <body lang="en">
     <header class="vcard">
       <h1><a class="fn url" rel="me" href="http://keithsmiley.net/">Keith Smiley</a></h1>
       <div class="rail">
@@ -27,21 +32,33 @@
             <span class="postal-code">xxxxx</span>
           </div>
 <?php endif; ?>
-          <a class="email" id="email" href="mailto:k.AT.keithsmiley.DOT.net">k.AT.keithsmiley.DOT.net</a>
+          </i> <a class="email" id="email" href="mailto:k.AT.keithsmiley.DOT.net">k.AT.keithsmiley.DOT.net</a>
 <?php if ($fullView): ?>
-          <div class="tel">(xxx) xxx-xxxx
+          <div class="tel">
+            (xxx) xxx-xxxx
+          </div>
 <?php endif; ?>
           <div class="social">
-            <span class="type">Twitter:</span> <a class="url" href="http://twitter.com/ksmiley">@ksmiley</a>
+            <div class="twitter">
+              <span class="type">Twitter</span> <a class="url" href="http://twitter.com/ksmiley"><i class="icon-twitter-sign icon-large"></i> @ksmiley</a>
+            </div>
+            <div class="github">
+              <span class="type">GitHub</span> <a class="url" href="http://github.com/ksmiley"><i class="icon-github-sign icon-large"></i> github.com/ksmiley</a>
+            </div>
           </div>
         </address>
       </div>
     </header>
+    <section id="about">
+  		<p>
+  			The boats were here hailed, to tow the whale on the larboard side, where fluke chains and other necessaries were already prepared for securing him. "Didn't I tell you so?" said Flask; "yes, you'll soon see this right whale's head hoisted up opposite that parmacetti's." In good time, Flask's saying proved true. As before, the Pequod steeply leaned over towards the sperm whale's head, now, by the counterpoise of both heads, she regained her even
+  		</p>
+  	</section>
     <section id="experience">
       <h1>Experience</h1>
       <article>
         <header>
-          <h2 class="fn org"><a href="http://www.morrisdigitalworks.com/">Morris DigitalWorks</a></h2>
+          <h1 class="fn org"><a href="http://www.morrisdigitalworks.com/">Morris DigitalWorks</a></h2>
           <div class="location"><span class="locality">Augusta</span>, <abbr class="region" title="Georgia">Ga.</abbr></div>
         </header>
         <ul>
@@ -66,7 +83,7 @@
       </article>
       <article>
         <header>
-          <h2 class="fn org"><a href="http://comm.uky.edu/">University of Kentucky Department of Communication</a></h2>
+          <h1 class="fn org"><a href="http://comm.uky.edu/">University of Kentucky Department of Communication</a></h2>
           <div class="location"><span class="locality">Lexington</span>, <abbr class="region" title="Kentucky">Ky.</abbr></div>
         </header>
         <ul>
@@ -87,7 +104,7 @@
       </article>
       <article>
         <header>
-          <h2 class="fn org"><a href="http://www.washingtontimes.com/">The Washington Times</a></h2>
+          <h1 class="fn org"><a href="http://www.washingtontimes.com/">The Washington Times</a></h2>
           <div class="location"><span class="locality">Washington</span>, <abbr class="region" title="District of Columbia">D.C.</abbr></div>
         </header>
         <ul>
@@ -104,7 +121,7 @@
       </article>
       <article>
         <header>
-          <h2 class="fn org"><a href="http://www.tennessean.com/">The Tennessean</a></h2>
+          <h1 class="fn org"><a href="http://www.tennessean.com/">The Tennessean</a></h2>
           <div class="location"><span class="locality">Nashville</span>, <abbr class="region" title="Tennessee">Tenn.</abbr></div>
         </header>
         <ul>
@@ -121,7 +138,7 @@
       </article>
       <article>
         <header>
-          <h2 class="fn org"><a href="http://kykernel.com/">Kentucky Kernel</a></h2>
+          <h1 class="fn org"><a href="http://kykernel.com/">Kentucky Kernel</a></h2>
           <div class="location"><span class="locality">Lexington</span>, <abbr class="region" title="Kentucky">Ky.</abbr></div>
         </header>
         <ul>
@@ -149,7 +166,7 @@
       </article>
       <article>
         <header>
-          <h2 class="fn org"><a href="http://www.rockymountainnews.com/">Rocky Mountain News</a></h2>
+          <h1 class="fn org"><a href="http://www.rockymountainnews.com/">Rocky Mountain News</a></h2>
           <div class="location"><span class="locality">Denver</span>, <abbr class="region" title="Colorado">Colo.</abbr></div>
         </header>
         <ul>
@@ -165,7 +182,7 @@
       </article>
       <article>
         <header>
-          <h2 class="fn org"><a href="http://www.courierpress.com/">Evansville Courier &amp; Press</a></h2>
+          <h1 class="fn org"><a href="http://www.courierpress.com/">Evansville Courier &amp; Press</a></h2>
           <div class="location"><span class="locality">Evansville</span>, <abbr class="region" title="Indiana">Ind.</abbr></div>
         </header>
         <ul>
