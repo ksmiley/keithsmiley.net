@@ -146,8 +146,8 @@ body > header {
   }
 
   .social {
+    .clearfix;
     margin-top: 0.5em;
-    overflow: hidden;
     
     div {
       margin-right: 1em;
@@ -247,7 +247,7 @@ section#skills {
   }
   
   ul {
-    overflow: hidden;
+    .clearfix;
 /*    font-size: (@font-size - 2)/@em;*/
   }
   
@@ -322,7 +322,8 @@ h3 {
 */
 
 .gutters() {
-  padding: 0 (@line/2)/@em;
+  padding-left: (@line/2)/@em;
+  padding-right: (@line/2)/@em;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -384,10 +385,15 @@ h3 {
 /* @media screen and (min-width: 720px) */
 @media screen and (min-width: 45em) {
 	
-	body {
-		/* Reset baseline grid to 16/16 = 1 */
-		font-size: (@font-size) / @em;
-	}
+  body {
+    /* Reset baseline grid to 16/16 = 1 */
+    font-size: (@font-size) / @em;
+    margin: 1em 5.55555%;
+  }
+
+  body > header address {
+    margin: 1em 0;
+  }
 
   section#about {
     .largeish;
@@ -402,22 +408,29 @@ h3 {
 
 /* @media screen and (min-width: 888px) */
 @media screen and (min-width: 55.5em) {
-	
-	body {
-		/* Zoom baseline grid to 17/16 = 1.0625 */
-		font-size: (@font-size + 1) / @em;
-    margin: 1em @column*2;
-	}
+  body {
+    /* Zoom baseline grid to 17/16 = 1.0625 */
+    font-size: (@font-size + 1) / @em;
+  }
   
+  /* Switch to grid by applying gutters to everything. Shrink header
+     and allow about box to float to its left. Together they're seven
+     columns over eight, so there's a half-column of whitespace on
+     either side compared to the section below. */
   body > header {
-    width: 8 * @column;
+    .gutters;
+    width: 50%;
+    margin-right: 6.25%;
     float: right;
   }
   
+  section {
+    .gutters;
+  }
+  
   section#about {
-/*    .gutters;*/
-    width: 8 * @column;
-    margin-left: @column;
+    width: 37.5%;
+    margin-left: 6.25%;
   }
   
   section#experience {
@@ -428,12 +441,33 @@ h3 {
 
 /* @media screen and (min-width: 984px) */
 @media screen and (min-width: 61.5em) {
-	
-	body {
-		/* Reset baseline grid to 16/16 = 1.0 */
-		font-size: (@font-size) / @em; 
+  body {
+    /* Reset baseline grid to 16/16 = 1.0 */
+    font-size: (@font-size) / @em;
 	}
-	
+  
+  /* Switch lower sections from linear to being three columns. */
+  section#education,
+  section#awards {
+    width: 25%;
+    float: left;
+  }
+  
+  section#skills {
+    width: 50%;
+    float: left;
+  }
+  
+  section#education {
+    article h1 {
+      .large;
+    }
+  }
+  
+  div.rail {
+    .clearfix;
+  }
+  
 /*  header, #twoway {
     margin: 0 @column*3;
   }*/
