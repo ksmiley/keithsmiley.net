@@ -56,7 +56,6 @@ address abbr[title], .location abbr[title] {
 
 body {
 	font-family: Helmet, Freesans, sans-serif;
-/*  line-height: 1.4em;*/
   color: @body-color;
   margin: 1em @column;
   padding-bottom: 1em;
@@ -71,7 +70,7 @@ h1 {
 
 .fontface h1 {
   font-family: Kreon;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 section {
@@ -291,63 +290,6 @@ section#awards {
   }
 }
 
-/*// 480px. Small tablet or mobile in landscape.
-@media only screen and (min-width: 480px) {
-  body > header h1 {
-    font-size: 4em;
-    font-weight: 400;
-  }
-  
-  section#experience article header h1 {
-    font-size: 2em;
-    font-weight: normal;
-    line-height: 1.2em;
-  }
-  
-  section#education article h1 {
-    font-size: 2em;
-    line-height: 1.2em
-  }
-}
-
-// 600px
-@media only screen and (min-width: 600px) {
-
-}*/
-
-// 768px
-@media only screen and (min-width: 768px) {
-  body {
-
-  }
-  
-  body > header {
-    overflow: hidden;
-  }
-  
-  body > header h1,
-  section#experience {
-
-  }
-  
-  div.rail {
-
-  }
-}
-
-// 992px
-@media only screen and (min-width: 992px) {
-
-}
-
-// 1382px
-@media only screen and (min-width: 1382px) {
-
-}
-
-
-
-
 
 /*
 *
@@ -379,13 +321,13 @@ h3 {
 *  Note: box-sizing will not work in IE6-7
 */
 
-/*.wrapper {
+.gutters() {
   padding: 0 (@line/2)/@em;
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-      box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-*/
+
 
 /*
 *
@@ -406,17 +348,10 @@ h3 {
     font-weight: 400;
   }
   
-  section#experience article header h1 {
-    /*font-size: 2em;
-        line-height: 1.2em;*/
-    .huge;
-    font-weight: normal;
-  }
-  
+  section#experience article header h1,
   section#education article h1 {
-    .huge;
-    /*font-size: 2em;
-        line-height: 1.2em*/
+    .hefty;
+    font-weight: normal;
   }
 }
 
@@ -453,12 +388,15 @@ h3 {
 		/* Reset baseline grid to 16/16 = 1 */
 		font-size: (@font-size) / @em;
 	}
-	
-/*  #twoway .wrapper {
-    float: left;
-    width: 50%;
-  }*/
-	
+
+  section#about {
+    .largeish;
+  }
+
+  section#experience article header h1,
+  section#education article h1 {
+    .huge;
+  }
 }
 
 
@@ -468,7 +406,23 @@ h3 {
 	body {
 		/* Zoom baseline grid to 17/16 = 1.0625 */
 		font-size: (@font-size + 1) / @em;
+    margin: 1em @column*2;
 	}
+  
+  body > header {
+    width: 8 * @column;
+    float: right;
+  }
+  
+  section#about {
+/*    .gutters;*/
+    width: 8 * @column;
+    margin-left: @column;
+  }
+  
+  section#experience {
+    clear: both;
+  }
 }
 
 

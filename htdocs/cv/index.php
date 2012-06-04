@@ -1,4 +1,4 @@
-<?php $fullView = 1; // (isset($_GET['a']) && $_GET['a'] == 'full') ?>
+<?php $fullView = 0; // (isset($_GET['a']) && $_GET['a'] == 'full') ?>
 <!DOCTYPE html>
 <!--[if lt IE 9]><html class="ie"><![endif]-->
 <!--[if gte IE 9]><!--><html><!--<![endif]-->

@@ -172,8 +172,7 @@ body {
   font-size: 0.875em;
   line-height: 1.2571428571428573em;
 }
-.normal,
-h3 {
+.normal {
   /* 16px / 22px */
 
   font-size: 1em;
@@ -181,11 +180,23 @@ h3 {
   /* 24 */
 
 }
+.largeish {
+  /* 20 / 27px */
+
+  font-size: 1.25em;
+  line-height: 1.4300000000000002em;
+}
 .large {
   /* 26 / 36px */
 
   font-size: 1.625em;
   line-height: 1.2692307692307692em;
+}
+.hefty {
+  /* 34 / 40px */
+
+  font-size: 2.125em;
+  line-height: 0.9705882352941176em;
 }
 .huge {
   /* 42px / 48px */
@@ -773,8 +784,6 @@ address abbr[title],
 }
 body {
   font-family: Helmet, Freesans, sans-serif;
-  /*  line-height: 1.4em;*/
-
   color: #000000;
   margin: 1em 5.555555555555555%;
   padding-bottom: 1em;
@@ -791,7 +800,7 @@ h1 {
 }
 .fontface h1 {
   font-family: Kreon;
-  font-weight: 400;
+  font-weight: 700;
 }
 section {
   margin-bottom: 0.5em;
@@ -1013,40 +1022,6 @@ section#awards dd {
     display: block;
   }
 }
-/*// 480px. Small tablet or mobile in landscape.
-@media only screen and (min-width: 480px) {
-  body > header h1 {
-    font-size: 4em;
-    font-weight: 400;
-  }
-  
-  section#experience article header h1 {
-    font-size: 2em;
-    font-weight: normal;
-    line-height: 1.2em;
-  }
-  
-  section#education article h1 {
-    font-size: 2em;
-    line-height: 1.2em
-  }
-}
-
-// 600px
-@media only screen and (min-width: 600px) {
-
-}*/
-@media only screen and (min-width: 768px) {
-  body > header {
-    overflow: hidden;
-  }
-}
-@media only screen and (min-width: 992px) {
-  
-}
-@media only screen and (min-width: 1382px) {
-  
-}
 /*
 *
 *  Four-column grid active
@@ -1074,13 +1049,6 @@ h3 {
 *  Simple elastic gutters
 *  Note: box-sizing will not work in IE6-7
 */
-/*.wrapper {
-  padding: 0 (@line/2)/@em;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-      box-sizing: border-box;
-}
-*/
 /*
 *
 *  Fixes for IE6-8
@@ -1098,24 +1066,13 @@ h3 {
     line-height: 0.9705882352941176em;
     font-weight: 400;
   }
-  section#experience article header h1 {
-    /*font-size: 2em;
-          line-height: 1.2em;*/
-  
-    /* 42px / 48px */
-  
-    font-size: 2.625em;
-    line-height: 1.0476190476190477em;
-    font-weight: normal;
-  }
+  section#experience article header h1,
   section#education article h1 {
-    /* 42px / 48px */
+    /* 34 / 40px */
   
-    font-size: 2.625em;
-    line-height: 1.0476190476190477em;
-    /*font-size: 2em;
-          line-height: 1.2em*/
-  
+    font-size: 2.125em;
+    line-height: 0.9705882352941176em;
+    font-weight: normal;
   }
 }
 /* @media screen and (min-width: 640px) */
@@ -1146,10 +1103,19 @@ h3 {
   
     font-size: 1em;
   }
-  /*  #twoway .wrapper {
-      float: left;
-      width: 50%;
-    }*/
+  section#about {
+    /* 20 / 27px */
+  
+    font-size: 1.25em;
+    line-height: 1.4300000000000002em;
+  }
+  section#experience article header h1,
+  section#education article h1 {
+    /* 42px / 48px */
+  
+    font-size: 2.625em;
+    line-height: 1.0476190476190477em;
+  }
 }
 /* @media screen and (min-width: 888px) */
 @media screen and (min-width: 55.5em) {
@@ -1157,6 +1123,20 @@ h3 {
     /* Zoom baseline grid to 17/16 = 1.0625 */
   
     font-size: 1.0625em;
+    margin: 1em 11.11111111111111%;
+  }
+  body > header {
+    width: 44.44444444444444%;
+    float: right;
+  }
+  section#about {
+    /*    .gutters;*/
+  
+    width: 44.44444444444444%;
+    margin-left: 5.555555555555555%;
+  }
+  section#experience {
+    clear: both;
   }
 }
 /* @media screen and (min-width: 984px) */
