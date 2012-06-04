@@ -892,8 +892,21 @@ body > header .email {
   font-weight: bold;
 }
 body > header .social {
+  zoom: 1;
   margin-top: 0.5em;
+}
+body > header .social:before {
+  content: "\0020";
+  display: table;
+  height: 0;
   overflow: hidden;
+}
+body > header .social:after {
+  content: "\0020";
+  display: table;
+  height: 0;
+  overflow: hidden;
+  clear: both;
 }
 body > header .social div {
   margin-right: 1em;
@@ -988,9 +1001,22 @@ section#skills h2 {
 
 }
 section#skills ul {
-  overflow: hidden;
+  zoom: 1;
   /*    font-size: (@font-size - 2)/@em;*/
 
+}
+section#skills ul:before {
+  content: "\0020";
+  display: table;
+  height: 0;
+  overflow: hidden;
+}
+section#skills ul:after {
+  content: "\0020";
+  display: table;
+  height: 0;
+  overflow: hidden;
+  clear: both;
 }
 section#skills li {
   float: left;
@@ -1102,6 +1128,10 @@ h3 {
     /* Reset baseline grid to 16/16 = 1 */
   
     font-size: 1em;
+    margin: 1em 5.55555%;
+  }
+  body > header address {
+    margin: 1em 0;
   }
   section#about {
     /* 20 / 27px */
@@ -1123,17 +1153,31 @@ h3 {
     /* Zoom baseline grid to 17/16 = 1.0625 */
   
     font-size: 1.0625em;
-    margin: 1em 11.11111111111111%;
   }
+  /* Switch to grid by applying gutters to everything. Shrink header
+       and allow about box to float to its left. Together they're seven
+       columns over eight, so there's a half-column of whitespace on
+       either side compared to the section below. */
   body > header {
-    width: 44.44444444444444%;
+    padding-left: 0.6875em;
+    padding-right: 0.6875em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    margin-right: 6.25%;
     float: right;
   }
+  section {
+    padding-left: 0.6875em;
+    padding-right: 0.6875em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
   section#about {
-    /*    .gutters;*/
-  
-    width: 44.44444444444444%;
-    margin-left: 5.555555555555555%;
+    width: 37.5%;
+    margin-left: 6.25%;
   }
   section#experience {
     clear: both;
@@ -1145,6 +1189,38 @@ h3 {
     /* Reset baseline grid to 16/16 = 1.0 */
   
     font-size: 1em;
+  }
+  /* Switch lower sections from linear to being three columns. */
+  section#education,
+  section#awards {
+    width: 25%;
+    float: left;
+  }
+  section#skills {
+    width: 50%;
+    float: left;
+  }
+  section#education article h1 {
+    /* 26 / 36px */
+  
+    font-size: 1.625em;
+    line-height: 1.2692307692307692em;
+  }
+  div.rail {
+    zoom: 1;
+  }
+  div.rail:before {
+    content: "\0020";
+    display: table;
+    height: 0;
+    overflow: hidden;
+  }
+  div.rail:after {
+    content: "\0020";
+    display: table;
+    height: 0;
+    overflow: hidden;
+    clear: both;
   }
   /*  header, #twoway {
       margin: 0 @column*3;
