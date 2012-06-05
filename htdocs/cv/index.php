@@ -21,40 +21,38 @@
       <div class="wrapper">
         <h1><a class="fn url" rel="me" href="http://keithsmiley.net/">Keith Smiley</a></h1>
       </div>
-      <div class="rail">
-        <address>
-<?php if ($fullView): ?>
-          <div class="adr">
-            <span class="type">Home</span>
-            <span class="street-address">xxxxx</span>
-            <span class="extended-address">xxxxx</span>
-            <br>
-            <span class="locality">Augusta</span>,
-            <abbr class="region" title="Georgia">Ga.</abbr>
-            <span class="postal-code">xxxxx</span>
+      <address>
+      <?php if ($fullView): ?>
+        <div class="adr">
+          <span class="type">Home</span>
+          <span class="street-address">xxxxx</span>
+          <span class="extended-address">xxxxx</span>
+          <br>
+          <span class="locality">Augusta</span>,
+          <abbr class="region" title="Georgia">Ga.</abbr>
+          <span class="postal-code">xxxxx</span>
+        </div>
+      <?php endif; ?>
+        </i> <a class="email" id="email" href="mailto:k.AT.keithsmiley.DOT.net">k.AT.keithsmiley.DOT.net</a>
+      <?php if ($fullView): ?>
+        <div class="tel">
+          (xxx) xxx-xxxx
+        </div>
+      <?php endif; ?>
+        <div class="social">
+          <div class="twitter">
+            <span class="type">Twitter</span> <a class="url" href="http://twitter.com/ksmiley"><i class="icon-twitter-sign icon-large"></i> @ksmiley</a>
           </div>
-<?php endif; ?>
-          </i> <a class="email" id="email" href="mailto:k.AT.keithsmiley.DOT.net">k.AT.keithsmiley.DOT.net</a>
-<?php if ($fullView): ?>
-          <div class="tel">
-            (xxx) xxx-xxxx
+          <div class="github">
+            <span class="type">GitHub</span> <a class="url" href="http://github.com/ksmiley"><i class="icon-github-sign icon-large"></i> github.com/ksmiley</a>
           </div>
-<?php endif; ?>
-          <div class="social">
-            <div class="twitter">
-              <span class="type">Twitter</span> <a class="url" href="http://twitter.com/ksmiley"><i class="icon-twitter-sign icon-large"></i> @ksmiley</a>
-            </div>
-            <div class="github">
-              <span class="type">GitHub</span> <a class="url" href="http://github.com/ksmiley"><i class="icon-github-sign icon-large"></i> github.com/ksmiley</a>
-            </div>
-          </div>
-        </address>
-      </div>
+        </div>
+      </address>
     </header>
     <section id="about">
-  		<p>
-  			The boats were here hailed, to tow the whale on the larboard side, where fluke chains and other necessaries were already prepared for securing him. "Didn't I tell you so?" said Flask; "yes, you'll soon see this right whale's head hoisted up opposite that parmacetti's." In good time, Flask's saying proved true. As before, the Pequod steeply leaned over towards the sperm whale's head, now, by the counterpoise of both heads, she regained her even
-  		</p>
+		<p>
+			<strong>I’m a software developer with a journalist’s&nbsp;curiosity.</strong> My work and interests center on the Web because I&nbsp;believe it is the best medium we have to get a piece of information to the individual who needs it most.&nbsp;<i class="icon-cog"></i>&nbsp;I’m familiar with all levels of the software stack that underlies the Web and with the protocols that tie it together. At each level I&nbsp;apply an attention to detail: I&nbsp;worry about the word choice on a button and about log rotation on a database server.
+		</p>
   	</section>
     <section id="experience">
       <h1>Experience</h1>
@@ -73,7 +71,16 @@
             <span class="job-title">Software Engineer</span>
           </li>
         </ul>
-        <p>
+		<p>
+			Develop and support web applications throughout the organization as a member of the core development team. Responsibilities include:
+			* Improving the Drupal-based CMS that powers the newspaper websites and integrates with other publishing systems.
+			* Maintaining legacy systems, including an in-house programming language that runs our advertising products.
+			* Supporting external customers. When they have a problem, I'm often the first person they talk to and see their issue through until it's resolved.
+			* Identifying performance improvements and working with system administrators on implementation.
+			* Refining development processes for smooth deployments across multiple custom sites.
+			* Guiding web producers at the newspapers on how they can use and improve the Drupal CMS.
+		</p>
+        <p style="display:none;">
           Develop and support web applications throughout the software stack,
           from backend data processing to client-side styling and scripting.
           Responsibilities include contributing to a Drupal-based CMS that
@@ -99,9 +106,9 @@
           and classroom instruction in the Department of Communication. Projects
           included designing and developing a Flash-based tool to support HIV 
           prevention campaigns in rural areas, adapting research surveys for use
-          on mobile devices, improving the department’s web content management 
-          software, and planning the expansion of a system that records and 
-          analyzes 400 hours of television daily.
+          on mobile devices, improving the department’s custom CMS, and planning
+		  the expansion of a system that records and analyzes 400 hours of
+		  television daily.
         </p>
       </article>
       <article>
