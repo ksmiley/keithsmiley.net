@@ -787,6 +787,20 @@ body {
   color: #000000;
   margin: 1em 5.555555555555555%;
   padding-bottom: 1em;
+  zoom: 1;
+}
+body:before {
+  content: "\0020";
+  display: table;
+  height: 0;
+  overflow: hidden;
+}
+body:after {
+  content: "\0020";
+  display: table;
+  height: 0;
+  overflow: hidden;
+  clear: both;
 }
 h1 {
   /*  font-size: 1.5em;*/
@@ -863,7 +877,7 @@ body > header address {
 
   font-size: 0.875em;
   line-height: 1.2571428571428573em;
-  margin: 0.25em 1.5em 0;
+  padding: 0.25em 1.5em 0;
 }
 body > header address:before {
   content: "\0020";
@@ -1032,6 +1046,25 @@ section#awards dt {
 section#awards dd {
   margin-top: 1px;
 }
+section#about {
+  /* Fixup separator icons within paragraph, which otherwise seem want to
+     float away. Also shrink and fade them to be less intrusive. */
+
+  /* Icon needs room to breath. */
+
+  /*  i[class^="icon-"],
+  i[class*=" icon-"] {
+    margin-left: 5px;
+  }
+*/
+}
+section#about i[class^="icon-"]:before,
+section#about i[class*=" icon-"]:before {
+  display: inline;
+  font-size: 0.6em;
+  vertical-align: top;
+  color: #595959;
+}
 /* Format for printer. Reveal footer with permalink and darken some colors. */
 @media print {
   body {
@@ -1131,7 +1164,8 @@ h3 {
     margin: 1em 5.55555%;
   }
   body > header address {
-    margin: 1em 0;
+    /*    margin: 1em 0;*/
+  
   }
   section#about {
     /* 20 / 27px */
@@ -1164,9 +1198,25 @@ h3 {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    width: 50%;
+    width: 37.5%;
     margin-right: 6.25%;
     float: right;
+    /* Switch border from under the header to under the name (above the address) */
+  
+    border-bottom: 0;
+  }
+  body > header address {
+    margin-top: 0.3333333333333333em;
+    padding: 1em;
+    border-top: 4px double #545454;
+  }
+  body > header h1 {
+    /* Background-color "shadow" so descender punches through underline. */
+  
+    text-shadow: #ffffff -5px 0 0, #ffffff 5px 0 0;
+    /* Arbitrary margin to force name to break to two lines at all widths. */
+  
+    margin-right: 2em;
   }
   section {
     padding-left: 0.6875em;
@@ -1176,8 +1226,9 @@ h3 {
     box-sizing: border-box;
   }
   section#about {
-    width: 37.5%;
+    width: 50%;
     margin-left: 6.25%;
+    text-indent: -3em;
   }
   section#experience {
     clear: both;
@@ -1233,6 +1284,35 @@ h3 {
   
     font-size: 1.0625em;
   }
+  body > header {
+    /* Cheating: using a 16-column width. */
+  
+    width: 43.75%;
+  }
+  body > header h1 {
+    /* 110px / 120px */
+  
+    font-size: 6.875em;
+    line-height: 1em;
+  }
+  section#about {
+    width: 37.5%;
+    margin-left: 12.5%;
+  }
+  section#experience {
+    width: 75%;
+    float: left;
+  }
+  section#education,
+  section#skills,
+  section#awards {
+    width: 100%;
+    float: none;
+  }
+  div.rail {
+    width: 25%;
+    float: left;
+  }
 }
 /* @media screen and (min-width: 1392px) */
 @media screen and (min-width: 87em) {
@@ -1240,10 +1320,35 @@ h3 {
     /* Reset baseline grid to 16/16 = 1.0 */
   
     font-size: 1em;
+    position: relative;
   }
-  /*  header, #twoway {
-      margin: 0 @column*5;
-    }*/
+  body > header,
+  section#about {
+    width: 37.5%;
+    margin: 0 0 1em 0;
+    float: left;
+  }
+  body > header {
+    height: 20em;
+    border-bottom: 4px double #545454;
+  }
+  body > header address {
+    border-top: 0;
+  }
+  section#about {
+    clear: left;
+  }
+  section#about p {
+    text-indent: 0;
+  }
+  section#experience,
+  div.rail {
+    clear: none;
+    width: 62.5%;
+    float: right;
+    position: relative;
+    top: -21em;
+  }
 }
 /* @media screen and (min-width: 1680px) */
 @media screen and (min-width: 105em) {

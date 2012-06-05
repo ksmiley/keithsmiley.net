@@ -59,6 +59,7 @@ body {
   color: @body-color;
   margin: 1em @column;
   padding-bottom: 1em;
+  .clearfix;
 }
 
 h1 {
@@ -126,7 +127,7 @@ body > header {
   address {
     .clearfix;
     .small;
-  	margin: 1/4em 3/2em 0;
+  	padding: 1/4em 3/2em 0;
   }
   
   i[class*="icon-"] {
@@ -271,6 +272,27 @@ section#awards {
   }
 }
 
+section#about {
+  /* Fixup separator icons within paragraph, which otherwise seem want to
+     float away. Also shrink and fade them to be less intrusive. */
+  i[class^="icon-"]:before,
+  i[class*=" icon-"]:before {
+    display: inline;
+    font-size: 0.6em;
+    vertical-align: top;
+    color: lighten(@body-color, 35%);
+  }
+  
+  /* Icon needs room to breath. */
+/*  i[class^="icon-"],
+  i[class*=" icon-"] {
+    margin-left: 5px;
+  }
+*/    
+  
+}
+
+
 /* Format for printer. Reveal footer with permalink and darken some colors. */
 @media print {
   body {
@@ -392,7 +414,7 @@ h3 {
   }
 
   body > header address {
-    margin: 1em 0;
+/*    margin: 1em 0;*/
   }
 
   section#about {
@@ -419,9 +441,26 @@ h3 {
      either side compared to the section below. */
   body > header {
     .gutters;
-    width: 50%;
+    width: 37.5%;
     margin-right: 6.25%;
     float: right;
+    
+    /* Switch border from under the header to under the name (above the address) */
+    border-bottom: 0;
+    
+    address {
+      margin-top: 1/3em;
+      padding: 1em;
+      border-top: 4px double lighten(@body-color, 33%);
+    }
+  
+    h1 {
+      /* Background-color "shadow" so descender punches through underline. */
+      text-shadow: #fff -5px 0 0, #fff 5px 0 0;
+      /* Arbitrary margin to force name to break to two lines at all widths. */
+      margin-right: 2em;
+    }
+    
   }
   
   section {
@@ -429,8 +468,9 @@ h3 {
   }
   
   section#about {
-    width: 37.5%;
+    width: 50%;
     margin-left: 6.25%;
+    text-indent: -3em;
   }
   
   section#experience {
@@ -482,7 +522,37 @@ h3 {
 		/* Zoom baseline grid to 17/16 = 1.0625 */
 		font-size: (@font-size + 1) / @em;
 	}
+
+  body > header {
+    /* Cheating: using a 16-column width. */
+    width: 43.75%;
+    
+    h1 {
+      .gigantic;
+    }
+  }
+  
+  section#about {
+    width: 37.5%;
+    margin-left: 12.5%;
+  }
+
+  section#experience {
+    width: 75%;
+    float: left;
+  }
+  
+  section#education,
+  section#skills,
+  section#awards {
+    width: 100%;
+    float: none;
+  }
 	
+  div.rail {
+    width: 25%;
+    float: left;
+  }
 }
 
 
@@ -492,12 +562,40 @@ h3 {
 	body {
 		/* Reset baseline grid to 16/16 = 1.0 */
 		font-size: (@font-size) / @em;
+    position: relative;
 	}
-	
-/*  header, #twoway {
-    margin: 0 @column*5;
-  }*/
-	
+  
+  body > header,
+  section#about {
+    width: 37.5%;
+    margin: 0 0 1em 0;
+    float: left;
+  }
+  
+  body > header {
+    height: 20em;
+    border-bottom: 4px double lighten(@body-color, 33%);
+    
+    address {
+      border-top: 0;
+    }
+  }
+  
+  section#about {
+    clear: left;
+    p {
+      text-indent: 0;
+    }
+  }
+
+  section#experience,
+  div.rail {
+    clear: none;
+    width: 62.5%;
+    float: right;
+    position: relative;
+    top: -21em;
+  }
 }
 
 
