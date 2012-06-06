@@ -803,8 +803,6 @@ body:after {
   clear: both;
 }
 h1 {
-  /*  font-size: 1.5em;*/
-
   /* 26 / 36px */
 
   font-size: 1.625em;
@@ -831,8 +829,6 @@ section  > h1,
   line-height: 1.375em;
   /* 24 */
 
-  /*    font-size: 1em;*/
-
   font-family: sans-serif;
   font-weight: bold;
 }
@@ -844,34 +840,28 @@ article .location {
   font-size: 0.875em;
 }
 /* Header block has name and contact information. */
-body > header {
-  /*  .width(4);*/
-
-  /*  margin: 0 auto;*/
-
+section#about header {
   padding-bottom: 0.75em;
-  /*  padding: 0 6px 12px;*/
-
   margin-bottom: 1em;
   border-bottom: 4px double #545454;
   /* Half the text in the header are links, which looks odd with color. */
 
 }
-body > header a {
+section#about header a {
   color: inherit;
 }
-body > header h1 {
+section#about header h1 {
   /* 42px / 48px */
 
   font-size: 2.625em;
   line-height: 1.0476190476190477em;
   font-weight: bold;
 }
-.fontface body > header h1 {
+.fontface section#about header h1 {
   font-family: 'Kreon', serif;
   font-weight: 700;
 }
-body > header address {
+section#about header address {
   zoom: 1;
   /* 14px / 18px */
 
@@ -879,54 +869,54 @@ body > header address {
   line-height: 1.2571428571428573em;
   padding: 0.25em 1.5em 0;
 }
-body > header address:before {
+section#about header address:before {
   content: "\0020";
   display: table;
   height: 0;
   overflow: hidden;
 }
-body > header address:after {
+section#about header address:after {
   content: "\0020";
   display: table;
   height: 0;
   overflow: hidden;
   clear: both;
 }
-body > header i[class*="icon-"] {
+section#about header i[class*="icon-"] {
   color: #143352;
 }
-body > header .type {
+section#about header .type {
   display: none;
 }
-body > header .adr {
+section#about header .adr {
   margin-bottom: 0.25em;
 }
-body > header .tel,
-body > header .email {
+section#about header .tel,
+section#about header .email {
   font-weight: bold;
 }
-body > header .social {
+section#about header .social {
   zoom: 1;
   margin-top: 0.5em;
 }
-body > header .social:before {
+section#about header .social:before {
   content: "\0020";
   display: table;
   height: 0;
   overflow: hidden;
 }
-body > header .social:after {
+section#about header .social:after {
   content: "\0020";
   display: table;
   height: 0;
   overflow: hidden;
   clear: both;
 }
-body > header .social div {
+section#about header .social div {
   margin-right: 1em;
   float: left;
 }
-body > header .social div:last-child {
+section#about header .social div:last-child {
   margin-right: 0;
 }
 /* Footer has source URL and should only be visible when printing. */
@@ -937,22 +927,18 @@ body > footer {
   padding-top: 10px;
   text-align: center;
 }
-section#experience {
-  /* Tighten up space around dashes in the time ranges. */
-
-}
 section#experience header {
-  margin-bottom: 0.3333333333333333em;
+  margin-bottom: 0.5em;
 }
 section#experience article header h1 {
   display: inline;
   color: #000;
-  margin-right: 6px;
+  margin-right: 0.3333333333333333em;
 }
 section#experience article header .location {
   display: inline;
   /* City and state should always display on same line. Either both are next
-       to the company name or both break to the next line. */
+         to the company name or both break to the next line. */
 
   white-space: nowrap;
 }
@@ -964,12 +950,14 @@ section#experience article > ul {
   margin-bottom: 0.3333333333333333px;
 }
 section#experience article > ul > li {
-  margin: 0.2em 0;
+  margin: 0.3333333333333333em 0;
+  /* Tighten up space around dashes in the time ranges. */
+
 }
 section#experience article > ul > li .time-range {
   word-spacing: -0.1em;
 }
-section#experience article > ul > li .time-range:after {
+section#experience article > ul > li .time-range :after {
   content: ': ';
   word-spacing: 0;
 }
@@ -979,7 +967,7 @@ section#experience article > ul > li .time-range time {
 section#experience article > ul > li .job-title {
   font-weight: bold;
   /* Time and job title are usually on the same line, but a few wrap on mobile
-       screens. In that case the entire job title should jump down a line. */
+         screens. In that case the entire job title should jump down a line. */
 
   white-space: nowrap;
 }
@@ -988,6 +976,7 @@ section#education article p {
 }
 section#education article h1 {
   display: inline;
+  margin-right: 0.3333333333333333em;
 }
 section#education article .location {
   display: inline;
@@ -1004,6 +993,17 @@ section#education article .time-range {
   /*    font-size: (@font-size - 2)/@em;*/
 
 }
+.floated-skills {
+  float: left;
+  margin-right: 10px;
+}
+.floated-skills:last-child {
+  margin-right: 0;
+}
+.linear-skills {
+  float: none;
+  margin-right: 0;
+}
 section#skills h2 {
   /* 16px / 22px */
 
@@ -1011,13 +1011,9 @@ section#skills h2 {
   line-height: 1.375em;
   /* 24 */
 
-  /*    font-size: 1em;*/
-
 }
 section#skills ul {
   zoom: 1;
-  /*    font-size: (@font-size - 2)/@em;*/
-
 }
 section#skills ul:before {
   content: "\0020";
@@ -1046,7 +1042,7 @@ section#awards dt {
 section#awards dd {
   margin-top: 1px;
 }
-section#about {
+section#about article {
   /* Fixup separator icons within paragraph, which otherwise seem want to
      float away. Also shrink and fade them to be less intrusive. */
 
@@ -1058,8 +1054,8 @@ section#about {
   }
 */
 }
-section#about i[class^="icon-"]:before,
-section#about i[class*=" icon-"]:before {
+section#about article i[class^="icon-"]:before,
+section#about article i[class*=" icon-"]:before {
   display: inline;
   font-size: 0.6em;
   vertical-align: top;
@@ -1070,7 +1066,7 @@ section#about i[class*=" icon-"]:before {
   body {
     padding: 0;
   }
-  body > header address a,
+  section#about header address a,
   section a {
     border-bottom: 0;
   }
@@ -1116,7 +1112,7 @@ h3 {
 */
 /* @media screen and (min-width: 480px) */
 @media screen and (min-width: 30em) {
-  body > header h1 {
+  section#about header h1 {
     /*    font-size: 4em;*/
   
     /* 68px / 72px */
@@ -1163,11 +1159,11 @@ h3 {
     font-size: 1em;
     margin: 1em 5.55555%;
   }
-  body > header address {
+  section#about header address {
     /*    margin: 1em 0;*/
   
   }
-  section#about {
+  section#about article {
     /* 20 / 27px */
   
     font-size: 1.25em;
@@ -1192,12 +1188,19 @@ h3 {
        and allow about box to float to its left. Together they're seven
        columns over eight, so there's a half-column of whitespace on
        either side compared to the section below. */
-  body > header {
+  section#about header,
+  section#about article,
+  section#experience,
+  section#education,
+  section#skills,
+  section#awards {
     padding-left: 0.6875em;
     padding-right: 0.6875em;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+  }
+  section#about header {
     width: 37.5%;
     margin-right: 6.25%;
     float: right;
@@ -1205,27 +1208,22 @@ h3 {
   
     border-bottom: 0;
   }
-  body > header address {
+  section#about header address {
     margin-top: 0.3333333333333333em;
     padding: 1em;
     border-top: 4px double #545454;
   }
-  body > header h1 {
-    /* Background-color "shadow" so descender punches through underline. */
-  
-    text-shadow: #ffffff -5px 0 0, #ffffff 5px 0 0;
+  section#about header h1 {
     /* Arbitrary margin to force name to break to two lines at all widths. */
   
     margin-right: 2em;
   }
-  section {
-    padding-left: 0.6875em;
-    padding-right: 0.6875em;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  .textshadow section#about header h1 {
+    /* Background-color "shadow" so descender punches through underline. */
+  
+    text-shadow: #ffffff -5px 0 0, #ffffff 5px 0 0;
   }
-  section#about {
+  section#about article {
     width: 50%;
     margin-left: 6.25%;
     text-indent: -3em;
@@ -1240,6 +1238,11 @@ h3 {
     /* Reset baseline grid to 16/16 = 1.0 */
   
     font-size: 1em;
+  }
+  /* Make contents of experience section narrower to keep line length manageable. */
+  section#experience article {
+    width: 87.5%;
+    margin-left: 6.25%;
   }
   /* Switch lower sections from linear to being three columns. */
   section#education,
@@ -1284,18 +1287,18 @@ h3 {
   
     font-size: 1.0625em;
   }
-  body > header {
+  section#about header {
     /* Cheating: using a 16-column width. */
   
     width: 43.75%;
   }
-  body > header h1 {
+  section#about header h1 {
     /* 110px / 120px */
   
     font-size: 6.875em;
     line-height: 1em;
   }
-  section#about {
+  section#about article {
     width: 37.5%;
     margin-left: 12.5%;
   }
@@ -1303,15 +1306,24 @@ h3 {
     width: 75%;
     float: left;
   }
+  /* Reset width on experience section. */
+  section#experience article {
+    width: auto;
+    margin-left: 0;
+  }
   section#education,
   section#skills,
   section#awards {
-    width: 100%;
+    width: auto;
     float: none;
   }
   div.rail {
     width: 25%;
     float: left;
+  }
+  section#skills li {
+    float: none;
+    margin-right: 0;
   }
 }
 /* @media screen and (min-width: 1392px) */
@@ -1320,25 +1332,39 @@ h3 {
     /* Reset baseline grid to 16/16 = 1.0 */
   
     font-size: 1em;
-    position: relative;
   }
-  body > header,
+  /* Switch about block to stacked from side-by-side. Requires resetting gutter
+       to be on container. */
   section#about {
+    padding-left: 0.6875em;
+    padding-right: 0.6875em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     width: 37.5%;
-    margin: 0 0 1em 0;
     float: left;
   }
-  body > header {
-    height: 20em;
+  section#about header,
+  section#about article {
+    float: none;
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    /* No need for fake-stroke with the border removed. */
+  
+  }
+  .textshadow section#about header h1,
+  .textshadow section#about article h1 {
+    text-shadow: none;
+  }
+  section#about header {
     border-bottom: 4px double #545454;
   }
-  body > header address {
+  section#about header address {
     border-top: 0;
   }
-  section#about {
-    clear: left;
-  }
-  section#about p {
+  section#about article p {
     text-indent: 0;
   }
   section#experience,
@@ -1346,8 +1372,38 @@ h3 {
     clear: none;
     width: 62.5%;
     float: right;
-    position: relative;
-    top: -21em;
+  }
+  section#experience article,
+  div.rail article {
+    padding: 0 1em;
+  }
+  section#experience {
+    /* Bump the start of the column down. This should make the bottom border
+         of the "Experience" heading roughly align with the baseline of the
+         first name in the about block. */
+  
+    margin-top: 4.5em;
+    /* Too much space appears between experience and education because I've
+         broken margin collapse somehow. */
+  
+    margin-bottom: 0;
+  }
+  section#experience  > h1,
+  .fontface section#experience  > h1 {
+    margin-top: 0;
+  }
+  section#education article h1 {
+    /* 42px / 48px */
+  
+    font-size: 2.625em;
+    line-height: 1.0476190476190477em;
+  }
+  section#skills li {
+    float: left;
+    margin-right: 10px;
+  }
+  section#skills li:last-child {
+    margin-right: 0;
   }
 }
 /* @media screen and (min-width: 1680px) */
@@ -1356,6 +1412,30 @@ h3 {
     /* Zoom baseline grid to 17/16 = 1.0625 */
   
     font-size: 1.0625em;
+  }
+  section#about {
+    width: 25%;
+  }
+  section#experience {
+    float: left;
+    width: 50%;
+  }
+  div.rail {
+    width: 25%;
+    float: left;
+    margin-top: 4.5em;
+  }
+  div.rail article {
+    padding: 0;
+  }
+  section#education h1 {
+    margin-top: 0;
+  }
+  section#education article h1 {
+    /* 26 / 36px */
+  
+    font-size: 1.625em;
+    line-height: 1.2692307692307692em;
   }
 }
 /*

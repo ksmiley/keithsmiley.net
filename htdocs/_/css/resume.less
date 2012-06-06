@@ -63,15 +63,14 @@ body {
 }
 
 h1 {
-/*  font-size: 1.5em;*/
   .large;
   font-family: georgia, serif;
   font-weight: bold;
-}
 
-.fontface h1 {
-  font-family: Kreon;
-  font-weight: 700;
+  .fontface & {
+    font-family: Kreon;
+    font-weight: 700;  
+  }
 }
 
 section {
@@ -84,7 +83,6 @@ section {
     padding: 0 1em;
     margin: 3/2em 0 1em;
     .normal;
-/*    font-size: 1em;*/
     font-family: sans-serif;
     font-weight: bold;
   }
@@ -101,11 +99,8 @@ article {
 
 
 /* Header block has name and contact information. */
-body > header {
-/*  .width(4);*/
-/*  margin: 0 auto;*/
+section#about header {
   padding-bottom: 3/4em;
-/*  padding: 0 6px 12px;*/
   margin-bottom: 1em;
   border-bottom: 4px double lighten(@body-color, 33%);
   
@@ -172,50 +167,52 @@ body > footer {
 
 section#experience {
   header {
-    margin-bottom: 1/3em;
+    margin-bottom: 1/2em;
   }
 
-  article header h1 {
-    display: inline;
-    color: #000;
-    margin-right: 6px;
-  }
-
-  article header .location {
-    display: inline;
-    /* City and state should always display on same line. Either both are next
-       to the company name or both break to the next line. */
-    white-space: nowrap;
+  article header {
+    h1 {
+      display: inline;
+      color: #000;
+      margin-right: 1/3em;
+    }
+    
+    .location {
+      display: inline;
+      /* City and state should always display on same line. Either both are next
+         to the company name or both break to the next line. */
+      white-space: nowrap;
+    }
   }
 
   article > ul {
     .small;
     margin-bottom: 1/3px;
   }
-  
+
   article > ul > li {
-    margin: 1/5em 0;
-  }
+    margin: 1/3em 0;
 
-  /* Tighten up space around dashes in the time ranges. */
-  article > ul > li .time-range {
-    word-spacing: -0.1em;
-  }
+    /* Tighten up space around dashes in the time ranges. */
+    .time-range {
+      word-spacing: -0.1em;
 
-  article > ul > li .time-range:after {
-    content: ': ';
-    word-spacing: 0;
-  }
-
-  article > ul > li .time-range time {
-    word-spacing: 0;
-  }
-
-  article > ul > li .job-title {
-    font-weight: bold;
-    /* Time and job title are usually on the same line, but a few wrap on mobile
-       screens. In that case the entire job title should jump down a line. */
-    white-space: nowrap;
+      :after {
+        content: ': ';
+        word-spacing: 0;    
+      }
+    
+      time {
+        word-spacing: 0;
+      }
+    }
+    
+    .job-title {
+      font-weight: bold;
+      /* Time and job title are usually on the same line, but a few wrap on mobile
+         screens. In that case the entire job title should jump down a line. */
+      white-space: nowrap;
+    }
   }
 }
 
@@ -226,6 +223,7 @@ section#education {
   
   article h1 {
     display: inline;
+    margin-right: 1/3em;
   }
   
   article .location {
@@ -241,23 +239,30 @@ section#education {
   }
 }
 
+.floated-skills {
+  float: left;
+  margin-right: 10px;
+  &:last-child {
+    margin-right: 0;
+  } 
+}
+
+.linear-skills {
+  float: none;
+  margin-right: 0;
+}
+
 section#skills {
   h2 {
     .normal;
-/*    font-size: 1em;*/
   }
   
   ul {
     .clearfix;
-/*    font-size: (@font-size - 2)/@em;*/
   }
   
   li {
-    float: left;
-    margin-right: 10px;
-    &:last-child {
-      margin-right: 0;
-    }
+    .floated-skills;
   }
 }
 
@@ -272,7 +277,7 @@ section#awards {
   }
 }
 
-section#about {
+section#about article {
   /* Fixup separator icons within paragraph, which otherwise seem want to
      float away. Also shrink and fade them to be less intrusive. */
   i[class^="icon-"]:before,
@@ -299,7 +304,7 @@ section#about {
     padding: 0;
   }
 
-  body > header address a, section a {
+  section#about header address a, section a {
     border-bottom: 0;
   }
 
@@ -365,7 +370,7 @@ h3 {
 
 /* @media screen and (min-width: 480px) */
 @media screen and (min-width: 30em) {
-  body > header h1 {
+  section#about header h1 {
 /*    font-size: 4em;*/
     .massive;
     font-weight: 400;
@@ -413,11 +418,11 @@ h3 {
     margin: 1em 5.55555%;
   }
 
-  body > header address {
+  section#about header address {
 /*    margin: 1em 0;*/
   }
 
-  section#about {
+  section#about article {
     .largeish;
   }
 
@@ -439,8 +444,16 @@ h3 {
      and allow about box to float to its left. Together they're seven
      columns over eight, so there's a half-column of whitespace on
      either side compared to the section below. */
-  body > header {
-    .gutters;
+   section#about header,
+   section#about article,
+   section#experience,
+   section#education,
+   section#skills,
+   section#awards {
+     .gutters;
+   }
+
+  section#about header {
     width: 37.5%;
     margin-right: 6.25%;
     float: right;
@@ -455,19 +468,18 @@ h3 {
     }
   
     h1 {
-      /* Background-color "shadow" so descender punches through underline. */
-      text-shadow: #fff -5px 0 0, #fff 5px 0 0;
       /* Arbitrary margin to force name to break to two lines at all widths. */
       margin-right: 2em;
+      
+      .textshadow & {
+        /* Background-color "shadow" so descender punches through underline. */
+        text-shadow: #fff -5px 0 0, #fff 5px 0 0;
+      }
     }
     
   }
   
-  section {
-    .gutters;
-  }
-  
-  section#about {
+  section#about article {
     width: 50%;
     margin-left: 6.25%;
     text-indent: -3em;
@@ -485,6 +497,12 @@ h3 {
     /* Reset baseline grid to 16/16 = 1.0 */
     font-size: (@font-size) / @em;
 	}
+  
+  /* Make contents of experience section narrower to keep line length manageable. */
+  section#experience article {
+    width: 87.5%;
+    margin-left: 6.25%;
+  }
   
   /* Switch lower sections from linear to being three columns. */
   section#education,
@@ -523,7 +541,7 @@ h3 {
 		font-size: (@font-size + 1) / @em;
 	}
 
-  body > header {
+  section#about header {
     /* Cheating: using a 16-column width. */
     width: 43.75%;
     
@@ -532,7 +550,7 @@ h3 {
     }
   }
   
-  section#about {
+  section#about article {
     width: 37.5%;
     margin-left: 12.5%;
   }
@@ -542,16 +560,28 @@ h3 {
     float: left;
   }
   
+  /* Reset width on experience section. */
+  section#experience article {
+    width: auto;
+    margin-left: 0;
+  }
+  
   section#education,
   section#skills,
   section#awards {
-    width: 100%;
+    width: auto;
     float: none;
   }
 	
   div.rail {
     width: 25%;
     float: left;
+  }
+  
+  section#skills {
+    li {
+      .linear-skills;
+    }
   }
 }
 
@@ -562,18 +592,31 @@ h3 {
 	body {
 		/* Reset baseline grid to 16/16 = 1.0 */
 		font-size: (@font-size) / @em;
-    position: relative;
 	}
   
-  body > header,
+  /* Switch about block to stacked from side-by-side. Requires resetting gutter
+     to be on container. */
   section#about {
+    .gutters;
     width: 37.5%;
-    margin: 0 0 1em 0;
     float: left;
+
+    header,
+    article {
+      float: none;
+      width: auto;
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0;
+      
+      /* No need for fake-stroke with the border removed. */
+      .textshadow & h1 {
+        text-shadow: none;
+      }
+    }
   }
   
-  body > header {
-    height: 20em;
+  section#about header {
     border-bottom: 4px double lighten(@body-color, 33%);
     
     address {
@@ -581,11 +624,8 @@ h3 {
     }
   }
   
-  section#about {
-    clear: left;
-    p {
-      text-indent: 0;
-    }
+  section#about article p {
+    text-indent: 0;
   }
 
   section#experience,
@@ -593,8 +633,37 @@ h3 {
     clear: none;
     width: 62.5%;
     float: right;
-    position: relative;
-    top: -21em;
+    
+    article {
+      padding: 0 1em;
+    }
+  }
+  
+  section#experience {
+    /* Bump the start of the column down. This should make the bottom border
+       of the "Experience" heading roughly align with the baseline of the
+       first name in the about block. */
+    margin-top: 4.5em;
+    /* Too much space appears between experience and education because I've
+       broken margin collapse somehow. */
+    margin-bottom: 0;
+
+    & > h1,
+    .fontface & > h1 {
+      margin-top: 0;
+    }
+  }
+  
+  section#education {
+    article h1 {
+      .huge;
+    }
+  }
+  
+  section#skills {
+    li {
+      .floated-skills;
+    }
   }
 }
 
@@ -606,7 +675,37 @@ h3 {
 		/* Zoom baseline grid to 17/16 = 1.0625 */
 		font-size: (@font-size + 1) / @em;
 	}
-	
+
+
+  section#about {
+    width: 25%;
+  }
+  
+  section#experience {
+    float: left;
+    width: 50%;
+  }
+  
+  div.rail {
+    width: 25%;
+    float: left;
+    margin-top: 4.5em;
+    
+    article {
+      padding: 0;
+    }
+  }
+  
+  section#education {
+    h1 {
+      margin-top: 0;
+    }
+    
+    article h1 {
+      .large;
+    }
+  }
+  
 }
 
 
