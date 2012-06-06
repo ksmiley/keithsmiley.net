@@ -8,13 +8,10 @@
     <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0">
     <meta name="cleartype" value="true">
     <title>Keith Smiley's Résumé</title>
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Kreon:300,400,700">
-    <!-- <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Kreon:bold&amp;text=Keith%20Smiley"> -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Kreon:400,700">
     <link rel="stylesheet" type="text/css" href="/_/css/resume.css">
-  	<!-- <link rel="stylesheet/less" type="text/css" href="/_/css/resume.less">
-    <script src="/_/js/less-1.3.0.min.js"></script> -->
   	<script src="/_/js/modernizr-2.5.3.min.js"></script>
-    <script src="/_/js/GGS.js"></script>
+    <!--[if gte IE 9]><!--><script src="/_/js/GGS.js"></script><!--<![endif]-->
   </head>
   <body lang="en">
     <section id="about">
