@@ -20,6 +20,16 @@
   zoom: 1;
 }
 
+// Simple elastic gutters
+// Note: box-sizing will not work in IE6-7
+.gutters () {
+  padding-left: (@line/2)/@em;
+  padding-right: (@line/2)/@em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 ul > li {
   list-style: none;
   padding-left: 1em;
@@ -160,8 +170,8 @@ section#about header {
 body > footer {
   display: none;
   clear: both;
-  border-top: 1px solid #333333;
-  padding-top: 10px;
+  border-top: 1px solid lighten(@body-color, 45%);
+  padding-top: 3px;
   text-align: center;
 }
 
@@ -302,16 +312,80 @@ section#about article {
 @media print {
   body {
     padding: 0;
+    font-size: (@font-size - 5) / @em;
   }
 
-  section#about header address a, section a {
-    border-bottom: 0;
+  section#about {
+    header {
+      width: (1/3) * 100%;
+      float: left;
+      border: 0;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+    
+    article {
+      width: (2/3) * 100%;
+      float: left;
+      margin-top: 1em;
+      /* Fake gutter. */
+      padding-left: @line/@em;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
   }
 
-  section article .location {
-    color: #bbb;
+  a,
+  section#about header i[class*="icon-"] {
+    color: @body-color;
+  }
+
+  section article {
+    margin-bottom: 1/2em;
+
+    .location {
+      color: #bbb;
+    }
+  }
+
+  section > h1,
+  .fontface section > h1 {
+    margin-top: 3/4em;
+    margin-bottom: 1/2em;
+  }
+
+  section#experience {
+    clear: left;
+    width: 75%;
+    float: left;
+    
+    header {
+      margin-bottom: 1/3em;
+    }
   }
   
+  section#skills article,
+  section#awards article {
+    .small;
+  }
+
+  section#skills {
+    li {
+      .linear-skills;
+    }
+  }
+
+  div.rail {
+    width: 25%;
+    float: left;
+    /* Fake gutter. */
+    padding-left: @line/@em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
   body > footer {
     display: block;
   }
@@ -327,44 +401,25 @@ section#about article {
 *
 */
 
-/*header, #twoway {
-  margin: 0 @column;
-}
-
-h1, h2 {
-  margin: (24/26*1em) 0 (36/26*1em);
-}
-
-h2 {
-  font-weight: normal;
-}
-
-h3 {
-  margin: (24/@em) 0 (24/@em);
-}*/
 
 /*
-*  Simple elastic gutters
-*  Note: box-sizing will not work in IE6-7
-*/
-
-.gutters() {
-  padding-left: (@line/2)/@em;
-  padding-right: (@line/2)/@em;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-
-/*
-*
 *  Fixes for IE6-8
 *  http://jonikorpi.com/leaving-old-IE-behind/
 *
 */
 
 .ie body {
+  width: 800px;
+  
+  section#experience article header h1,
+  section#education article h1 {
+    .huge;
+    font-weight: normal;
+  }
+
+  section#about article {
+    .largeish;
+  }
 
 }
 
@@ -391,11 +446,6 @@ h3 {
 		font-size: (@font-size + 1) / @em;
 	}
 
-/*  h1 {
-    .huge();
-    margin: (48/42*1em) 0 (24/42*1em);
-  }*/
-	
 }
 
 
@@ -416,10 +466,6 @@ h3 {
     /* Reset baseline grid to 16/16 = 1 */
     font-size: (@font-size) / @em;
     margin: 1em 5.55555%;
-  }
-
-  section#about header address {
-/*    margin: 1em 0;*/
   }
 
   section#about article {
