@@ -264,11 +264,11 @@
         <article>
           <dl>
             <dt>Spirit of Morris DigitalWorks</dt>
-            <dd>Development team award for 2010</dd>
+            <dd>Development team award for&nbsp;2010</dd>
             <dt>UK Dean’s List</dt>
-            <dd>Fall 2004, Spring 2005, Fall 2005, Fall 2006, Spring 2007, Spring 2009 and Fall 2009</dd>
+            <dd>Fall&nbsp;2004, Spring&nbsp;2005, Fall&nbsp;2005, Fall&nbsp;2006, Spring&nbsp;2007, Spring&nbsp;2009 and Fall&nbsp;2009</dd>
             <dt>Hearst Journalism Awards for Photojournalism</dt>
-            <dd>7th Place, Sports &amp; News (2007); 19th Place, Sports &amp; News (2006)</dd>
+            <dd>7th Place, Sports&nbsp;&amp;&nbsp;News (2007); 19th Place, Sports&nbsp;&amp;&nbsp;News (2006)</dd>
           </dl>
         </article>
       </section>
