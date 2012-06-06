@@ -16,9 +16,7 @@
   <body lang="en">
     <section id="about">
       <header class="vcard">
-        <div class="wrapper">
-          <h1><a class="fn url" rel="me" href="http://keithsmiley.net/">Keith Smiley</a></h1>
-        </div>
+        <h1><a class="fn url" rel="me" href="http://keithsmiley.net/">Keith Smiley</a></h1>
         <address>
         <?php if ($fullView): ?>
           <div class="adr">
