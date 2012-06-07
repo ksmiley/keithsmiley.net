@@ -226,11 +226,13 @@ Built databases and web applications to support faculty research and classroom i
             <li>SQL</li>
             <li>LAMP Architecture</li>
             <li>Drupal</li>
+            <li>Source control (Perforce and Git)</li>
           </ul>
         </article>
         <article>
           <h2>In the toolkit</h2>
           <ul>
+            <li>Python</li>
             <li>Java</li>
             <li>Final Cut Pro</li>
             <li>Photo Mechanic</li>
@@ -246,7 +248,6 @@ Built databases and web applications to support faculty research and classroom i
             <li>Oracle</li>
             <li>FileMaker Pro</li>
             <li>QuarkXPress</li>
-            <li>Soundslides</li>
           </ul>
         </article>
       </section>
