@@ -1,4 +1,4 @@
-<?php $fullView = 0; // (isset($_GET['a']) && $_GET['a'] == 'full') ?>
+<?php $fullView = 1; // (isset($_GET['a']) && $_GET['a'] == 'full') ?>
 <!DOCTYPE html>
 <!--[if lt IE 9]><html class="ie"><![endif]-->
 <!--[if gte IE 9]><!--><html><!--<![endif]-->
@@ -47,7 +47,7 @@
       </header>
       <article>
         <p>
-          <strong>I’m a software developer with a journalist’s&nbsp;curiosity.</strong> My work and interests center on the Web because I&nbsp;believe it is the best medium we have to get a piece of information to the individual who needs it most.&nbsp;<i class="icon-cog"></i>&nbsp;I’m familiar with all levels of the software stack that underlies the Web and with the protocols that tie it together. At each level I&nbsp;apply an attention to detail: I&nbsp;worry about the word choice on a button and about log rotation on a database server.
+          <strong>I’m a software developer with a journalist’s&nbsp;curiosity.</strong> My work centers on the Web because it affords all information a chance to be valuable, by reaching the individual who needs it most.&nbsp;<i class="icon-cog"></i>&nbsp;I’m familiar with all levels of the software stack that underlies the Web and with the protocols that tie it together. At each level I worry about details, whether it's the wording on a button or the log rotation on an app server.&nbsp;<i class="icon-cog"></i>&nbsp;I want to combine my technical knowledge and journalism experience to create innovative ways of sharing and applying information, to give meaning to data so it has impact.
         </p>
       </article>
   	</section>
@@ -69,13 +69,12 @@
           </li>
         </ul>
         <p>
-        Develop and support web applications throughout the organization as a member of the core development team. Responsibilities include:
-        * Improving the Drupal-based CMS that powers the newspaper websites and integrates with other publishing systems.
-        * Maintaining legacy systems, including an in-house programming language that runs our advertising products.
-        * Supporting external customers. When they have a problem, I'm often the first person they talk to and see their issue through until it's resolved.
-        * Identifying performance improvements and working with system administrators on implementation.
-        * Refining development processes for smooth deployments across multiple custom sites.
-        * Guiding web producers at the newspapers on how they can use and improve the Drupal CMS.
+Develop and support web applications throughout the organization as a member of the core development team. Responsibilities include:
+building a Drupal-based CMS for daily newspaper sites and integrating it with existing publishing systems; 
+improving development processes for easier deployment across multiple sites;
+supporting legacy systems, including a custom programming language that runs our advertising products;
+analyzing performance bottlenecks and working with system administrators on implementation; and
+coaching developers at the newspapers on how they can use and improve the Drupal CMS.
         </p>
         <p style="display:none;">
           Develop and support web applications throughout the software stack,
@@ -99,13 +98,7 @@
           </li>
         </ul>
         <p>
-          Created databases and web applications to support faculty research
-          and classroom instruction in the Department of Communication. Projects
-          included designing and developing a Flash-based tool to support HIV 
-          prevention campaigns in rural areas, adapting research surveys for use
-          on mobile devices, improving the department’s custom CMS, and planning
-		  the expansion of a system that records and analyzes 400 hours of
-		  television daily.
+Built databases and web applications to support faculty research and classroom instruction in the Department of Communication. Projects included designing and developing a Flash-based tool to support HIV prevention campaigns in rural areas, adapting research surveys for use on mobile devices, improving the department’s custom CMS, and planning the expansion of a system that records and analyzes 400 hours of television daily.
         </p>
       </article>
       <article>
