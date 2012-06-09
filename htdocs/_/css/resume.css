@@ -236,31 +236,15 @@ body {
     -------------------------------------------------------
     Email: dave@davegandy.com
     Twitter: http://twitter.com/fortaweso_me
-    Work: http://lemonwi.se co-founder
+    Work: Lead Product Designer @ http://kyruus.com
 
     */
 @font-face {
   font-family: 'FontAwesome';
   src: url('../font/fontawesome-webfont.eot');
-  src: url('../font/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('../font/fontawesome-webfont.woff') format('woff'), url('../font/fontawesome-webfont.ttf') format('truetype'), url('../font/fontawesome-webfont.svgz#FontAwesomeRegular') format('svg'), url('../font/fontawesome-webfont.svg#FontAwesomeRegular') format('svg');
+  src: url('../font/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('../font/fontawesome-webfont.woff') format('woff'), url('../font/fontawesome-webfont.ttf') format('truetype'), url('../font/fontawesome-webfont.svg#FontAwesome') format('svg');
   font-weight: normal;
   font-style: normal;
-}
-/* sprites.less reset */
-[class^="icon-"],
-[class*=" icon-"] {
-  display: inline;
-  width: auto;
-  height: auto;
-  line-height: inherit;
-  vertical-align: baseline;
-  background-image: none;
-  background-position: 0% 0%;
-  background-repeat: repeat;
-}
-li[class^="icon-"],
-li[class*=" icon-"] {
-  display: block;
 }
 /*  Font Awesome styles
     ------------------------------------------------------- */
@@ -279,11 +263,13 @@ a [class*=" icon-"] {
 }
 /* makes the font 33% larger relative to the icon container */
 .icon-large:before {
-  vertical-align: top;
+  vertical-align: middle;
   font-size: 1.3333333333333333em;
 }
 .btn [class^="icon-"],
-.btn [class*=" icon-"] {
+.nav-tabs [class^="icon-"],
+.btn [class*=" icon-"],
+.nav-tabs [class*=" icon-"] {
   /* keeps button heights with and without icons the same */
 
   line-height: .9em;
@@ -294,25 +280,26 @@ li [class*=" icon-"] {
   width: 1.25em;
   text-align: center;
 }
-li .icon-large[class^="icon-"],
-li .icon-large[class*=" icon-"] {
+li .icon-large:before,
+li .icon-large:before {
   /* 1.5 increased font size for icon-large * 1.25 width */
 
   width: 1.875em;
 }
-li[class^="icon-"],
-li[class*=" icon-"] {
-  margin-left: 0;
+ul.icons {
   list-style-type: none;
+  margin-left: 2em;
+  text-indent: -0.8em;
 }
-li[class^="icon-"]:before,
-li[class*=" icon-"]:before {
-  text-indent: -2em;
-  text-align: center;
+ul.icons li [class^="icon-"],
+ul.icons li [class*=" icon-"] {
+  width: .8em;
 }
-li[class^="icon-"].icon-large:before,
-li[class*=" icon-"].icon-large:before {
-  text-indent: -1.3333333333333333em;
+ul.icons li .icon-large:before,
+ul.icons li .icon-large:before {
+  /* 1.5 increased font size for icon-large * 1.25 width */
+
+  vertical-align: initial;
 }
 /*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
     readers do not read off random characters that represent icons */
@@ -737,6 +724,216 @@ li[class*=" icon-"].icon-large:before {
 .icon-lemon:before {
   content: "\f094";
 }
+.icon-phone:before {
+  content: "\f095";
+}
+.icon-check-empty:before {
+  content: "\f096";
+}
+.icon-bookmark-empty:before {
+  content: "\f097";
+}
+.icon-phone-sign:before {
+  content: "\f098";
+}
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-facebook:before {
+  content: "\f09a";
+}
+.icon-github:before {
+  content: "\f09b";
+}
+.icon-unlock:before {
+  content: "\f09c";
+}
+.icon-credit-card:before {
+  content: "\f09d";
+}
+.icon-rss:before {
+  content: "\f09e";
+}
+.icon-hdd:before {
+  content: "\f0a0";
+}
+.icon-bullhorn:before {
+  content: "\f0a1";
+}
+.icon-bell:before {
+  content: "\f0a2";
+}
+.icon-certificate:before {
+  content: "\f0a3";
+}
+.icon-hand-right:before {
+  content: "\f0a4";
+}
+.icon-hand-left:before {
+  content: "\f0a5";
+}
+.icon-hand-up:before {
+  content: "\f0a6";
+}
+.icon-hand-down:before {
+  content: "\f0a7";
+}
+.icon-circle-arrow-left:before {
+  content: "\f0a8";
+}
+.icon-circle-arrow-right:before {
+  content: "\f0a9";
+}
+.icon-circle-arrow-up:before {
+  content: "\f0aa";
+}
+.icon-circle-arrow-down:before {
+  content: "\f0ab";
+}
+.icon-globe:before {
+  content: "\f0ac";
+}
+.icon-wrench:before {
+  content: "\f0ad";
+}
+.icon-tasks:before {
+  content: "\f0ae";
+}
+.icon-filter:before {
+  content: "\f0b0";
+}
+.icon-briefcase:before {
+  content: "\f0b1";
+}
+.icon-fullscreen:before {
+  content: "\f0b2";
+}
+.icon-group:before {
+  content: "\f0c0";
+}
+.icon-link:before {
+  content: "\f0c1";
+}
+.icon-cloud:before {
+  content: "\f0c2";
+}
+.icon-beaker:before {
+  content: "\f0c3";
+}
+.icon-cut:before {
+  content: "\f0c4";
+}
+.icon-copy:before {
+  content: "\f0c5";
+}
+.icon-paper-clip:before {
+  content: "\f0c6";
+}
+.icon-save:before {
+  content: "\f0c7";
+}
+.icon-sign-blank:before {
+  content: "\f0c8";
+}
+.icon-reorder:before {
+  content: "\f0c9";
+}
+.icon-list-ul:before {
+  content: "\f0ca";
+}
+.icon-list-ol:before {
+  content: "\f0cb";
+}
+.icon-strikethrough:before {
+  content: "\f0cc";
+}
+.icon-underline:before {
+  content: "\f0cd";
+}
+.icon-table:before {
+  content: "\f0ce";
+}
+.icon-magic:before {
+  content: "\f0d0";
+}
+.icon-truck:before {
+  content: "\f0d1";
+}
+.icon-pinterest:before {
+  content: "\f0d2";
+}
+.icon-pinterest-sign:before {
+  content: "\f0d3";
+}
+.icon-google-plus-sign:before {
+  content: "\f0d4";
+}
+.icon-google-plus:before {
+  content: "\f0d5";
+}
+.icon-money:before {
+  content: "\f0d6";
+}
+.icon-caret-down:before {
+  content: "\f0d7";
+}
+.icon-caret-up:before {
+  content: "\f0d8";
+}
+.icon-caret-left:before {
+  content: "\f0d9";
+}
+.icon-caret-right:before {
+  content: "\f0da";
+}
+.icon-columns:before {
+  content: "\f0db";
+}
+.icon-sort:before {
+  content: "\f0dc";
+}
+.icon-sort-down:before {
+  content: "\f0dd";
+}
+.icon-sort-up:before {
+  content: "\f0de";
+}
+.icon-envelope-alt:before {
+  content: "\f0e0";
+}
+.icon-linkedin:before {
+  content: "\f0e1";
+}
+.icon-undo:before {
+  content: "\f0e2";
+}
+.icon-legal:before {
+  content: "\f0e3";
+}
+.icon-dashboard:before {
+  content: "\f0e4";
+}
+.icon-comment-alt:before {
+  content: "\f0e5";
+}
+.icon-comments-alt:before {
+  content: "\f0e6";
+}
+.icon-bolt:before {
+  content: "\f0e7";
+}
+.icon-sitemap:before {
+  content: "\f0e8";
+}
+.icon-umbrella:before {
+  content: "\f0e9";
+}
+.icon-paste:before {
+  content: "\f0ea";
+}
+.icon-user-md:before {
+  content: "\f200";
+}
 .clearfix {
   zoom: 1;
 }
@@ -755,21 +952,27 @@ li[class*=" icon-"].icon-large:before {
 }
 ul > li {
   list-style: none;
-  padding-left: 1em;
+  margin: 0.2em 0 0.2em 0.6em;
+  text-indent: -0.6em;
 }
 ul > li:before {
-  content: '› ';
+  content: '›';
   font-size: 1.3333333333333333em;
   font-weight: bold;
-  color: #545454;
-  margin-left: -0.6em;
+  color: #737373;
+  margin-right: 0.1em;
+}
+.fontface ul > li {
+  margin-left: 0.65em;
+  text-indent: -0.63em;
 }
 .fontface ul > li:before {
-  content: "\f054  ";
+  content: "\f054";
   font-size: 0.75em;
   vertical-align: top;
   font-family: FontAwesome;
   font-weight: normal;
+  margin-right: 0.3em;
 }
 address {
   font-style: normal;
@@ -836,7 +1039,7 @@ article {
   margin-bottom: 1em;
 }
 article .location {
-  color: #888;
+  color: #737373;
   font-size: 0.875em;
 }
 /* Header block has name and contact information. */
@@ -844,11 +1047,15 @@ section#about header {
   padding-bottom: 0.75em;
   margin-bottom: 1em;
   border-bottom: 4px double #545454;
-  /* Half the text in the header are links, which looks odd with color. */
+  /* Half the text in the header are links, which looks odd with color.
+     Remove color from the links but do apply it to the social icons. */
 
 }
 section#about header a {
   color: inherit;
+}
+section#about header i[class*="icon-"] {
+  color: #143352;
 }
 section#about header h1 {
   /* 42px / 48px */
@@ -881,9 +1088,6 @@ section#about header address:after {
   height: 0;
   overflow: hidden;
   clear: both;
-}
-section#about header i[class*="icon-"] {
-  color: #143352;
 }
 section#about header .type {
   display: none;
@@ -919,6 +1123,18 @@ section#about header .social div {
 section#about header .social div:last-child {
   margin-right: 0;
 }
+section#about article {
+  /* Fixup separator icons within paragraph, which otherwise seem want to
+     float away. Also shrink and fade them to be less intrusive. */
+
+}
+section#about article i[class^="icon-"]:before,
+section#about article i[class*=" icon-"]:before {
+  display: inline;
+  font-size: 0.6em;
+  vertical-align: top;
+  color: #737373;
+}
 /* Footer has source URL and should only be visible when printing. */
 body > footer {
   display: none;
@@ -942,29 +1158,32 @@ section#experience article header .location {
 
   white-space: nowrap;
 }
-section#experience article > ul {
+section#experience article ul.roles {
   /* 14px / 18px */
 
   font-size: 0.875em;
   line-height: 1.2571428571428573em;
   margin-bottom: 0.3333333333333333px;
 }
-section#experience article > ul > li {
-  margin: 0.3333333333333333em 0;
+section#experience article ul.roles > li {
+  margin: 0.3333333333333333em 0 0.3333333333333333em 1em;
   /* Tighten up space around dashes in the time ranges. */
 
 }
-section#experience article > ul > li .time-range {
+section#experience article ul.roles > li .time-range {
   word-spacing: -0.1em;
 }
-section#experience article > ul > li .time-range :after {
+section#experience article ul.roles > li .time-range:after {
   content: ': ';
   word-spacing: 0;
 }
-section#experience article > ul > li .time-range time {
+section#experience article ul.roles > li .time-range time {
   word-spacing: 0;
 }
-section#experience article > ul > li .job-title {
+section#experience article ul.roles > li:before {
+  content: "\f0da";
+}
+section#experience article ul.roles > li .job-title {
   font-weight: bold;
   /* Time and job title are usually on the same line, but a few wrap on mobile
          screens. In that case the entire job title should jump down a line. */
@@ -1042,30 +1261,19 @@ section#awards dt {
 section#awards dd {
   margin-top: 1px;
 }
-section#about article {
-  /* Fixup separator icons within paragraph, which otherwise seem want to
-     float away. Also shrink and fade them to be less intrusive. */
-
-  /* Icon needs room to breath. */
-
-  /*  i[class^="icon-"],
-  i[class*=" icon-"] {
-    margin-left: 5px;
-  }
-*/
-}
-section#about article i[class^="icon-"]:before,
-section#about article i[class*=" icon-"]:before {
-  display: inline;
-  font-size: 0.6em;
-  vertical-align: top;
-  color: #595959;
-}
 /* Format for printer. Reveal footer with permalink and darken some colors. */
 @media print {
+  @page  {
+    margin: 0.5in;
+  }
   body {
     padding: 0;
+    margin: 0;
     font-size: 0.6875em;
+  }
+  section#about {
+    margin: 0;
+    padding: 0;
   }
   section#about header {
     width: 33.33333333333333%;
@@ -1077,7 +1285,7 @@ section#about article i[class*=" icon-"]:before {
   section#about article {
     width: 66.66666666666666%;
     float: left;
-    margin-top: 1em;
+    margin-top: 0;
     /* Fake gutter. */
   
     padding-left: 1.375em;
@@ -1108,6 +1316,13 @@ section#about article i[class*=" icon-"]:before {
   section#experience header {
     margin-bottom: 0.3333333333333333em;
   }
+  section#experience article {
+    page-break-inside: avoid;
+  }
+  section#skills,
+  section#awards {
+    page-break-inside: avoid;
+  }
   section#skills article,
   section#awards article {
     /* 14px / 18px */
@@ -1115,10 +1330,11 @@ section#about article i[class*=" icon-"]:before {
     font-size: 0.875em;
     line-height: 1.2571428571428573em;
   }
-  section#skills li {
-    float: none;
-    margin-right: 0;
-  }
+  /*section#skills {
+        li {
+          .linear-skills;
+        }
+      }*/
   div.rail {
     width: 25%;
     float: left;
@@ -1228,6 +1444,7 @@ section#about article i[class*=" icon-"]:before {
     /* Zoom baseline grid to 17/16 = 1.0625 */
   
     font-size: 1.0625em;
+    margin-top: 2em;
   }
   /* Switch to grid by applying gutters to everything. Shrink header
        and allow about box to float to its left. Together they're seven
@@ -1457,7 +1674,9 @@ section#about article i[class*=" icon-"]:before {
     /* Zoom baseline grid to 17/16 = 1.0625 */
   
     font-size: 1.0625em;
+    margin-top: 3em;
   }
+  /* Move sections below experience to a right rail. */
   section#about {
     width: 25%;
   }
@@ -1517,6 +1736,15 @@ section#about article i[class*=" icon-"]:before {
     /* Zoom baseline grid to 18/16 = 1.125 */
   
     font-size: 1.125em;
+    /* Cap page width. */
+  
     max-width: 160em;
+    margin-top: 4em;
+  }
+}
+@media screen and (min-width: 180em) {
+  /* Switch from percentage-based margin to centered. */
+  body {
+    margin: 4em auto;
   }
 }
