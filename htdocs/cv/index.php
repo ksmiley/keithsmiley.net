@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Kreon:400,700">
     <link rel="stylesheet" type="text/css" href="/_/css/resume.css">
   	<script src="/_/js/modernizr-2.5.3.min.js"></script>
-    <!--[if gte IE 9]><!--><script src="/_/js/GGS.js"></script><!--<![endif]-->
+    <!--<script src="/_/js/GGS.js"></script>-->
   </head>
   <body lang="en">
     <section id="about">
