@@ -58,32 +58,23 @@
           <h1 class="fn org"><a href="http://www.morrisdigitalworks.com/">Morris DigitalWorks</a></h2>
           <div class="location"><span class="locality">Augusta</span>, <abbr class="region" title="Georgia">Ga.</abbr></div>
         </header>
-        <ul>
-          <li>
-            <span class="time-range"><time datetime="2011-08-01">August 2011</time> &ndash; <time datetime="<?php echo date('Y-m-d'); ?>">Present</time></span>
+        <ul class="roles">
+          <li><span class="time-range"><time datetime="2011-08-01">August 2011</time> &ndash; <time datetime="<?php echo date('Y-m-d'); ?>">Present</time></span>
             <span class="job-title">Senior Software Engineer</span>
           </li>
-          <li>
-            <span class="time-range"><time datetime="2010-05-03">May 2010</time> &ndash; <time datetime="2011-08-01">August 2011</time></span>
+          <li><span class="time-range"><time datetime="2010-05-03">May 2010</time> &ndash; <time datetime="2011-08-01">August 2011</time></span>
             <span class="job-title">Software Engineer</span>
           </li>
         </ul>
         <p>
 Develop and support web applications throughout the organization as a member of the core development team. Responsibilities include:
-building a Drupal-based CMS for daily newspaper sites and integrating it with existing publishing systems; 
-improving development processes for easier deployment across multiple sites;
-supporting legacy systems, including a custom programming language that runs our advertising products;
-analyzing performance bottlenecks and working with system administrators on implementation; and
-coaching developers at the newspapers on how they can use and improve the Drupal CMS.
-        </p>
-        <p style="display:none;">
-          Develop and support web applications throughout the software stack,
-          from backend data processing to client-side styling and scripting.
-          Responsibilities include contributing to a Drupal-based CMS that
-          integrates with publishing for Morris newspapers, maintaining and
-          improving an in-house programming language, analyzing performance on
-          LAMP systems, and providing support for external customers who use our
-          classifieds products.
+<ul>
+<li>Building a Drupal-based CMS for twelve daily newspapers and integrating it with existing publishing systems.</li>
+<li>Refactoring development processes for easier deployment across distinct sites. I have reduced the commands needed to build a release from a dozen to one, and I am leading a transition to Git.</li>
+<li>Supporting legacy systems, including adding functionality to a custom programming language that runs our advertising products.</li>
+<li>Analyzing and improving performance. I've used a profiler to find bottlenecks in Drupal modules and worked with system administrators on architectural changes.</li>
+<li>Coaching developers at the newspapers on how they can use and improve the Drupal CMS.</li>
+</ul>
         </p>
       </article>
       <article>
@@ -257,6 +248,8 @@ Built databases and web applications to support faculty research and classroom i
           <dl>
             <dt>Spirit of Morris DigitalWorks</dt>
             <dd>Development team award for&nbsp;2010</dd>
+            <dt>Associated Collegiate Press Pacemaker</dt>
+            <dd>Awarded to the Kentucky Kernel for my year as editor.</dd>
             <dt>UK Dean’s List</dt>
             <dd>Fall&nbsp;2004, Spring&nbsp;2005, Fall&nbsp;2005, Fall&nbsp;2006, Spring&nbsp;2007, Spring&nbsp;2009 and Fall&nbsp;2009</dd>
             <dt>Hearst Journalism Awards for Photojournalism</dt>
