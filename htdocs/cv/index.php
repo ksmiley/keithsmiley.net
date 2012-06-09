@@ -82,9 +82,8 @@ Develop and support web applications throughout the organization as a member of 
           <h1 class="fn org"><a href="http://comm.uky.edu/">University of Kentucky</a></h2>
           <div class="location"><span class="locality">Lexington</span>, <abbr class="region" title="Kentucky">Ky.</abbr></div>
         </header>
-        <ul>
-          <li>
-            <span class="time-range"><time datetime="2009-03-01">March 2009</time> &ndash; <time datetime="2010-04-20">April 2010</time></span>
+        <ul class="roles">
+          <li><span class="time-range"><time datetime="2009-03-01">March 2009</time> &ndash; <time datetime="2010-04-20">April 2010</time></span>
             <span class="job-title">Web and Database Developer</span>
           </li>
         </ul>
@@ -97,9 +96,8 @@ Built databases and web applications to support faculty research and classroom i
           <h1 class="fn org"><a href="http://www.washingtontimes.com/">The Washington Times</a></h2>
           <div class="location"><span class="locality">Washington</span>, <abbr class="region" title="District of Columbia">D.C.</abbr></div>
         </header>
-        <ul>
-          <li>
-            <span class="time-range"><time datetime="2008-09-01">September</time> &ndash; <time datetime="2008-12-15">December 2008</time></span>
+        <ul class="roles">
+          <li><span class="time-range"><time datetime="2008-09-01">September</time> &ndash; <time datetime="2008-12-15">December 2008</time></span>
             <span class="job-title">Photography Intern</span>
           </li>
         </ul>
@@ -114,15 +112,14 @@ Built databases and web applications to support faculty research and classroom i
           <h1 class="fn org"><a href="http://www.tennessean.com/">The Tennessean</a></h2>
           <div class="location"><span class="locality">Nashville</span>, <abbr class="region" title="Tennessee">Tenn.</abbr></div>
         </header>
-        <ul>
-          <li>
-            <span class="time-range"><time datetime="2008-06-01">June</time> &ndash; <time datetime="2010-08-10">August 2008</time></span>
+        <ul class="roles">
+          <li><span class="time-range"><time datetime="2008-06-01">June</time> &ndash; <time datetime="2010-08-10">August 2008</time></span>
             <span class="job-title">Copy Editing Intern</span>
           </li>
         </ul>
         <p>
           Worked on the news copy desk editing stories, designing pages and
-          updating the Web site. The internship was through the <a href="https://www.newsfund.org/">Dow Jones
+          selecting wire stories. The internship was through the <a href="https://www.newsfund.org/">Dow Jones
           Newspaper Fund</a> and included two weeks of training in Austin, Texas.
         </p>
       </article>
@@ -131,17 +128,14 @@ Built databases and web applications to support faculty research and classroom i
           <h1 class="fn org"><a href="http://kykernel.com/">Kentucky Kernel</a></h2>
           <div class="location"><span class="locality">Lexington</span>, <abbr class="region" title="Kentucky">Ky.</abbr></div>
         </header>
-        <ul>
-          <li>
-            <span class="time-range"><time datetime="2007-08-01">August 2007</time> &ndash; <time datetime="2008-05-10">May 2008</time></span>
+        <ul class="roles">
+          <li><span class="time-range"><time datetime="2007-08-01">August 2007</time> &ndash; <time datetime="2008-05-10">May 2008</time></span>
             <span class="job-title">Editor in chief</span>
           </li>
-          <li>
-            <span class="time-range"><time datetime="2006-08-01">August 2006</time> &ndash; <time datetime="2007-05-10">May 2007</time></span>
+          <li><span class="time-range"><time datetime="2006-08-01">August 2006</time> &ndash; <time datetime="2007-05-10">May 2007</time></span>
             <span class="job-title">Managing editor</span>
           </li>
-          <li>
-            <span class="time-range"><time datetime="2004-08-30">August 2004</time> &ndash; <time datetime="2006-05-10">May 2006</time></span>
+          <li><span class="time-range"><time datetime="2004-08-30">August 2004</time> &ndash; <time datetime="2006-05-10">May 2006</time></span>
             <span class="job-title">Photographer and photo editor</span>
           </li>
         </ul>
@@ -159,9 +153,8 @@ Built databases and web applications to support faculty research and classroom i
           <h1 class="fn org"><a href="http://www.rockymountainnews.com/">Rocky Mountain News</a></h2>
           <div class="location"><span class="locality">Denver</span>, <abbr class="region" title="Colorado">Colo.</abbr></div>
         </header>
-        <ul>
-          <li>
-            <span class="time-range"><time datetime="2006-06-01">June</time> &ndash; <time datetime="2006-08-15">Augusta 2006</time></span>
+        <ul class="roles">
+          <li><span class="time-range"><time datetime="2006-06-01">June</time> &ndash; <time datetime="2006-08-15">Augusta 2006</time></span>
             <span class="job-title">Photography Intern</span>
           </li>
         </ul>
@@ -175,9 +168,8 @@ Built databases and web applications to support faculty research and classroom i
           <h1 class="fn org"><a href="http://www.courierpress.com/">Evansville Courier &amp; Press</a></h2>
           <div class="location"><span class="locality">Evansville</span>, <abbr class="region" title="Indiana">Ind.</abbr></div>
         </header>
-        <ul>
-          <li>
-            <span class="time-range"><time datetime="2005-06-01">June</time> &ndash; <time datetime="2005-06-30">July 2005</time></span>
+        <ul class="roles">
+          <li><span class="time-range"><time datetime="2005-06-01">June</time> &ndash; <time datetime="2005-06-30">July 2005</time></span>
             <span class="job-title">Photography Intern</span>
           </li>
         </ul>
