@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0">
     <meta name="cleartype" value="true">
-    <title>Keith Smiley's Résumé</title>
+    <title>Keith Smiley’s Résumé</title>
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Kreon:400,700">
     <link rel="stylesheet" type="text/css" href="/_/css/resume.css">
   	<script src="/_/js/modernizr-2.5.3.min.js"></script>
@@ -47,7 +47,7 @@
       </header>
       <article>
         <p>
-          <strong>I’m a software developer with a journalist’s&nbsp;curiosity.</strong> My work centers on the Web because it affords all information a chance to be valuable, by reaching the individual who needs it most.&nbsp;<i class="icon-cog"></i>&nbsp;I’m familiar with all levels of the software stack that underlies the Web and with the protocols that tie it together. At each level I worry about details, whether it's the wording on a button or the log rotation on an app server.&nbsp;<i class="icon-cog"></i>&nbsp;I want to combine my technical knowledge and journalism experience to create innovative ways of sharing and applying information, to give meaning to data so it has impact.
+          <strong>I’m a software developer with a journalist’s&nbsp;curiosity.</strong> <i class="icon-cog"></i>&nbsp;I’m familiar with all levels of the software stack that underlies the Web and with the protocols that tie it together. <i class="icon-cog"></i>&nbsp;I see the intricacies throughout an application: the word choice on a button, the parameters to a new API, the log rotation on an app server. <i class="icon-cog"></i>&nbsp;With my journalism background and technical knowledge, I want to create innovative ways of sharing and applying information, to give meaning to data so it has impact.
         </p>
       </article>
   	</section>
@@ -67,15 +67,15 @@
           </li>
         </ul>
         <p>
-Develop and support web applications throughout the organization as a member of the core development team. Responsibilities include:
-<ul>
-<li>Building a Drupal-based CMS for twelve daily newspapers and integrating it with existing publishing systems.</li>
-<li>Refactoring development processes for easier deployment across distinct sites. I have reduced the commands needed to build a release from a dozen to one, and I am leading a transition to Git.</li>
-<li>Supporting legacy systems, including adding functionality to a custom programming language that runs our advertising products.</li>
-<li>Analyzing and improving performance. I've used a profiler to find bottlenecks in Drupal modules and worked with system administrators on architectural changes.</li>
-<li>Coaching developers at the newspapers on how they can use and improve the Drupal CMS.</li>
-</ul>
+          Develop and support web applications throughout the organization as a member of the core development team. Projects include:
         </p>
+        <ul>
+          <li>Building a Drupal-based CMS that handles more than 55&nbsp;million page views per month for 12 daily newspapers, and integrating it with existing publishing systems.</li>
+          <li>Refactoring development processes for faster deployment across distinct sites. I have reduced the commands needed to build a release from a dozen to one am leading a transition to Git.</li>
+          <li>Supporting legacy systems, such as adding functionality to a custom programming language that runs our advertising products.</li>
+          <li>Analyzing and improving performance, including reducing page render time by more than a second.</li>
+          <li>Coaching developers at the newspapers on how they can use and improve the Drupal CMS.</li>
+        </ul>
       </article>
       <article>
         <header>
@@ -102,9 +102,7 @@ Built databases and web applications to support faculty research and classroom i
           </li>
         </ul>
         <p>
-          Spent 16 weeks as a general-assignment photographer covering politics,
-          regional news, features and sports. The internship was through the
-          <a href="http://www.wcpj.org/">Washington Center for Politics and Journalism</a>.
+          Spent 16 weeks as a general-assignment photographer covering politics, regional news, features and sports. The internship was through the <a href="http://www.wcpj.org/">Washington Center for Politics and Journalism</a>.
         </p>
       </article>
       <article>
@@ -118,9 +116,7 @@ Built databases and web applications to support faculty research and classroom i
           </li>
         </ul>
         <p>
-          Worked on the news copy desk editing stories, designing pages and
-          selecting wire stories. The internship was through the <a href="https://www.newsfund.org/">Dow Jones
-          Newspaper Fund</a> and included two weeks of training in Austin, Texas.
+          Worked on the news copy desk editing stories, designing pages and selecting wire stories. The internship was through the <a href="https://www.newsfund.org/">Dow Jones Newspaper Fund</a> and included two weeks of training in Austin, Texas.
         </p>
       </article>
       <article>
@@ -140,12 +136,7 @@ Built databases and web applications to support faculty research and classroom i
           </li>
         </ul>
         <p>
-          Oversaw daily news gathering and production, planned short- and
-          long-term stories, and managed a staff of more than 40 as editor of
-          the 17,000-circulation independent daily newspaper. The 2007-2008
-          staff received the Pacemaker award recognizing the top college
-          newspapers in the country and the Kentucky Press Association’s
-          General Excellence award.
+          Oversaw daily news gathering and production, planned short- and long-term stories, and managed a staff of more than 40 as editor of the 17,000-circulation independent daily newspaper. Projects included producing an eight-page section that followed a lecturer and Vietnam War veteran as he returned to the country with a group of students, and creating election guides for student government and statewide races. The 2007-2008 staff received the Pacemaker award recognizing the top college newspapers in the country and the Kentucky Press Association’s General Excellence award.
         </p>
       </article>
       <article>
@@ -159,8 +150,7 @@ Built databases and web applications to support faculty research and classroom i
           </li>
         </ul>
         <p>
-          Photographed a variety of assignments, including news, sports,
-          feature and business stories.
+          Photographed a variety of assignments, including breaking news, sports, feature and business stories.
         </p>
       </article>
       <article>
@@ -188,8 +178,7 @@ Built databases and web applications to support faculty research and classroom i
             <div class="location"><span class="locality">Lexington</span>, <abbr class="region" title="Kentucky">Ky.</abbr></div>
           </header>
           <p>
-            Graduated with bachelor’s degrees in computer science
-            and print journalism.
+            Graduated with bachelor’s degrees in computer science and print&nbsp;journalism.
           </p>
         </article>
       </section>
@@ -239,9 +228,9 @@ Built databases and web applications to support faculty research and classroom i
         <article>
           <dl>
             <dt>Spirit of Morris DigitalWorks</dt>
-            <dd>Development team award for&nbsp;2010</dd>
+            <dd>Development team award for&nbsp;2010.</dd>
             <dt>Associated Collegiate Press Pacemaker</dt>
-            <dd>Awarded to the Kentucky Kernel for my year as editor.</dd>
+            <dd>Awarded to the Kentucky Kernel for my year as&nbsp;editor.</dd>
             <dt>UK Dean’s List</dt>
             <dd>Fall&nbsp;2004, Spring&nbsp;2005, Fall&nbsp;2005, Fall&nbsp;2006, Spring&nbsp;2007, Spring&nbsp;2009 and Fall&nbsp;2009</dd>
             <dt>Hearst Journalism Awards for Photojournalism</dt>
@@ -255,7 +244,7 @@ Built databases and web applications to support faculty research and classroom i
       Latest version always available at <a href="<?php echo $selfUrl; ?>"><?php echo $selfUrl; ?></a>
     </footer>
     <!--
-      E-mail address is obfuscated to (hopefully) deter spam. But if you've made
+      E-mail address is obfuscated to (hopefully) deter spam. But if you’ve made
       it this far, you probably know how to decipher it. Why not drop me a note?
     -->
     <script>
