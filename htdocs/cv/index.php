@@ -1,16 +1,19 @@
-<?php $fullView = 1; // (isset($_GET['a']) && $_GET['a'] == 'full') ?>
+<?php $state = include './info.inc.php'; ?>
 <!DOCTYPE html>
 <!--[if lt IE 9]><html class="ie"><![endif]-->
 <!--[if gte IE 9]><!--><html><!--<![endif]-->
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<?php if ($state->full): ?>
+    <meta name="robots" content="noindex">
+<?php endif; ?>
     <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0">
     <meta name="cleartype" value="true">
     <title>Keith Smiley’s Résumé</title>
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Kreon:400,700">
     <link rel="stylesheet" type="text/css" href="/_/css/resume.css">
-  	<script src="/_/js/modernizr-2.5.3.min.js"></script>
+    <script src="/_/js/modernizr-2.5.3.min.js"></script>
     <!--<script src="/_/js/GGS.js"></script>-->
   </head>
   <body lang="en">
@@ -18,23 +21,7 @@
       <header class="vcard">
         <h1><a class="fn url" rel="me" href="http://keithsmiley.net/">Keith Smiley</a></h1>
         <address>
-        <?php if ($fullView): ?>
-          <div class="adr">
-            <span class="type">Home</span>
-            <span class="street-address">xxxxx</span>
-            <span class="extended-address">xxxxx</span>
-            <br>
-            <span class="locality">Augusta</span>,
-            <abbr class="region" title="Georgia">Ga.</abbr>
-            <span class="postal-code">xxxxx</span>
-          </div>
-        <?php endif; ?>
-          </i> <a class="email" id="email" href="mailto:k.AT.keithsmiley.DOT.net">k.AT.keithsmiley.DOT.net</a>
-        <?php if ($fullView): ?>
-          <div class="tel">
-            (xxx) xxx-xxxx
-          </div>
-        <?php endif; ?>
+<?php echo $state->contact; ?>
           <div class="social">
             <div class="twitter">
               <span class="type">Twitter</span> <a class="url" href="http://twitter.com/ksmiley"><i class="icon-twitter-sign icon-large"></i> @ksmiley</a>
@@ -239,8 +226,7 @@ Built databases and web applications to support faculty research and classroom i
         </article>
       </section>
       <footer>
-        <?php $selfUrl = 'http://keithsmiley.net/cv/' . ($fullView ? 'full' : ''); ?>
-        Latest version always available at <a href="<?php echo $selfUrl; ?>"><?php echo $selfUrl; ?></a>
+        Latest version always available at <a href="<?php echo $state->url; ?>"><?php echo $state->url; ?></a>
       </footer>
     </div>
     <!--
