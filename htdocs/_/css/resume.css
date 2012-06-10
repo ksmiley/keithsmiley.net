@@ -1248,6 +1248,8 @@ section#skills ul:after {
   clear: both;
 }
 section#skills li {
+  margin-top: 0;
+  margin-bottom: 0;
   float: left;
   margin-right: 10px;
 }
