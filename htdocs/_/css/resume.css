@@ -1136,9 +1136,10 @@ section#about article i[class*=" icon-"]:before {
   color: #737373;
 }
 /* Footer has source URL and should only be visible when printing. */
-body > footer {
+body footer {
   display: none;
-  clear: both;
+  /*  clear: both;*/
+
   border-top: 1px solid #737373;
   padding-top: 3px;
   text-align: center;
@@ -1266,7 +1267,7 @@ section#awards dd {
 /* Format for printer. Reveal footer with permalink and darken some colors. */
 @media print {
   @page  {
-    margin: 0.5in;
+    margin: 0.3in 0.5in;
   }
   body {
     padding: 0;
@@ -1347,7 +1348,7 @@ section#awards dd {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-  body > footer {
+  body footer {
     display: block;
   }
 }

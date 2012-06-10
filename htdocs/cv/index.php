@@ -74,7 +74,7 @@
           <li>Refactoring development processes for faster deployment across distinct sites. I have reduced the commands needed to build a release from a dozen to one am leading a transition to Git.</li>
           <li>Supporting legacy systems, such as adding functionality to a custom programming language that runs our advertising products.</li>
           <li>Analyzing and improving performance, including reducing page render time by more than a second.</li>
-          <li>Coaching developers at the newspapers on how they can use and improve the Drupal CMS.</li>
+          <li>Coaching developers at the newspapers on how to use and improve the Drupal CMS.</li>
         </ul>
       </article>
       <article>
@@ -238,11 +238,11 @@ Built databases and web applications to support faculty research and classroom i
           </dl>
         </article>
       </section>
+      <footer>
+        <?php $selfUrl = 'http://keithsmiley.net/cv/' . ($fullView ? 'full' : ''); ?>
+        Latest version always available at <a href="<?php echo $selfUrl; ?>"><?php echo $selfUrl; ?></a>
+      </footer>
     </div>
-    <footer>
-      <?php $selfUrl = 'http://keithsmiley.net/cv/' . ($fullView ? 'full' : ''); ?>
-      Latest version always available at <a href="<?php echo $selfUrl; ?>"><?php echo $selfUrl; ?></a>
-    </footer>
     <!--
       E-mail address is obfuscated to (hopefully) deter spam. But if you’ve made
       it this far, you probably know how to decipher it. Why not drop me a note?
