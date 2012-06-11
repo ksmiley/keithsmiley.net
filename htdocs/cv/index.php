@@ -42,7 +42,7 @@
       <h1>Experience</h1>
       <article>
         <header>
-          <h1 class="fn org"><a href="http://www.morrisdigitalworks.com/">Morris DigitalWorks</a></h2>
+          <h1 class="fn org"><a href="http://morris.com/">Morris DigitalWorks</a></h2>
           <div class="location"><span class="locality">Augusta</span>, <abbr class="region" title="Georgia">Ga.</abbr></div>
         </header>
         <ul class="roles">
