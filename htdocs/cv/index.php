@@ -34,7 +34,7 @@
       </header>
       <article>
         <p>
-          <strong>I’m a software developer with a journalist’s&nbsp;curiosity.</strong> <i class="icon-cog"></i>&nbsp;I’m familiar with all levels of the software stack that underlies the Web and with the protocols that tie it together. <i class="icon-cog"></i>&nbsp;I see the intricacies throughout an application: the word choice on a button, the parameters to a new API, the log rotation on an app server. <i class="icon-cog"></i>&nbsp;With my journalism background and technical knowledge, I want to create innovative ways of sharing and applying information, to give meaning to data so it has impact.
+          <strong>I’m a software developer with a journalist’s&nbsp;curiosity.</strong> <i class="icon-cog"></i>&nbsp;I’m familiar with all levels of the software stack that underlies the Web and with the protocols that tie it together. <i class="icon-cog"></i>&nbsp;I see the intricacies throughout an application, whether in the word choice on a button, the parameters to a new API, or the log rotation on an app server. <i class="icon-cog"></i>&nbsp;With my journalism background and technical knowledge, I want to create innovative ways of sharing and applying information, to give meaning to data so it has impact.
         </p>
       </article>
   	</section>
@@ -58,7 +58,7 @@
         </p>
         <ul>
           <li>Building a Drupal-based CMS that handles more than 55&nbsp;million page views per month for 12 daily newspapers, and integrating it with existing publishing systems.</li>
-          <li>Refactoring development processes for faster deployment across distinct sites. I have reduced the commands needed to build a release from a dozen to one am leading a transition to Git.</li>
+          <li>Refactoring development processes for faster deployment across distinct sites. I have reduced the commands needed to build a release from a dozen to one and am leading a transition to Git.</li>
           <li>Supporting legacy systems, such as adding functionality to a custom programming language that runs our advertising products.</li>
           <li>Analyzing and improving performance, including reducing page render time by more than a second.</li>
           <li>Coaching developers at the newspapers on how to use and improve the Drupal CMS.</li>
@@ -123,7 +123,7 @@ Built databases and web applications to support faculty research and classroom i
           </li>
         </ul>
         <p>
-          Oversaw daily news gathering and production, planned short- and long-term stories, and managed a staff of more than 40 as editor of the 17,000-circulation independent daily newspaper. Projects included producing an eight-page section that followed a lecturer and Vietnam War veteran as he returned to the country with a group of students, and creating election guides for student government and statewide races. The 2007-2008 staff received the Pacemaker award recognizing the top college newspapers in the country and the Kentucky Press Association’s General Excellence award.
+          Oversaw daily news gathering and production, planned short- and long-term stories, and managed a staff of more than 40 as editor of the 17,000-circulation independent daily newspaper. Projects included producing an eight-page section that followed a lecturer and Vietnam War veteran as he returned to the country with a group of students, and creating election guides for student government and statewide races. The 2007&ndash;2008 staff received the Pacemaker award recognizing the top college newspapers in the country and the Kentucky Press Association’s General Excellence award.
         </p>
       </article>
       <article>
