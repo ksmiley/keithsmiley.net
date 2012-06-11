@@ -1,0 +1,76 @@
+/*  Font Awesome
+    the iconic font designed for use with Twitter Bootstrap
+    -------------------------------------------------------
+    The full suite of pictographic icons, examples, and documentation
+    can be found at: http://fortawesome.github.com/Font-Awesome/
+
+    License
+    -------------------------------------------------------
+    The Font Awesome webfont, CSS, and LESS files are licensed under CC BY 3.0:
+    http://creativecommons.org/licenses/by/3.0/ A mention of
+    'Font Awesome - http://fortawesome.github.com/Font-Awesome' in human-readable
+    source code is considered acceptable attribution (most common on the web).
+    If human readable source code is not available to the end user, a mention in
+    an 'About' or 'Credits' screen is considered acceptable (most common in desktop
+    or mobile software).
+
+    Contact
+    -------------------------------------------------------
+    Email: dave@davegandy.com
+    Twitter: http://twitter.com/fortaweso_me
+    Work: Lead Product Designer @ http://kyruus.com
+
+    */
+
+/* This is a stripped-down stylesheet for a subset of the font created with
+   http://www.fontsquirrel.com/fontface/generator.
+   
+   Generator config: {"mode":"expert","formats":["ttf","woff","eotz"],"tt_instructor":"default","fix_vertical_metrics":"Y","fix_gasp":"xy","remove_kerning":"Y","add_spaces":"Y","add_hyphens":"Y","fallback":"none","fallback_custom":"100","options_subset":"advanced","subset_custom":"","subset_custom_range":"f081,f092,f013,f054,f0da","css_stylesheet":"stylesheet.css","filename_suffix":"-webfont","emsquare":"2048","spacing_adjustment":"0"}
+
+ */
+
+@fontAwesomePath: '../font';
+// Used for testing, to see whether a problem is in the subsetted font or
+// in this stripped-down CSS.
+@subset: '.subset';
+//@subset: '';
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('@{fontAwesomePath}/fontawesome-webfont@{subset}.eot');
+  src: url('@{fontAwesomePath}/fontawesome-webfont@{subset}.eot?#iefix') format('embedded-opentype'),
+    url('@{fontAwesomePath}/fontawesome-webfont@{subset}.woff') format('woff'),
+    url('@{fontAwesomePath}/fontawesome-webfont@{subset}.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*  Font Awesome styles
+    ------------------------------------------------------- */
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+a [class^="icon-"],
+a [class*=" icon-"] {
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+/* makes the font 33% larger relative to the icon container */
+.icon-large:before {
+  vertical-align: top;
+  font-size: 4/3em;
+}
+
+.icon-cog:before                  { content: "\f013"; }
+.icon-twitter-sign:before         { content: "\f081"; }
+.icon-github-sign:before          { content: "\f092"; }
+/* These two arrows aren't used as classes but the glyphs are used for lists. */
+.icon-caret-right:before          { content: "\f0da"; }
+.icon-chevron-right:before        { content: "\f054"; }
