@@ -75,8 +75,13 @@
           </li>
         </ul>
         <p>
-Built databases and web applications to support faculty research and classroom instruction in the Department of Communication. Projects included designing and developing a Flash-based tool to support HIV prevention campaigns in rural areas, adapting research surveys for use on mobile devices, improving the department’s custom CMS, and planning the expansion of a system that records and analyzes 400 hours of television daily.
+          Built databases and web applications to support faculty research and classroom instruction in the Department of Communication. Projects included:
         </p>
+        <ul>
+          <li>Designing and developing a Flash-based tool to support HIV prevention campaigns in rural areas.</li>
+          <li>Adapting research surveys for use on mobile devices.</li>
+          <li>Planning the expansion of a system that records and analyzes 400 hours of television daily.</li>
+        </ul>
       </article>
       <article>
         <header>
@@ -123,7 +128,7 @@ Built databases and web applications to support faculty research and classroom i
           </li>
         </ul>
         <p>
-          Oversaw daily news gathering and production, planned short- and long-term stories, and managed a staff of more than 40 as editor of the 17,000-circulation independent daily newspaper. Projects included producing an eight-page section that followed a lecturer and Vietnam War veteran as he returned to the country with a group of students, and creating election guides for student government and statewide races. The 2007&ndash;2008 staff received the Pacemaker award recognizing the top college newspapers in the country and the Kentucky Press Association’s General Excellence award.
+          Oversaw daily news gathering and production, planned short- and long-term stories, and managed a staff of more than 40 as editor of the 17,000-circulation independent daily newspaper. Projects included producing an eight-page section that followed a lecturer and Vietnam War veteran as he returned to the country with a group of students, and creating election guides for student government and statewide races. For my year as editor the newspaper received the Pacemaker award recognizing the top college newspapers in the country and the Kentucky Press Association’s General Excellence award.
         </p>
       </article>
       <article>
@@ -132,7 +137,7 @@ Built databases and web applications to support faculty research and classroom i
           <div class="location"><span class="locality">Denver</span>, <abbr class="region" title="Colorado">Colo.</abbr></div>
         </header>
         <ul class="roles">
-          <li><span class="time-range"><time datetime="2006-06-01">June</time> &ndash; <time datetime="2006-08-15">Augusta 2006</time></span>
+          <li><span class="time-range"><time datetime="2006-06-01">June</time> &ndash; <time datetime="2006-08-15">August 2006</time></span>
             <span class="job-title">Photography Intern</span>
           </li>
         </ul>
