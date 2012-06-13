@@ -34,7 +34,7 @@
       </header>
       <article>
         <p>
-          <strong>I’m a software developer with a journalist’s&nbsp;curiosity.</strong> <i class="icon-cog"></i>&nbsp;I’m familiar with all levels of the software stack that underlies the Web and with the protocols that tie it together. <i class="icon-cog"></i>&nbsp;I see the intricacies throughout an application, whether in the word choice on a button, the parameters to a new API, or the log rotation on an app server. <i class="icon-cog"></i>&nbsp;With my journalism background and technical knowledge, I want to create innovative ways of sharing and applying information, to give meaning to data so it has impact.
+          <strong>I’m a software developer with a journalist’s&nbsp;curiosity.</strong> Technology is not always the answer, but I believe it can relieve many civic problems. <i class="icon-cog"></i>&nbsp;I’m familiar with all levels of the software stack that underlies the Web and with the protocols that tie it together. <i class="icon-cog"></i>&nbsp;With my journalism background and technical knowledge, I want to create innovative ways of sharing and applying information, to give meaning to data so it has impact.
         </p>
       </article>
   	</section>
