@@ -34,7 +34,7 @@
       </header>
       <article>
         <p>
-          <strong>I’m a software developer with a journalist’s&nbsp;curiosity.</strong> Technology is not always the answer, but I believe it can relieve many civic problems. <i class="icon-cog"></i>&nbsp;I’m familiar with all levels of the software stack that underlies the Web and with the protocols that tie it together. <i class="icon-cog"></i>&nbsp;With my journalism background and technical knowledge, I want to create innovative ways of sharing and applying information, to give meaning to data so it has impact.
+          <strong>A software developer with a journalist’s&nbsp;curiosity.</strong> <i class="icon-cog"></i>&nbsp;I'm interested in telling human stories and solving civic problems through technology. <i class="icon-cog"></i>&nbsp;I’m familiar with all levels of the software stack that underlies the Web and with the protocols that tie it together. <i class="icon-cog"></i>&nbsp;With my journalism background and technical knowledge, I want to create innovative ways of sharing and applying information, to give meaning to data so it has impact.
         </p>
       </article>
   	</section>
@@ -222,7 +222,7 @@
             <dt>Spirit of Morris DigitalWorks</dt>
             <dd>Development team award for&nbsp;2010.</dd>
             <dt>Associated Collegiate Press Pacemaker</dt>
-            <dd>Awarded to the Kentucky Kernel for my year as&nbsp;editor.</dd>
+            <dd>The Kentucky Kernel was named one of the best college newspapers for my year as editor.</dd>
             <dt>UK Dean’s List</dt>
             <dd>Fall&nbsp;2004, Spring&nbsp;2005, Fall&nbsp;2005, Fall&nbsp;2006, Spring&nbsp;2007, Spring&nbsp;2009 and Fall&nbsp;2009</dd>
             <dt>Hearst Journalism Awards for Photojournalism</dt>
