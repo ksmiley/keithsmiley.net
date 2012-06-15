@@ -242,7 +242,7 @@
       var c=':', u='k', h='keithsmiley.net', a='@', p='mailto',
         e = document.getElementById("email");
       e.attributes.href.value = p+c+u+a+h;
-      e.textContent = u+a+h;
+      e.innerHTML = u+a+h;
 
       var _gaq = [['_setAccount', 'UA-19711479-2'], ['_trackPageview']];
       (function(d, t) {

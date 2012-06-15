@@ -719,6 +719,7 @@ section#awards dd {
 */
 .ie body {
   width: 800px;
+  margin: 1em auto;
 }
 .ie body section#experience article header h1,
 .ie body section#education article h1 {
