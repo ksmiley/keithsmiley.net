@@ -735,6 +735,19 @@ section#awards dd {
   font-size: 1.25em;
   line-height: 1.4300000000000002em;
 }
+/* Plain bullets for IE7 */
+.no-generatedcontent ul > li {
+  list-style: inside disc;
+  text-indent: 0;
+  margin: 0;
+}
+.no-generatedcontent section#experience article ul.roles > li {
+  list-style: inside circle;
+}
+.no-generatedcontent section#skills li {
+  float: none;
+  margin-right: 0;
+}
 /* @media screen and (min-width: 480px) */
 @media screen and (min-width: 30em) {
   section#about header h1 {

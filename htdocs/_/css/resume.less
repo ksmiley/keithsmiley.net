@@ -445,6 +445,24 @@ section#awards {
 
 }
 
+/* Plain bullets for IE7 */
+.no-generatedcontent {
+  
+  ul > li {
+    list-style: inside disc;
+    text-indent: 0;
+    margin: 0;
+  }
+  
+  section#experience article ul.roles > li {
+    list-style: inside circle;
+  }
+  
+  section#skills li {
+    .linear-skills;
+  }
+}
+
 /* @media screen and (min-width: 480px) */
 @media screen and (min-width: 30em) {
   section#about header h1 {
