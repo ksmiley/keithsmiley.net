@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 *
 *  Golden Grid System (1.01)	<http://goldengridsystem.com/>
@@ -494,7 +495,11 @@ body footer {
 
   border-top: 1px solid #737373;
   padding-top: 3px;
+  margin-top: 2em;
   text-align: center;
+}
+body footer a {
+  font-weight: bold;
 }
 section#experience header {
   margin-bottom: 0.5em;
@@ -619,7 +624,7 @@ section#awards dd {
 /* Format for printer. Reveal footer with permalink and darken some colors. */
 @media print {
   @page  {
-    margin: 0.3in 0.5in;
+    margin: 0.4in 0.5in 0.3in 0.5in;
   }
   body {
     padding: 0;

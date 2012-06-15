@@ -231,7 +231,7 @@
         </article>
       </section>
       <footer>
-        Latest version always available at <a href="<?php echo $state->url; ?>"><?php echo $state->url; ?></a>
+        Latest version always available&nbsp;at <a href="<?php echo $state->url; ?>"><?php echo $state->url; ?></a>
       </footer>
     </div>
     <!--

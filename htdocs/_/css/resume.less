@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @import "GGS.less";
 //@import "font-awesome.less";
 @import "font-awesome.subset.less";
@@ -191,7 +193,12 @@ body footer {
 /*  clear: both;*/
   border-top: 1px solid lighten(@body-color, 45%);
   padding-top: 3px;
+  margin-top: 2em;
   text-align: center;
+  
+  a {
+    font-weight: bold;
+  }
 }
 
 section#experience {
@@ -316,7 +323,7 @@ section#awards {
 /* Format for printer. Reveal footer with permalink and darken some colors. */
 @media print {
   @page {
-    margin: 0.3in 0.5in;
+    margin: 0.4in 0.5in 0.3in 0.5in;
   }
   
   body {
