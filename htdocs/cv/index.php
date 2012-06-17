@@ -42,7 +42,7 @@
       <h1>Experience</h1>
       <article>
         <header>
-          <h1 class="fn org"><a href="http://morris.com/">Morris DigitalWorks</a></h2>
+          <h1 class="fn org"><a href="http://morris.com/">Morris DigitalWorks</a></h1>
           <div class="location"><span class="locality">Augusta</span>, <abbr class="region" title="Georgia">Ga.</abbr></div>
         </header>
         <ul class="roles">
@@ -66,7 +66,7 @@
       </article>
       <article>
         <header>
-          <h1 class="fn org"><a href="http://comm.uky.edu/">University of Kentucky</a></h2>
+          <h1 class="fn org"><a href="http://comm.uky.edu/">University of Kentucky</a></h1>
           <div class="location"><span class="locality">Lexington</span>, <abbr class="region" title="Kentucky">Ky.</abbr></div>
         </header>
         <ul class="roles">
@@ -85,7 +85,7 @@
       </article>
       <article>
         <header>
-          <h1 class="fn org"><a href="http://www.washingtontimes.com/">The Washington Times</a></h2>
+          <h1 class="fn org"><a href="http://www.washingtontimes.com/">The Washington Times</a></h1>
           <div class="location"><span class="locality">Washington</span>, <abbr class="region" title="District of Columbia">D.C.</abbr></div>
         </header>
         <ul class="roles">
@@ -99,7 +99,7 @@
       </article>
       <article>
         <header>
-          <h1 class="fn org"><a href="http://www.tennessean.com/">The Tennessean</a></h2>
+          <h1 class="fn org"><a href="http://www.tennessean.com/">The Tennessean</a></h1>
           <div class="location"><span class="locality">Nashville</span>, <abbr class="region" title="Tennessee">Tenn.</abbr></div>
         </header>
         <ul class="roles">
@@ -113,7 +113,7 @@
       </article>
       <article>
         <header>
-          <h1 class="fn org"><a href="http://kykernel.com/">Kentucky Kernel</a></h2>
+          <h1 class="fn org"><a href="http://kykernel.com/">Kentucky Kernel</a></h1>
           <div class="location"><span class="locality">Lexington</span>, <abbr class="region" title="Kentucky">Ky.</abbr></div>
         </header>
         <ul class="roles">
@@ -133,7 +133,7 @@
       </article>
       <article>
         <header>
-          <h1 class="fn org"><a href="http://www.rockymountainnews.com/">Rocky Mountain News</a></h2>
+          <h1 class="fn org"><a href="http://www.rockymountainnews.com/">Rocky Mountain News</a></h1>
           <div class="location"><span class="locality">Denver</span>, <abbr class="region" title="Colorado">Colo.</abbr></div>
         </header>
         <ul class="roles">
@@ -147,7 +147,7 @@
       </article>
       <article>
         <header>
-          <h1 class="fn org"><a href="http://www.courierpress.com/">Evansville Courier &amp; Press</a></h2>
+          <h1 class="fn org"><a href="http://www.courierpress.com/">Evansville Courier &amp; Press</a></h1>
           <div class="location"><span class="locality">Evansville</span>, <abbr class="region" title="Indiana">Ind.</abbr></div>
         </header>
         <ul class="roles">
