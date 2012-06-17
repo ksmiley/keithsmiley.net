@@ -153,6 +153,15 @@ img {
 	-ms-interpolation-mode: bicubic;
 }
 
+// Simple elastic gutters
+// Note: box-sizing will not work in IE6-7
+.gutters () {
+  padding-left: (@line/2)/@em;
+  padding-right: (@line/2)/@em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 /*
 *

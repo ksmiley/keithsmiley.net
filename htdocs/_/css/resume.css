@@ -391,10 +391,6 @@ section  > h1,
 article {
   margin-bottom: 1em;
 }
-article .location {
-  color: #737373;
-  font-size: 0.875em;
-}
 /* Header block has name and contact information. */
 section#about header {
   padding-bottom: 0.75em;
@@ -488,8 +484,83 @@ section#about article i[class*=" icon-"]:before {
   vertical-align: top;
   color: #737373;
 }
+/*
+*
+*  Four-column grid active
+*  ----------------------------------------
+*  Margin   | #  1   2   3   4   |   Margin
+*  5.55555% | %  25  50  75  100 | 5.55555%
+*
+*/
+/*
+*  Fixes for IE6-8
+*  http://jonikorpi.com/leaving-old-IE-behind/
+*
+*/
+.ie body {
+  width: 800px;
+  margin: 1em auto;
+}
+.ie body section#about article {
+  /* 20 / 27px */
+
+  font-size: 1.25em;
+  line-height: 1.4300000000000002em;
+}
+/* Plain bullets for IE7 */
+.no-generatedcontent ul > li {
+  list-style: inside disc;
+  text-indent: 0;
+  margin: 0;
+}
+/* @media screen and (min-width: 480px) */
+@media screen and (min-width: 30em) {
+  section#about header h1 {
+    /* 68px / 72px */
+  
+    font-size: 4.25em;
+    line-height: 0.9705882352941176em;
+    font-weight: 400;
+  }
+}
+/* @media screen and (min-width: 640px) */
+@media screen and (min-width: 40em) {
+  body {
+    /* Zoom baseline grid to 17/16 = 1.0625 */
+  
+    font-size: 1.0625em;
+  }
+}
+/*
+*
+*  Eight-column grid active
+*  ----------------------------------------------------------------------
+*  Margin   | #  1     2     3     4     5     6     7     8   |   Margin
+*  5.55555% | %  12.5  25.0  37.5  50.0  62.5  75.0  87.5  100 | 5.55555%
+*	
+*
+*/
+/* @media screen and (min-width: 720px) */
+@media screen and (min-width: 45em) {
+  body {
+    /* Reset baseline grid to 16/16 = 1 */
+  
+    font-size: 1em;
+    margin: 1em 5.55555%;
+  }
+  section#about article {
+    /* 20 / 27px */
+  
+    font-size: 1.25em;
+    line-height: 1.4300000000000002em;
+  }
+}
+article .location {
+  color: #737373;
+  font-size: 0.875em;
+}
 /* Footer has source URL and should only be visible when printing. */
-body footer {
+footer {
   display: none;
   /*  clear: both;*/
 
@@ -498,7 +569,7 @@ body footer {
   margin-top: 2em;
   text-align: center;
 }
-body footer a {
+footer a {
   font-weight: bold;
 }
 section#experience header {
@@ -631,6 +702,9 @@ section#awards dd {
     margin: 0;
     font-size: 0.6875em;
   }
+  ul > li:before {
+    color: #545454;
+  }
   section#about {
     margin: 0;
     padding: 0;
@@ -710,22 +784,10 @@ section#awards dd {
   }
 }
 /*
-*
-*  Four-column grid active
-*  ----------------------------------------
-*  Margin   | #  1   2   3   4   |   Margin
-*  5.55555% | %  25  50  75  100 | 5.55555%
-*
-*/
-/*
 *  Fixes for IE6-8
 *  http://jonikorpi.com/leaving-old-IE-behind/
 *
 */
-.ie body {
-  width: 800px;
-  margin: 1em auto;
-}
 .ie body section#experience article header h1,
 .ie body section#education article h1 {
   /* 42px / 48px */
@@ -734,18 +796,7 @@ section#awards dd {
   line-height: 1.0476190476190477em;
   font-weight: normal;
 }
-.ie body section#about article {
-  /* 20 / 27px */
-
-  font-size: 1.25em;
-  line-height: 1.4300000000000002em;
-}
 /* Plain bullets for IE7 */
-.no-generatedcontent ul > li {
-  list-style: inside disc;
-  text-indent: 0;
-  margin: 0;
-}
 .no-generatedcontent section#experience article ul.roles > li {
   list-style: inside circle;
 }
@@ -753,17 +804,9 @@ section#awards dd {
   float: none;
   margin-right: 0;
 }
+/* Four-column grid. */
 /* @media screen and (min-width: 480px) */
 @media screen and (min-width: 30em) {
-  section#about header h1 {
-    /*    font-size: 4em;*/
-  
-    /* 68px / 72px */
-  
-    font-size: 4.25em;
-    line-height: 0.9705882352941176em;
-    font-weight: 400;
-  }
   section#experience article header h1,
   section#education article h1 {
     /* 34 / 40px */
@@ -773,37 +816,9 @@ section#awards dd {
     font-weight: normal;
   }
 }
-/* @media screen and (min-width: 640px) */
-@media screen and (min-width: 40em) {
-  body {
-    /* Zoom baseline grid to 17/16 = 1.0625 */
-  
-    font-size: 1.0625em;
-  }
-}
-/*
-*
-*  Eight-column grid active
-*  ----------------------------------------------------------------------
-*  Margin   | #  1     2     3     4     5     6     7     8   |   Margin
-*  5.55555% | %  12.5  25.0  37.5  50.0  62.5  75.0  87.5  100 | 5.55555%
-*	
-*
-*/
+/* Eight-column grid. */
 /* @media screen and (min-width: 720px) */
 @media screen and (min-width: 45em) {
-  body {
-    /* Reset baseline grid to 16/16 = 1 */
-  
-    font-size: 1em;
-    margin: 1em 5.55555%;
-  }
-  section#about article {
-    /* 20 / 27px */
-  
-    font-size: 1.25em;
-    line-height: 1.4300000000000002em;
-  }
   section#experience article header h1,
   section#education article h1 {
     /* 42px / 48px */
