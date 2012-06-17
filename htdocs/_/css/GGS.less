@@ -134,6 +134,16 @@ table {
     border-spacing: 0;
 }
 
+/*
+* All border-box, all the time.
+* http://paulirish.com/2012/box-sizing-border-box-ftw/
+*
+*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 /*
 *
@@ -155,12 +165,15 @@ img {
 
 // Simple elastic gutters
 // Note: box-sizing will not work in IE6-7
-.gutters () {
+.gutter-left {
   padding-left: (@line/2)/@em;
+}
+.gutter-right {
   padding-right: (@line/2)/@em;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+}
+.gutters {
+  .gutter-left;
+  .gutter-right;
 }
 
 /*
