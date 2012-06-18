@@ -9,7 +9,7 @@
     <meta name="robots" content="noindex">
 <?php endif; ?>
     <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0">
-    <meta name="cleartype" value="true">
+    <meta http-equiv="cleartype" content="on">
     <title>Keith Smiley’s Résumé</title>
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Kreon:400,700">
     <link rel="stylesheet" type="text/css" href="/_/css/resume.css">
