@@ -54,7 +54,7 @@
           </li>
         </ul>
         <p>
-          Develop and support web applications throughout the organization as a member of the core development team. Projects include:
+          Develop and support Web applications throughout the organization as a member of the core development team. Projects include:
         </p>
         <ul>
           <li>Building a Drupal-based CMS that handles more than 55&nbsp;million page views per month for 12 daily newspapers, and integrating it with existing publishing systems.</li>
@@ -75,7 +75,7 @@
           </li>
         </ul>
         <p>
-          Built databases and web applications to support faculty research and classroom instruction in the Department of Communication. Projects included:
+          Built databases and applications to support faculty research and classroom instruction in the Department of Communication. Projects included:
         </p>
         <ul>
           <li>Designing and developing a Flash-based tool to support HIV prevention campaigns in rural areas.</li>
