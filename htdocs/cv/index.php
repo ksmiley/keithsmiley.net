@@ -80,7 +80,7 @@
         <ul>
           <li>Designing and developing a Flash-based tool to support HIV prevention campaigns in rural&nbsp;areas.</li>
           <li>Adapting research surveys for use on mobile&nbsp;devices.</li>
-          <li>Planning the expansion of a system that records and analyzes 400 hours of television&nbsp;daily.</li>
+          <li>Planning the expansion of a system that records and analyzes 400&nbsp;hours of television&nbsp;daily.</li>
         </ul>
       </article>
       <article>
