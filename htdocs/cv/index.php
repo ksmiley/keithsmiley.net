@@ -34,7 +34,7 @@
       </header>
       <article>
         <p>
-          <strong>A software developer with a journalist’s&nbsp;curiosity.</strong> <i class="icon-cog"></i>&nbsp;I'm interested in telling human stories and solving civic problems through technology. <i class="icon-cog"></i>&nbsp;I’m familiar with all levels of the software stack that underlies the Web and with the protocols that tie it together. <i class="icon-cog"></i>&nbsp;With my journalism background and technical knowledge, I want to create innovative ways of sharing and applying information, to give meaning to data so it has impact.
+          <strong>A software developer with a journalist’s&nbsp;curiosity.</strong> <i class="icon-cog"></i>&nbsp;I'm interested in telling human stories and solving civic problems through technology. <i class="icon-cog"></i>&nbsp;I’m familiar with all levels of the software stack that underlies the Web and with the protocols that tie it together. <i class="icon-cog"></i>&nbsp;With my journalism background and technical knowledge, I want to create innovative ways of sharing and applying information, to give meaning to data so it has&nbsp;impact.
         </p>
       </article>
   	</section>
@@ -54,14 +54,14 @@
           </li>
         </ul>
         <p>
-          Develop and support Web applications throughout the organization as a member of the core development team. Projects include:
+          Develop and support Web applications throughout the organization as a member of the core development team. Projects&nbsp;include:
         </p>
         <ul>
-          <li>Building a Drupal-based CMS that handles more than 55&nbsp;million page views per month for 12 daily newspapers, and integrating it with existing publishing systems.</li>
-          <li>Refactoring development processes for faster deployment across distinct sites. I have reduced the commands needed to build a release from a dozen to one and am leading a transition to Git.</li>
+          <li>Building a Drupal-based CMS that handles more than 55&nbsp;million page views per month for 12 daily newspapers, and integrating it with existing publishing&nbsp;systems.</li>
+          <li>Refactoring development processes for faster deployment across distinct sites. I have reduced the commands needed to build a release from a dozen to one and am leading a transition to&nbsp;Git.</li>
           <li>Supporting legacy systems, such as adding functionality to a custom programming language that runs our advertising products.</li>
           <li>Analyzing and improving performance, including reducing page render time by more than a second.</li>
-          <li>Coaching developers at the newspapers on how to use and improve the Drupal CMS.</li>
+          <li>Coaching developers at the newspapers on how to use and improve the Drupal&nbsp;CMS.</li>
         </ul>
       </article>
       <article>
@@ -75,12 +75,12 @@
           </li>
         </ul>
         <p>
-          Built databases and applications to support faculty research and classroom instruction in the Department of Communication. Projects included:
+          Built databases and applications to support faculty research and classroom instruction in the Department of Communication. Projects&nbsp;included:
         </p>
         <ul>
-          <li>Designing and developing a Flash-based tool to support HIV prevention campaigns in rural areas.</li>
-          <li>Adapting research surveys for use on mobile devices.</li>
-          <li>Planning the expansion of a system that records and analyzes 400 hours of television daily.</li>
+          <li>Designing and developing a Flash-based tool to support HIV prevention campaigns in rural&nbsp;areas.</li>
+          <li>Adapting research surveys for use on mobile&nbsp;devices.</li>
+          <li>Planning the expansion of a system that records and analyzes 400 hours of television&nbsp;daily.</li>
         </ul>
       </article>
       <article>
@@ -94,7 +94,7 @@
           </li>
         </ul>
         <p>
-          Spent 16 weeks as a general-assignment photographer covering politics, regional news, features and sports. The internship was through the <a href="http://www.wcpj.org/">Washington Center for Politics and Journalism</a>.
+          Spent 16 weeks as a general-assignment photographer covering politics, regional news, features and sports. The internship was through the <a href="http://www.wcpj.org/">Washington Center for Politics and&nbsp;Journalism</a>.
         </p>
       </article>
       <article>
@@ -108,7 +108,7 @@
           </li>
         </ul>
         <p>
-          Worked on the news copy desk editing stories, designing pages and selecting wire stories. The internship was through the <a href="https://www.newsfund.org/">Dow Jones Newspaper Fund</a> and included two weeks of training in Austin, Texas.
+          Worked on the news copy desk editing stories, designing pages and selecting wire stories. The internship was through the <a href="https://www.newsfund.org/">Dow Jones Newspaper Fund</a> and included two weeks of training in Austin,&nbsp;Texas.
         </p>
       </article>
       <article>
@@ -128,7 +128,7 @@
           </li>
         </ul>
         <p>
-          Oversaw daily news gathering and production, planned short- and long-term stories, and managed a staff of more than 40 as editor of the 17,000-circulation independent daily newspaper. Projects included producing an eight-page section that followed a lecturer and Vietnam War veteran as he returned to the country with a group of students, and creating election guides for student government and statewide races. For my year as editor the newspaper received the Pacemaker award recognizing the top college newspapers in the country and the Kentucky Press Association’s General Excellence award.
+          Oversaw daily news gathering and production, planned short- and long-term stories, and managed a staff of more than 40 as editor of the 17,000-circulation independent daily newspaper. Projects included producing an eight-page section that followed a lecturer and Vietnam War veteran as he returned to the country with a group of students, and creating election guides for student government and statewide races. For my year as editor the newspaper received the Pacemaker award recognizing the top college newspapers in the country and the Kentucky Press Association’s General Excellence&nbsp;award.
         </p>
       </article>
       <article>
@@ -142,7 +142,7 @@
           </li>
         </ul>
         <p>
-          Photographed a variety of assignments, including breaking news, sports, feature and business stories.
+          Photographed a variety of assignments, including breaking news, sports, feature and business&nbsp;stories.
         </p>
       </article>
       <article>
@@ -222,7 +222,7 @@
             <dt>Spirit of Morris DigitalWorks</dt>
             <dd>Development team award for&nbsp;2010.</dd>
             <dt>Associated Collegiate Press Pacemaker</dt>
-            <dd>The Kentucky Kernel was named one of the best college newspapers for my year as editor.</dd>
+            <dd>The Kentucky Kernel was named one of the best college newspapers for my year as&nbsp;editor.</dd>
             <dt>UK Dean’s List</dt>
             <dd>Fall&nbsp;2004, Spring&nbsp;2005, Fall&nbsp;2005, Fall&nbsp;2006, Spring&nbsp;2007, Spring&nbsp;2009 and Fall&nbsp;2009</dd>
             <dt>Hearst Journalism Awards for Photojournalism</dt>
