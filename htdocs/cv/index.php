@@ -57,10 +57,10 @@
           Develop and support Web applications throughout the organization as a member of the core development team. Projects&nbsp;include:
         </p>
         <ul>
-          <li>Building a Drupal-based CMS that handles more than 55&nbsp;million page views per month for 12 daily newspapers, and integrating it with existing publishing&nbsp;systems.</li>
+          <li>Building a Drupal-based CMS that handles more than 55&nbsp;million page views per month for 12&nbsp;daily newspapers, and integrating it with existing publishing&nbsp;systems.</li>
           <li>Refactoring development processes for faster deployment across distinct sites. I have reduced the commands needed to build a release from a dozen to one and am leading a transition to&nbsp;Git.</li>
-          <li>Supporting legacy systems, such as adding functionality to a custom programming language that runs our advertising products.</li>
-          <li>Analyzing and improving performance, including reducing page render time by more than a second.</li>
+          <li>Supporting legacy systems, such as adding functionality to a custom programming language that runs our advertising&nbsp;products.</li>
+          <li>Analyzing and improving performance, including reducing page render time by more than a&nbsp;second.</li>
           <li>Coaching developers at the newspapers on how to use and improve the Drupal&nbsp;CMS.</li>
         </ul>
       </article>
@@ -188,7 +188,7 @@
             <li>Shell scripting</li>
             <li>C</li>
             <li>SQL</li>
-            <li>LAMP Architecture</li>
+            <li>LAMP architecture</li>
             <li>Drupal</li>
             <li>Source control (Perforce and Git)</li>
           </ul>
@@ -224,9 +224,9 @@
             <dt>Associated Collegiate Press Pacemaker</dt>
             <dd>The Kentucky Kernel was named one of the best college newspapers for my year as&nbsp;editor.</dd>
             <dt>UK Dean’s List</dt>
-            <dd>Fall&nbsp;2004, Spring&nbsp;2005, Fall&nbsp;2005, Fall&nbsp;2006, Spring&nbsp;2007, Spring&nbsp;2009 and Fall&nbsp;2009</dd>
+            <dd>Fall&nbsp;2004, Spring&nbsp;2005, Fall&nbsp;2005, Fall&nbsp;2006, Spring&nbsp;2007, Spring&nbsp;2009 and Fall&nbsp;2009.</dd>
             <dt>Hearst Journalism Awards for Photojournalism</dt>
-            <dd>7th Place, Sports&nbsp;&amp;&nbsp;News (2007); 19th Place, Sports&nbsp;&amp;&nbsp;News (2006)</dd>
+            <dd>7th Place, Sports&nbsp;&amp;&nbsp;News (2007); 19th Place, Sports&nbsp;&amp;&nbsp;News (2006).</dd>
           </dl>
         </article>
       </section>
