@@ -31,7 +31,7 @@
       </header>
       <article>
         <p>
-          A sampling of projects that I’ve been substantially responsible for.
+          I've worked in newsrooms and on development teams performing a variety of roles. Oftentimes I take on several roles in a project, whether it’s doing both front- and back-end development on software or doing both the editing and page design of a news project. Below is a selection of projects I had a substantial role in completing.
         </p>
       </article>
     </section>
@@ -46,7 +46,7 @@
           <img src="images/follow-small.png">
         </figure>
         <p>
-          Created a feature on Morris newspaper sites to push custom news updates to readers without requiring any action from editors. That is, “<a href="http://www.yelvington.com/content/follow-article-home-delivery-web">home delivery for the Web</a>.” The project came to the development team as a one-page proposal. Starting from that document, I designed much the user experience and built the feature on top of the Drupal <a href="http://drupal.org/project/messaging">Messaging</a> and <a href="http://drupal.org/project/notifications">Notifications</a> frameworks. A custom module implemented the interface and a second module funneled notifcations through our e-mail marketing provider, which allowed us to track open and clickthrough rates. The Follow feature has been operating on 10 sites for about a year. In that time More than 6,000 users have followed 17,000 topics.
+          Created a feature on Morris newspaper sites to push custom news updates to readers without requiring any action from editors. My colleague calls it “<a href="http://www.yelvington.com/content/follow-article-home-delivery-web">home delivery for the Web</a>.” The project came to the development team as a one-page proposal. Starting from that document, I designed much the user experience and built the feature on top of the <a href="http://www.opencalais.com/">Calais service</a>, and the Drupal <a href="http://drupal.org/project/messaging">Messaging</a> and <a href="http://drupal.org/project/notifications">Notifications</a> frameworks. A custom module implemented the interface and a second module funneled notifcations through our e-mail marketing provider, which allowed us to track open and clickthrough rates. The Follow feature has been operating on 10 sites for about a year. In that time more than 6,000 users have followed 17,000 topics.
         </p>
       </article>
       <article>
@@ -70,7 +70,7 @@
           <img src="images/story_page-small.png">
         </figure>
         <p>
-          Collaborated with a developer at the Athens Banner-Herald on a redesign of the main article display that emphasizes the writing and photography. My role was to carefully review the prototype created by the newspaper’s developer and ensure that it would perform well on the live site.
+          Collaborated with a developer at the Athens Banner-Herald on a redesign of the newspaper’s main article display that emphasizes the writing and photography. My role was to carefully review the prototype created by the newspaper’s developer and ensure that it would perform well on the live site.
         </p>
       </article>
       <article>
