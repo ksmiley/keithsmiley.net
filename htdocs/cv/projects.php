@@ -38,49 +38,57 @@
     <section id="projects">
       <h1>Code</h1>
       <article>
-        <hgroup>
-          <h1>Follow News</h1>
-          <h2>Morris DigitalWorks</h2>
-        </hgroup>
-        <figure>
-          <img src="images/follow-small.png">
-        </figure>
+        <div class="column">
+          <hgroup>
+            <h1>Follow News</h1>
+            <h2>Morris DigitalWorks</h2>
+          </hgroup>
+          <figure>
+            <img src="images/follow-small.png">
+          </figure>
+        </div>
         <p>
           Created a feature on Morris newspaper sites to push custom news updates to readers without requiring any action from editors. My colleague calls it “<a href="http://www.yelvington.com/content/follow-article-home-delivery-web">home delivery for the Web</a>.” The project came to the development team as a one-page proposal. Starting from that document, I designed much the user experience and built the feature on top of the <a href="http://www.opencalais.com/">Calais service</a>, and the Drupal <a href="http://drupal.org/project/messaging">Messaging</a> and <a href="http://drupal.org/project/notifications">Notifications</a> frameworks. A custom module implemented the interface and a second module funneled notifcations through our e-mail marketing provider, which allowed us to track open and clickthrough rates. The Follow feature has been operating on 10 sites for about a year. In that time more than 6,000 users have followed 17,000 topics.
         </p>
       </article>
       <article>
-        <hgroup>
-          <h1>Project CREATE</h1>
-          <h2>UK Department of Communication</h2>
-        </hgroup>
-        <figure>
-          <img src="images/poster-small.png">
-        </figure>
+        <div class="column">
+          <hgroup>
+            <h1>Project CREATE</h1>
+            <h2>UK Department of Communication</h2>
+          </hgroup>
+          <figure>
+            <img src="images/poster-small.png">
+          </figure>
+        </div>
         <p>
           Designed and built a Web application to support HIV prevention in rural parts of the United States by allowing public-health workers to create posters tailored to local demographics. University of Kentucky faculty working with the <a href="http://www.indiana.edu/~aids/">Rural Center for AIDS/STD Prevention</a> asked us in May 2009 to take on the “poster maker” project with hopes of launching a pilot program in August. With the help of another developer, I designed and built the Flash-based frontend over the summer. When the pilot was delayed, we built a backend with PHP and Filemaker to store posters as they’re built and let participants order a favorite.
         </p>
       </article>
       <article>
-        <hgroup>
-          <h1>Article Page Redesign</h1>
-          <h2>Morris DigitalWorks</h2>
-        </hgroup>
-        <figure>
-          <img src="images/story_page-small.png">
-        </figure>
+        <div class="column">
+          <hgroup>
+            <h1>Article Page Redesign</h1>
+            <h2>Morris DigitalWorks</h2>
+          </hgroup>
+          <figure>
+            <img src="images/story_page-small.png">
+          </figure>
+        </div>
         <p>
           Collaborated with a developer at the Athens Banner-Herald on a redesign of the newspaper’s main article display that emphasizes the writing and photography. My role was to carefully review the prototype created by the newspaper’s developer and ensure that it would perform well on the live site.
         </p>
       </article>
       <article>
-        <hgroup>
-          <h1>Single Sign&#8209;On</h1>
-          <h2>Morris DigitalWorks</h2>
-        </hgroup>
-        <figure>
-          <img src="images/talks-small.png">
-        </figure>
+        <div class="column">
+          <hgroup>
+            <h1>Single Sign&#8209;On</h1>
+            <h2>Morris DigitalWorks</h2>
+          </hgroup>
+          <figure>
+            <img src="images/talks-small.png">
+          </figure>
+        </div>
         <p>
           Built a shared-authentication system to integrate login and registration between the main <a href="http://onlineathens.com/">Athens Banner-Herald</a> site and the newspaper’s existing comments site, <a href="http://www.athenstalks.com/">AthensTalks</a>. While both sites were built on Drupal, they had significant differences in configuration and were hosted in physically different locations. My solution was designed to be resilient, so an outage on one site would only reduce functionality on the other but would not lose data or hurt performance. The system has been running since October 2011 and has required almost no manual intervention, even during periods of heavy traffic.
         </p>

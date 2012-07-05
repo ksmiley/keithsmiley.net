@@ -42,6 +42,10 @@ section#projects {
 }
 
 section#kernel {
+  & > p {
+    margin-bottom: 1em;
+  }
+  
   article {
     
     figure {
@@ -68,7 +72,7 @@ section#kernel {
         }
       }
     }
-    
+
     p {
       width: 50%;
       float: left;
@@ -78,3 +82,54 @@ section#kernel {
   }
   
 }
+
+/* @media screen and (min-width: 480px) */
+@media screen and (min-width: 30em) {
+  h1, .fontface h1 {
+    .hefty;
+  }
+}
+
+/* @media screen and (min-width: 640px) */
+@media screen and (min-width: 40em) {
+	body {
+		/* Zoom baseline grid to 17/16 = 1.0625 */
+		font-size: (@font-size + 1) / @em;
+	}
+  
+  section#projects article {
+    .column {
+      width: 50%;
+      float: left;
+      .gutter-right;
+    }
+    
+    hgroup {
+      float: none;
+      text-align: right;
+      width: 100%;
+    }
+    
+    figure {
+      width: 100%;
+      float: none;
+      padding: 0;
+    }
+    
+    p {
+      float: right;
+      clear: none;
+      width: 50%;
+      .gutter-left;
+    }
+  }
+  
+  /* Journalism section gets too much whitespace but doesn't have enough
+     space to switch layouts. Add margins for now. */
+  section#kernel article {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
