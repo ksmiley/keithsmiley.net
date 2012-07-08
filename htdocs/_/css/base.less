@@ -25,28 +25,40 @@ ul > li {
   list-style: none;
   margin: 0.2em 0 0.2em 0.6em;
   text-indent: -0.6em;
-}
-
-ul > li:before {
-  content: '›';
-  font-size: 4/3em;
-  font-weight: bold;
-  color: lighten(@body-color, 45%);
-  margin-right: 0.1em;
+  
+  &:before {
+    content: '›';
+    font-size: 4/3em;
+    font-weight: bold;
+    color: lighten(@body-color, 45%);
+    margin-right: 0.1em;
+  }
 }
 
 .fontface ul > li {
   margin-left: 0.65em;
   text-indent: -0.63em;
+  
+  &:before {
+    content: "\f054";
+    font-size: 3/4em;
+    vertical-align: top;
+    font-family: FontAwesome;
+    font-weight: normal;
+    margin-right: 0.3em;
+  }
 }
 
-.fontface ul > li:before {
-  content: "\f054";
-  font-size: 3/4em;
-  vertical-align: top;
-  font-family: FontAwesome;
-  font-weight: normal;
-  margin-right: 0.3em;
+/* Image lists are used for slideshows and should be plain. */
+figure ul > li,
+.fontface figure ul > li {
+  list-style: none;
+  margin: 0;
+  text-indent: 0;
+  
+  &:before {
+    content: none;
+  }
 }
 
 address {
