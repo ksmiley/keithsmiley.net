@@ -28,12 +28,23 @@ section#projects {
       font-weight: normal;   
     }
   }
-  
+
+  /* At the narrow width, float the main project image to the side of the
+     heading and hide the other images. */
   figure {
+    position: relative;
     width: 50%;
     float: left;
     margin-bottom: 1em;
     .gutter-right;
+    
+    li {
+      display: none;
+
+      &:first-child {
+        display: block;
+      }
+    }
   }
   
   p {
@@ -114,6 +125,31 @@ section#kernel {
       width: 100%;
       float: none;
       padding: 0;
+      
+      /* Secondary images become visible below the first, main image. */
+      li {
+        display: block;
+        width: 100%/3;
+        padding-left: 1em;
+        float: right;
+
+        &:first-child {
+          width: 100%;
+          padding: 0;
+          margin-bottom: 1em;
+        }
+        
+        /* Keep image against right gutter even if the columns get bigger
+           than the image. */
+        a {
+          display: block;
+          text-align: right;
+          
+          img {
+            display: inline;
+          }
+        }
+      }
     }
     
     p {

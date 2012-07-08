@@ -353,6 +353,17 @@ ul > li:before {
   font-weight: normal;
   margin-right: 0.3em;
 }
+/* Image lists are used for slideshows and should be plain. */
+figure ul > li,
+.fontface figure ul > li {
+  list-style: none;
+  margin: 0;
+  text-indent: 0;
+}
+figure ul > li:before,
+.fontface figure ul > li:before {
+  content: none;
+}
 address {
   font-style: normal;
 }
@@ -592,6 +603,11 @@ section#projects article:last-child,
 section#kernel article:last-child {
   border-bottom: 0;
 }
+section#projects {
+  /* At the narrow width, float the main project image to the side of the
+     heading and hide the other images. */
+
+}
 section#projects hgroup {
   width: 50%;
   float: right;
@@ -604,10 +620,17 @@ section#projects hgroup h2 {
   font-weight: normal;
 }
 section#projects figure {
+  position: relative;
   width: 50%;
   float: left;
   margin-bottom: 1em;
   padding-right: 0.6875em;
+}
+section#projects figure li {
+  display: none;
+}
+section#projects figure li:first-child {
+  display: block;
 }
 section#projects p {
   clear: both;
@@ -674,6 +697,29 @@ section#kernel article p {
     width: 100%;
     float: none;
     padding: 0;
+    /* Secondary images become visible below the first, main image. */
+  
+  }
+  section#projects article figure li {
+    display: block;
+    width: 33.333333333333336%;
+    padding-left: 1em;
+    float: right;
+    /* Keep image against right gutter even if the columns get bigger
+             than the image. */
+  
+  }
+  section#projects article figure li:first-child {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 1em;
+  }
+  section#projects article figure li a {
+    display: block;
+    text-align: right;
+  }
+  section#projects article figure li a img {
+    display: inline;
   }
   section#projects article p {
     float: right;

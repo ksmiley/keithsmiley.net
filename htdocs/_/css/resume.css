@@ -135,6 +135,16 @@ table {
   border-spacing: 0;
 }
 /*
+* All border-box, all the time.
+* http://paulirish.com/2012/box-sizing-border-box-ftw/
+*
+*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*
 *
 *  Simple fluid media
 *
@@ -153,6 +163,16 @@ img {
   border: 0;
   -ms-interpolation-mode: bicubic;
 }
+.gutter-left {
+  padding-left: 0.6875em;
+}
+.gutter-right {
+  padding-right: 0.6875em;
+}
+.gutters {
+  padding-left: 0.6875em;
+  padding-right: 0.6875em;
+}
 /*
 *
 *	Zoomable baseline grid
@@ -164,6 +184,12 @@ body {
 
   font-size: 1em;
   line-height: 1.375em;
+}
+.tiny {
+  /* 12px / 16px */
+
+  font-size: 0.75em;
+  line-height: 1.4666666666666668em;
 }
 .small {
   /* 14px / 18px */
@@ -195,7 +221,7 @@ body {
   /* 34 / 40px */
 
   font-size: 2.125em;
-  line-height: 0.9705882352941176em;
+  line-height: 1.1323529411764706em;
 }
 .huge {
   /* 42px / 48px */
@@ -326,6 +352,17 @@ ul > li:before {
   font-family: FontAwesome;
   font-weight: normal;
   margin-right: 0.3em;
+}
+/* Image lists are used for slideshows and should be plain. */
+figure ul > li,
+.fontface figure ul > li {
+  list-style: none;
+  margin: 0;
+  text-indent: 0;
+}
+figure ul > li:before,
+.fontface figure ul > li:before {
+  content: none;
 }
 address {
   font-style: normal;
@@ -812,7 +849,7 @@ section#awards dd {
     /* 34 / 40px */
   
     font-size: 2.125em;
-    line-height: 0.9705882352941176em;
+    line-height: 1.1323529411764706em;
     font-weight: normal;
   }
 }
@@ -847,9 +884,6 @@ section#awards dd {
   section#awards {
     padding-left: 0.6875em;
     padding-right: 0.6875em;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
   }
   section#about header {
     width: 37.5%;
@@ -989,9 +1023,6 @@ section#awards dd {
   section#about {
     padding-left: 0.6875em;
     padding-right: 0.6875em;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
     width: 37.5%;
     float: left;
   }
