@@ -12,6 +12,137 @@
     <link rel="stylesheet" type="text/css" href="/_/css/projects.css">
     <script src="/_/js/modernizr-2.5.3.min.js"></script>
     <script src="/_/js/GGS.js"></script>
+    <script>
+    (function(){
+      /*
+      Simple responsive images using the noscript method. Pretty much zero
+      IE support in this version. Based on this approach:
+      http://www.headlondon.com/our-thoughts/technology/posts/creating-responsive-images-using-the-noscript-tag
+      
+      Expected markup:
+        <noscript class="responsive">
+          <img src="imagefilename-thumb.png" alt="Other attributes will be copied." title="A picture.">
+        </noscript>
+      
+      Requires responsive images to have filenames that follow a consistent
+      pattern of "basefilename-SIZE.ext". The default image inside the noscript
+      should use whatever is set in the defaultSize variable. The breakpoints
+      list must given in order from narrowest viewport to widest.
+      
+      TODO: It would be a lot cooler to use matchMedia() for the breakpoints,
+            and maybe more efficient since the resize event and debouncing
+            wouldn't be needed.
+      */
+      var defaultSize = 'thumb',
+          breakpoints = [
+            [0, 'thumb'],
+            [880, 'palm']
+          ],
+          // 
+          triggerClass = 'responsive',
+          processedClass = 'responsive-image-processed',
+          /**
+           * Create semi-empty elements for each responsive image.
+           *
+           * Must be called before setImageSize() can be used, and must be
+           * called only once.
+           */
+          setupImages = function() {
+            var sources = document.getElementsByClassName(triggerClass),
+                curSource = 0,
+                numSources = sources.length,
+                // Element outside of the DOM tree will be used to parse the
+                // noscript contents into an img element that can be moved
+                // into the tree.
+                tmpContainer = document.createElement('div'),
+                imgNode, parent, curSrc;
+            for (; curSource < numSources; curSource++) {
+              tmpContainer.innerHTML = sources[curSource].textContent;
+              imgNode = tmpContainer.getElementsByTagName('img')[0];
+              // Use accessor methods instead of .src shorthand so that
+              // the URL isn't mangled by the browser.
+              curSrc = imgNode.getAttribute('src');
+              imgNode.setAttribute('data-orig-src', curSrc);
+              imgNode.removeAttribute('src');
+              // Add a class to make it easier for setImageSize() to find.
+              imgNode.className = imgNode.className + ' ' + processedClass;
+              parent = sources[curSource].parentNode;
+              // Replace the noscript tag with the new image element.
+              parent.insertBefore(imgNode, sources[curSource]);
+              parent.removeChild(sources[curSource]);
+            }
+          },
+          /**
+           * Set all responsive images on the page to given size.
+           *
+           * It's safe to call this method multiple times without the size
+           * actually changing, though calling it rapidly could be slow.
+           *
+           * @param {string} sizeName A size in the breakpoints list.
+           */
+          setImageSize = function(sizeName) {
+            var before = '-' + defaultSize + '.',
+                after = '-' + sizeName + '.',
+                images = document.getElementsByClassName(processedClass),
+                baseSrc, curSrc, newSrc,
+                curImage = 0,
+                numImages = images.length;
+            for (; curImage < numImages; curImage++) {
+              baseSrc = images[curImage].getAttribute('data-orig-src');
+              curSrc = images[curImage].getAttribute('src');
+              newSrc = baseSrc.replace(before, after);
+              if (!curSrc || curSrc !== newSrc) {
+                images[curImage].setAttribute('src', newSrc);
+              }
+            }
+          },
+          /**
+           * Compare viewport size to the breakpoints list and update images.
+           */
+          resizeImages = function() {
+            var curWidth = window.innerWidth;
+            // Loop over breakpoints list in reverse to find the largest match.
+            for (var i = breakpoints.length - 1; i >= 0; i--) {
+              if (curWidth >= breakpoints[i][0]) {
+                setImageSize(breakpoints[i][1]);
+                break;
+              }
+            }
+          }
+          /**
+           * Helper function to prevent rapid-fire events from causing a
+           * performance problem.
+           *
+           * Source: http://unscriptable.com/2009/03/20/debouncing-javascript-methods/
+           */
+          debounce = function (func, threshold, execAsap) {
+            var timeout;
+            return function debounced () {
+              var obj = this,
+                  args = arguments,
+                  delayed = function() {
+                    if (!execAsap) {
+                      func.apply(obj, args);
+                    }
+                    timeout = null; 
+                  };
+              if (timeout) {
+                clearTimeout(timeout);
+              } else if (execAsap) {
+                func.apply(obj, args);
+              }
+              timeout = setTimeout(delayed, threshold || 100); 
+            };
+          };
+      document.addEventListener('DOMContentLoaded', function() {
+        setupImages();
+        resizeImages();
+        // Use debounce on the resize event so that changing the browser size
+        // doesn't trigger excessive breakpoint checks.
+        window.addEventListener('resize', debounce(resizeImages, 100, true));
+      });
+    }());
+    </script>
   </head>
   <body lang="en">
     <section id="about">
@@ -44,7 +175,18 @@
             <h2>Morris DigitalWorks</h2>
           </hgroup>
           <figure>
-            <img src="images/follow-small.png">
+            <ul>
+              <li>
+                <a href="images/follow.png">
+                  <noscript class="responsive">
+                    <img src="images/follow-thumb.png" alt="Cropped image of a screen capture from the Follow News feature.">
+                  </noscript>
+                </a>
+              </li>
+              <li><a href="images/follow.png"><img src="images/follow-thumb.png"></a></li>
+              <li><a href="images/follow.png"><img src="images/follow-thumb.png"></a></li>
+              <li><a href="images/follow.png"><img src="images/follow-thumb.png"></a></li>
+            </ul>
           </figure>
         </div>
         <p>
