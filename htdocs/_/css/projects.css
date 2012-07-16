@@ -221,13 +221,13 @@ body {
   /* 34 / 40px */
 
   font-size: 2.125em;
-  line-height: 1.1323529411764706em;
+  line-height: 1.1647058823529413em;
 }
 .huge {
   /* 42px / 48px */
 
   font-size: 2.625em;
-  line-height: 1.0476190476190477em;
+  line-height: 1.1392857142857142em;
 }
 .massive {
   /* 68px / 72px */
@@ -447,7 +447,7 @@ section#about header h1 {
   /* 42px / 48px */
 
   font-size: 2.625em;
-  line-height: 1.0476190476190477em;
+  line-height: 1.1392857142857142em;
   font-weight: bold;
 }
 .fontface section#about header h1 {
@@ -592,6 +592,82 @@ section#about article i[class*=" icon-"]:before {
     line-height: 1.4300000000000002em;
   }
 }
+/* @media screen and (min-width: 888px) */
+@media screen and (min-width: 55.5em) {
+  body {
+    /* Zoom baseline grid to 17/16 = 1.0625 */
+  
+    font-size: 1.0625em;
+    margin-top: 2em;
+  }
+}
+/* @media screen and (min-width: 984px) */
+@media screen and (min-width: 61.5em) {
+  body {
+    /* Reset baseline grid to 16/16 = 1.0 */
+  
+    font-size: 1em;
+  }
+}
+/* @media screen and (min-width: 1200px) */
+@media screen and (min-width: 75em) {
+  body {
+    /* Zoom baseline grid to 17/16 = 1.0625 */
+  
+    font-size: 1.0625em;
+  }
+}
+/* @media screen and (min-width: 1392px) */
+@media screen and (min-width: 87em) {
+  body {
+    /* Reset baseline grid to 16/16 = 1.0 */
+  
+    font-size: 1em;
+  }
+}
+/* @media screen and (min-width: 1680px) */
+@media screen and (min-width: 105em) {
+  body {
+    /* Zoom baseline grid to 17/16 = 1.0625 */
+  
+    font-size: 1.0625em;
+    margin-top: 3em;
+  }
+}
+/*
+*
+*  Sixteen-column grid active
+*  ----------------------------------------------------------------------------------------------------------------------
+*  Margin   | #  1     2     3     4     5     6     7     8     9     10    11    12    13    14    15    16  |   Margin
+*  5.55555% | %  6.25  12.5  18.75 25.0  31.25 37.5  43.75 50.0  56.25 62.5  68.75 75.0  81.25 87.5  93.75 100 | 5.55555%
+*	
+*
+*/
+/* @media screen and (min-width: 1872px) */
+@media screen and (min-width: 117em) {
+  /* Not currently used. */
+}
+/* @media screen and (min-width: 2080px) */
+@media screen and (min-width: 130em) {
+  body {
+    /* Zoom baseline grid to 18/16 = 1.125 */
+  
+    font-size: 1.125em;
+    /* Cap page width. */
+  
+    max-width: 160em;
+    margin-top: 4em;
+  }
+}
+@media screen and (min-width: 180em) {
+  /* Switch from percentage-based margin to centered. */
+  body {
+    margin: 4em auto;
+  }
+}
+article figure img {
+  border: 1px solid #bfbfbf;
+}
 section#projects article,
 section#kernel article {
   padding-bottom: 1em;
@@ -624,6 +700,7 @@ section#projects figure {
   width: 50%;
   float: left;
   margin-bottom: 1em;
+  overflow: hidden;
   padding-right: 0.6875em;
 }
 section#projects figure li {
@@ -645,7 +722,6 @@ section#kernel article figure {
   padding-right: 0.6875em;
 }
 section#kernel article figure img {
-  border: 1px solid #143352;
   margin: 0.2em auto;
 }
 section#kernel article figure figcaption {
@@ -673,16 +749,11 @@ section#kernel article p {
     /* 34 / 40px */
   
     font-size: 2.125em;
-    line-height: 1.1323529411764706em;
+    line-height: 1.1647058823529413em;
   }
 }
 /* @media screen and (min-width: 640px) */
 @media screen and (min-width: 40em) {
-  body {
-    /* Zoom baseline grid to 17/16 = 1.0625 */
-  
-    font-size: 1.0625em;
-  }
   section#projects article .column {
     width: 50%;
     float: left;
@@ -726,6 +797,9 @@ section#kernel article p {
     clear: none;
     width: 50%;
     padding-left: 0.6875em;
+    /* Move first line down to have roughly the same baseline as the h1. */
+  
+    margin-top: 1em;
   }
   /* Journalism section gets too much whitespace but doesn't have enough
        space to switch layouts. Add margins for now. */
@@ -733,5 +807,156 @@ section#kernel article p {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+/* @media screen and (min-width: 888px) */
+@media screen and (min-width: 55.5em) {
+  h1,
+  .fontface h1 {
+    /* 42px / 48px */
+  
+    font-size: 2.625em;
+    line-height: 1.1392857142857142em;
+    font-weight: normal;
+  }
+  section#projects article {
+    /* Adjust article header so it's positioned the same as before (right-align
+         above main image) but extends all the way across and pushes the body
+         down. */
+  
+    /* Make thumbnails 4 to a line instead of 3. */
+  
+  }
+  section#projects article .column {
+    width: 100%;
+    float: none;
+  }
+  section#projects article hgroup {
+    width: 100%;
+    padding-right: 34%;
+  }
+  section#projects article figure {
+    width: 66%;
+    float: left;
+  }
+  section#projects article p {
+    width: 34%;
+    margin-top: 0;
+  }
+  section#projects article figure li {
+    width: 25%;
+  }
+  /* Change journalism section to one-column entries. */
+  section#kernel article {
+    width: 25%;
+    margin-left: 0;
+    margin-right: 0;
+    border-bottom: 0;
+    float: left;
+    clear: none;
+    padding-left: 0.6875em;
+    padding-right: 0.6875em;
+  }
+  section#kernel article figure,
+  section#kernel article p {
+    float: none;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 1em;
+  }
+}
+/* @media screen and (min-width: 984px) */
+@media screen and (min-width: 61.5em) {
+  /* Make contents of experience section narrower to keep line length manageable. */
+  section#projects article {
+    width: 87.5%;
+    margin-left: 6.25%;
+  }
+}
+/* @media screen and (min-width: 1200px) */
+@media screen and (min-width: 75em) {
+  /* Sit this one out. */
+}
+/* @media screen and (min-width: 1392px) */
+@media screen and (min-width: 87em) {
+  /* Switch about block to stacked from side-by-side. Requires resetting gutter
+       to be on container. */
+  section#about {
+    padding-left: 0.6875em;
+    padding-right: 0.6875em;
+    width: 25%;
+    float: left;
+  }
+  section#about header {
+    border-bottom: 4px double #545454;
+  }
+  section#about header h1 {
+    /* Force name to two lines. */
+  
+    margin-right: 2em;
+  }
+  section#about header address {
+    border-top: 0;
+  }
+  section#about article p {
+    text-indent: 0;
+  }
+  section#projects {
+    width: 75%;
+    float: right;
+    padding-right: 0;
+    padding-left: 0.6875em;
+    /* Remove narrowing margins from projets. */
+  
+  }
+  section#projects article {
+    width: 100%;
+    margin-left: 0;
+    /* Keep some breathing room between images and about section. */
+  
+  }
+  section#projects article figure {
+    padding-left: 1em;
+  }
+  section#kernel {
+    width: 75%;
+    float: right;
+    padding-left: 0.6875em;
+  }
+}
+/* @media screen and (min-width: 1680px) */
+@media screen and (min-width: 105em) {
+  /* No change */
+}
+/* @media screen and (min-width: 1872px) */
+@media screen and (min-width: 117em) {
+  /* Change journalis to a column down the right. */
+  section#projects {
+    width: 56.25%;
+    float: left;
+    padding-left: 0.6875em;
+    padding-right: 0.6875em;
+  }
+  section#kernel {
+    width: 18.75%;
+    float: right;
+    padding-left: 0.6875em;
+  }
+  section#kernel  > p {
+    padding: 0 1em;
+    /* 14px / 18px */
+  
+    font-size: 0.875em;
+    line-height: 1.2571428571428573em;
+  }
+  section#kernel article {
+    /* 14px / 18px */
+  
+    font-size: 0.875em;
+    line-height: 1.2571428571428573em;
+    float: none;
+    padding: 0;
+    width: 62.5%;
+    margin-left: 18.75%;
   }
 }
