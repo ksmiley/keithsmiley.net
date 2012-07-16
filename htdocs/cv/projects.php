@@ -10,6 +10,7 @@
     <title>Keith Smiley’s Résumé &mdash; Projects</title>
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Kreon:400,700">
     <link rel="stylesheet" type="text/css" href="/_/css/projects.css">
+    <link rel="stylesheet" type="text/css" href="/_/css/photoswipe.css">
     <script src="/_/js/modernizr-2.5.3.min.js"></script>
     <script src="/_/js/GGS.js"></script>
     <script>
@@ -378,6 +379,18 @@
         </p>
       </article>
     </section>
+    <script src="/_/js/jquery-klass-photoswipe.min.js"></script>
+    <script>
+    $(function() {
+      $("#projects article").each(function() {
+        $("figure li > a", this).photoSwipe({
+          loop: false,
+          preventSlideshow: true,
+          imageScaleMethod: 'fitNoUpscale'
+        });
+      });
+    });
+    </script>
 <?php include "../js-footer.inc.php"; ?>
   </body>
 </html>
