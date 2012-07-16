@@ -33,10 +33,10 @@
             and maybe more efficient since the resize event and debouncing
             wouldn't be needed.
       */
-      var defaultSize = 'thumb',
+      var defaultSize = 'lo',
           breakpoints = [
-            [0, 'thumb'],
-            [880, 'palm']
+            [0,   'lo'],
+            [888, 'hi']
           ],
           // 
           triggerClass = 'responsive',
@@ -69,7 +69,7 @@
               parent = sources[curSource].parentNode;
               // Replace the noscript tag with the new image element.
               parent.insertBefore(imgNode, sources[curSource]);
-              parent.removeChild(sources[curSource]);
+              // parent.removeChild(sources[curSource]);
             }
           },
           /**
@@ -139,7 +139,7 @@
         resizeImages();
         // Use debounce on the resize event so that changing the browser size
         // doesn't trigger excessive breakpoint checks.
-        window.addEventListener('resize', debounce(resizeImages, 100, true));
+        window.addEventListener('resize', debounce(resizeImages));
       });
     }());
     </script>
