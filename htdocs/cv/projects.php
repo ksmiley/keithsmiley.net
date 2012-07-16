@@ -168,7 +168,7 @@
     </section>
     <section id="projects">
       <h1>Code</h1>
-      <article>
+      <article id="project-follow">
         <div class="column">
           <hgroup>
             <h1>Follow News</h1>
@@ -177,15 +177,40 @@
           <figure>
             <ul>
               <li>
-                <a href="images/follow.png">
+                <a href="images/follow-full.png">
                   <noscript class="responsive">
-                    <img src="images/follow-thumb.png" alt="Cropped image of a screen capture from the Follow News feature.">
+                    <img src="images/follow-thumb-lo.png" alt="Cropped image of a screen capture from the Follow News feature.">
                   </noscript>
                 </a>
               </li>
-              <li><a href="images/follow.png"><img src="images/follow-thumb.png"></a></li>
-              <li><a href="images/follow.png"><img src="images/follow-thumb.png"></a></li>
-              <li><a href="images/follow.png"><img src="images/follow-thumb.png"></a></li>
+              <li>
+                <a href="images/follow-email-full.png">
+                  <noscript class="responsive">
+                    <img src="images/follow-email-lo.png" alt="Cropped image of an email update sent by Follow.">
+                  </noscript>
+                </a>
+              </li>
+              <li>
+                <a href="images/follow-manage-full.png">
+                  <noscript class="responsive">
+                    <img src="images/follow-manage-lo.png" alt="Cropped image of the Follow management screen.">
+                  </noscript>
+                </a>
+              </li>
+              <li>
+                <a href="images/follow-login-full.png">
+                  <noscript class="responsive">
+                    <img src="images/follow-login-lo.png" alt="Cropped image of a login screen.">
+                  </noscript>
+                </a>
+              </li>
+              <li>
+                <a href="images/follow-original-full.png">
+                  <noscript class="responsive">
+                    <img src="images/follow-original-lo.png" alt="Cropped image of a subscription screen without any customization.">
+                  </noscript>
+                </a>
+              </li>
             </ul>
           </figure>
         </div>
@@ -193,42 +218,101 @@
           Created a feature on Morris newspaper sites to push custom news updates to readers without requiring any action from editors. My colleague calls it “<a href="http://www.yelvington.com/content/follow-article-home-delivery-web">home delivery for the Web</a>.” The project came to the development team as a one-page proposal. Starting from that document, I designed much the user experience and built the feature on top of the <a href="http://www.opencalais.com/">Calais service</a>, and the Drupal <a href="http://drupal.org/project/messaging">Messaging</a> and <a href="http://drupal.org/project/notifications">Notifications</a> frameworks. A custom module implemented the interface and a second module funneled notifcations through our e-mail marketing provider, which allowed us to track open and clickthrough rates. The Follow feature has been operating on 10 sites for about a year. In that time more than 6,000 users have followed 17,000 topics.
         </p>
       </article>
-      <article>
+      <article id="project-create">
         <div class="column">
           <hgroup>
             <h1>Project CREATE</h1>
             <h2>UK Department of Communication</h2>
           </hgroup>
           <figure>
-            <img src="images/poster-small.png">
+            <ul>
+              <li>
+                <a href="images/poster-full.png">
+                  <noscript class="responsive">
+                    <img src="images/poster-thumb-lo.png" alt="Cropped image of the poster-maker software showing a stock photograph with text overlaid.">
+                  </noscript>
+                </a>
+              </li>
+        <li>
+                <a href="images/poster-review-full.png">
+                  <noscript class="responsive">
+                    <img src="images/poster-review-lo.png" alt="Cropped image of a screen showing thumbnails of saved posters.">
+                  </noscript>
+                </a>
+              </li>
+        <li>
+                <a href="images/poster-custom-full.png">
+                  <noscript class="responsive">
+                    <img src="images/poster-custom-lo.png" alt="Cropped image of a textbox with a statistic typed into it.">
+                  </noscript>
+                </a>
+              </li>
+        <li>
+                <a href="images/poster-change-full.png">
+                  <noscript class="responsive">
+                    <img src="images/poster-change-lo.png" alt="Cropped image of a screen with forms for changing account information.">
+                  </noscript>
+                </a>
+              </li>
+            </ul>
           </figure>
         </div>
         <p>
           Designed and built a Web application to support HIV prevention in rural parts of the United States by allowing public-health workers to create posters tailored to local demographics. University of Kentucky faculty working with the <a href="http://www.indiana.edu/~aids/">Rural Center for AIDS/STD Prevention</a> asked us in May 2009 to take on the “poster maker” project with hopes of launching a pilot program in August. With the help of another developer, I designed and built the Flash-based frontend over the summer. When the pilot was delayed, we built a backend with PHP and Filemaker to store posters as they’re built and let participants order a favorite.
         </p>
       </article>
-      <article>
+      <article id="project-article">
         <div class="column">
           <hgroup>
             <h1>Article Page Redesign</h1>
             <h2>Morris DigitalWorks</h2>
           </hgroup>
           <figure>
-            <img src="images/story_page-small.png">
+            <ul>
+              <li>
+                <a href="images/story_page-full.png">
+                  <noscript class="responsive">
+                    <img src="images/story_page-thumb-lo.png" alt="Cropped image of an article with photos on the Athens Banner-Herald site.">
+                  </noscript>
+                </a>
+              </li>
+              <li>
+                <a href="images/story_page-before-full.png">
+                  <noscript class="responsive">
+                    <img src="images/story_page-before-lo.png" alt="Cropped image of an article on the Athens Banner-Herald site using the old template.">
+                  </noscript>
+                </a>
+              </li>
+              <li>
+                <a href="images/story_page-author-full.png">
+                  <noscript class="responsive">
+                    <img src="images/story_page-author-lo.png" alt="Cropped image of a box on a story page showing details about the author.">
+                  </noscript>
+                </a>
+              </li>
+            </ul>
           </figure>
         </div>
         <p>
           Collaborated with a developer at the Athens Banner-Herald on a redesign of the newspaper’s main article display that emphasizes the writing and photography. My role was to carefully review the prototype created by the newspaper’s developer and ensure that it would perform well on the live site.
         </p>
       </article>
-      <article>
+      <article id="project-sso">
         <div class="column">
           <hgroup>
             <h1>Single Sign&#8209;On</h1>
             <h2>Morris DigitalWorks</h2>
           </hgroup>
           <figure>
-            <img src="images/talks-small.png">
+            <ul>
+              <li>
+                <a href="images/talks-full.png">
+                  <noscript class="responsive">
+                    <img src="images/talks-thumb-lo.png" alt="Cropped image of a cross-domain login screen from Athens Talks.">
+                  </noscript>
+                </a>
+              </li>
+            </ul>
           </figure>
         </div>
         <p>
@@ -241,36 +325,52 @@
       <p>
         During my year as editor in chief of the <a href="http://kykernel.com/">Kentucky Kernel</a>, the University of Kentucky’s student newspaper, we published several major projects and were <a href="http://studentpressblogs.org/acp/?p=26">recognized by the Associated Collegiate Press</a> as one of the top college papers in the country. Below are PDF versions of some of the projects I edited and designed.
       </p>
-      <article>
+      <article id="jou-vietnam">
         <figure>
-          <a href="projects/vietnam.pdf"><img src="images/vietnam_thumb.jpg"></a>
+          <a href="projects/vietnam.pdf">
+            <noscript class="responsive">
+              <img src="images/vietnam-thumb-lo.png" alt="Cropped image of a newspaper cover showing the healdine &quot;Bridging past and present.&quot;">
+            </noscript>
+          </a>
           <figcaption>PDF, 6.3&nbsp;MB</figcaption>
         </figure>
         <p>
           Special section that follows a UK instructor and Vietnam War veteran as he returns to the country with a group of students.
         </p>
       </article>
-      <article>
+      <article id="jou-aids">
         <figure>
-          <a href="projects/fuller_aids.pdf"><img src="images/fuller_thumb.jpg"></a>
+          <a href="projects/fuller_aids.pdf">
+            <noscript class="responsive">
+              <img src="images/fuller-thumb-lo.png" alt="Partial image of the first page of the article about an AIDS patient with the headline &quot;Living through the nightmare.&quot;">
+            </noscript>
+          </a>
           <figcaption>PDF, 1.4&nbsp;MB</figcaption>
         </figure>
         <p>
           Profile of a man who has been HIV-positive for two decades that we published for World AIDS Day.
         </p>
       </article>
-      <article>
+      <article id="jou-sg">
         <figure>
-          <a href="projects/sg_guide.pdf"><img src="images/sg_guide_thumb.jpg"></a>
+          <a href="projects/sg_guide.pdf">
+            <noscript class="responsive">
+              <img src="images/sg_guide-thumb-lo.png" alt="Cropped image of a newspaper page showing the headline &quot;Voter’s Guide.&quot;">
+            </noscript>
+          </a>
           <figcaption>PDF, 1&nbsp;MB</figcaption>
         </figure>
         <p>
           Voter’s guide that presents a survey we sent to all candidates for Student Government Senate.
         </p>
       </article>
-      <article>
+      <article id="jou-gov">
         <figure>
-          <a href="projects/gov_guide_reordered.pdf"><img src="images/gov_guide_thumb.jpg"></a>
+          <a href="projects/gov_guide_reordered.pdf">
+            <noscript class="responsive">
+              <img src="images/gov_guide-thumb-lo.png" alt="Cover of a newspaper election guide with an illustration of two candidates arm wrestling.">
+            </noscript>
+          </a>
           <figcaption>PDF, 6.1&nbsp;MB</figcaption>
         </figure>
         <p>
