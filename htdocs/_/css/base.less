@@ -253,3 +253,80 @@ section#about article {
     .largeish;
   }
 }
+
+/* @media screen and (min-width: 888px) */
+@media screen and (min-width: 55.5em) {
+  body {
+    /* Zoom baseline grid to 17/16 = 1.0625 */
+    font-size: (@font-size + 1) / @em;
+    margin-top: 2em;
+  }
+}
+
+/* @media screen and (min-width: 984px) */
+@media screen and (min-width: 61.5em) {
+  body {
+    /* Reset baseline grid to 16/16 = 1.0 */
+    font-size: (@font-size) / @em;
+	}
+}
+
+/* @media screen and (min-width: 1200px) */
+@media screen and (min-width: 75em) {	
+	body {
+		/* Zoom baseline grid to 17/16 = 1.0625 */
+		font-size: (@font-size + 1) / @em;
+	}
+}
+
+/* @media screen and (min-width: 1392px) */
+@media screen and (min-width: 87em) {	
+	body {
+		/* Reset baseline grid to 16/16 = 1.0 */
+		font-size: (@font-size) / @em;
+	}
+}
+
+/* @media screen and (min-width: 1680px) */
+@media screen and (min-width: 105em) {
+	body {
+		/* Zoom baseline grid to 17/16 = 1.0625 */
+		font-size: (@font-size + 1) / @em;
+    margin-top: 3em;
+	}
+}
+
+/*
+*
+*  Sixteen-column grid active
+*  ----------------------------------------------------------------------------------------------------------------------
+*  Margin   | #  1     2     3     4     5     6     7     8     9     10    11    12    13    14    15    16  |   Margin
+*  5.55555% | %  6.25  12.5  18.75 25.0  31.25 37.5  43.75 50.0  56.25 62.5  68.75 75.0  81.25 87.5  93.75 100 | 5.55555%
+*	
+*
+*/
+
+/* @media screen and (min-width: 1872px) */
+@media screen and (min-width: 117em) {
+  /* Not currently used. */
+}
+
+/* @media screen and (min-width: 2080px) */
+@media screen and (min-width: 130em) {
+
+	body {
+		/* Zoom baseline grid to 18/16 = 1.125 */
+		font-size: (@font-size + 2) / @em;
+    /* Cap page width. */
+		max-width: 2560/@em;
+    margin-top: 4em;
+	}
+	
+}
+
+@media screen and (min-width: 180em) {
+  /* Switch from percentage-based margin to centered. */
+  body {
+    margin: 4em auto;
+  }
+}
