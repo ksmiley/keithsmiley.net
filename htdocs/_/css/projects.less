@@ -35,7 +35,7 @@ section#projects {
 
   /* At the narrow width, float the main project image to the side of the
      heading and hide the other images. */
-  figure {
+  ul.images {
     position: relative;
     width: 50%;
     float: left;
@@ -49,6 +49,11 @@ section#projects {
       &:first-child {
         display: block;
       }
+    }
+
+    /* Caption is only shown by the slideshow view. */
+    figure figcaption {
+      display: none;
     }
   }
   
@@ -122,7 +127,7 @@ section#kernel {
       width: 100%;
     }
     
-    figure {
+    ul.images {
       width: 100%;
       float: none;
       padding: 0;
@@ -194,19 +199,19 @@ section#kernel {
       padding-right: 34%;
     }
     
-    figure {
+    ul.images {
       width: 66%;
       float: left;
+
+      /* Make thumbnails 4 to a line instead of 3. */ 
+      li {
+        width: 25%;
+      }
     }
 
     p {
       width: 34%;
       margin-top: 0;
-    }
-
-    /* Make thumbnails 4 to a line instead of 3. */
-    figure li {
-      width: 25%;
     }
   }
   
@@ -284,7 +289,7 @@ section#kernel {
       margin-left: 0;
       
       /* Keep some breathing room between images and about section. */
-      figure {
+      ul.images {
         padding-left: 1em;
       }
     }

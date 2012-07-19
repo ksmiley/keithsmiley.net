@@ -44,45 +44,58 @@
             <h1>Follow News</h1>
             <h2>Morris DigitalWorks</h2>
           </hgroup>
-          <figure>
-            <ul>
-              <li>
+          <ul class="images">
+            <li>
+              <figure>
+                <figcaption>The Follow screen doesn’t require users to leave the article page. Most followable topics come from the OpenCalais service and are sorted by relevance.</figcaption>
                 <a href="images/follow-full.png">
                   <noscript class="responsive">
-                    <img src="images/follow-thumb-lo.png" alt="Cropped image of a screen capture from the Follow News feature.">
+                    <img src="images/follow-thumb-lo.png" alt="Screenshot from the Follow News feature showing a list of names extracted from a news article.">
                   </noscript>
                 </a>
-              </li>
-              <li>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <figcaption>An example email sent by Follow. Besides a headline and summary, the message has multiple ways to stop receiving the emails. We did want users to feel they were being spammed. The block on the right was reserved for a possible sponsor ad.</figcaption>
                 <a href="images/follow-email-full.png">
                   <noscript class="responsive">
-                    <img src="images/follow-email-lo.png" alt="Cropped image of an email update sent by Follow.">
+                    <img src="images/follow-email-lo.png" alt="Email marked as a “News Update” with a story headline, summary, and “Read More” link.">
                   </noscript>
                 </a>
-              </li>
-              <li>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <figcaption>A tab on the account page shows users which topics and articles they are following. This screen is a rewrite of the one provided by the Drupal Notifications module, with the goal of streamlining the interface.</figcaption>
                 <a href="images/follow-manage-full.png">
                   <noscript class="responsive">
-                    <img src="images/follow-manage-lo.png" alt="Cropped image of the Follow management screen.">
+                    <img src="images/follow-manage-lo.png" alt="Screenshot of a table of topics and articles followed by a user. Each row of the table includes links to “Disable” or “Remove” a followed topic.">
                   </noscript>
                 </a>
-              </li>
-              <li>
-                <a href="images/follow-login-full.png">
-                  <noscript class="responsive">
-                    <img src="images/follow-login-lo.png" alt="Cropped image of a login screen.">
-                  </noscript>
-                </a>
-              </li>
-              <li>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <figcaption>The default interface provided by the Drupal Notifications framework. Most of the information on it was repetitive for our needs, since Follow only supported one message channel and one send interval.</figcaption>
                 <a href="images/follow-original-full.png">
                   <noscript class="responsive">
-                    <img src="images/follow-original-lo.png" alt="Cropped image of a subscription screen without any customization.">
+                    <img src="images/follow-original-lo.png" alt="Screenshot of a table of topics with additional labels such as “Send Interval: Immediately” and “Status: Active”.">
                   </noscript>
                 </a>
-              </li>
-            </ul>
-          </figure>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <figcaption>The Follow dialog can present and process a login form instead of redirecting to a different page. An account on the site is required for Follow, but the button to activate it is shown to all visitors to increase its visibility.</figcaption>
+                <a href="images/follow-login-full.png">
+                  <noscript class="responsive">
+                    <img src="images/follow-login-lo.png" alt="Screenshot of a login form inside a dialog box, with the text “Follow this article and the topics in it to get future updates sent to your email. To get started, please log in to your account.”">
+                  </noscript>
+                </a>
+              </figure>
+            </li>
+          </ul>
         </div>
         <p>
           Created a feature on Morris newspaper sites to push custom news updates to readers without requiring any action from editors. My colleague calls it “<a href="http://www.yelvington.com/content/follow-article-home-delivery-web">home delivery for the Web</a>.” The project came to the development team as a one-page proposal. Starting from that document, I designed much the user experience and built the feature on top of the <a href="http://www.opencalais.com/">Calais service</a>, and the Drupal <a href="http://drupal.org/project/messaging">Messaging</a> and <a href="http://drupal.org/project/notifications">Notifications</a> frameworks. A custom module implemented the interface and a second module funneled notifcations through our e-mail marketing provider, which allowed us to track open and clickthrough rates. The Follow feature has been operating on 10 sites for about a year. In that time more than 6,000 users have followed 17,000 topics.
@@ -94,38 +107,48 @@
             <h1>Project CREATE</h1>
             <h2>UK Department of Communication</h2>
           </hgroup>
-          <figure>
-            <ul>
-              <li>
+          <ul class="images">
+            <li>
+              <figure>
+                <figcaption>After answering three questions about which demographic they want to target, users use this screen to build a poster. The images, layouts, fonts and messages are loaded dynamically from XML files. The design decisions for end-users are limited, but researchers have fine-grained control over where and how text will appear on each image.</figcaption>
                 <a href="images/poster-full.png">
                   <noscript class="responsive">
-                    <img src="images/poster-thumb-lo.png" alt="Cropped image of the poster-maker software showing a stock photograph with text overlaid.">
+                    <img src="images/poster-thumb-lo.png" alt="Screenshot of the poster-maker software showing a stock photograph with text overlaid.">
                   </noscript>
                 </a>
-              </li>
-        <li>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <figcaption>During the pilot, users could create an unlimited number of poster designs but could order only one. The previews on this page were generated by the Flash application and uploaded to the server, along with metadata about the selected images and messages that would be needed to generate a high-resolution image.</figcaption>
                 <a href="images/poster-review-full.png">
                   <noscript class="responsive">
-                    <img src="images/poster-review-lo.png" alt="Cropped image of a screen showing thumbnails of saved posters.">
+                    <img src="images/poster-review-lo.png" alt="Screenshot of a contact-sheet screen with thumbnails of posters..">
                   </noscript>
                 </a>
-              </li>
-        <li>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <figcaption>Besides lists of prewritten messages and statistics, researchers could also add a free-text input to any poster template. As a user typed the preview would update dynamically, including adjusting the font size to make room for the text.</figcaption>
                 <a href="images/poster-custom-full.png">
                   <noscript class="responsive">
-                    <img src="images/poster-custom-lo.png" alt="Cropped image of a textbox with a statistic typed into it.">
+                    <img src="images/poster-custom-lo.png" alt="Image of a text input box on the poster-maker software.">
                   </noscript>
                 </a>
-              </li>
-        <li>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <figcaption>The server component included some account management features even though they weren’t required for the short-duration pilot. The goal was to have code that was ready to scale up if the project had received additional funding.</figcaption>
                 <a href="images/poster-change-full.png">
                   <noscript class="responsive">
-                    <img src="images/poster-change-lo.png" alt="Cropped image of a screen with forms for changing account information.">
+                    <img src="images/poster-change-lo.png" alt="Screenshot of forms for changing account information, including the password, the user’s address, and the user’s contact information.">
                   </noscript>
                 </a>
-              </li>
-            </ul>
-          </figure>
+              </figure>
+            </li>
+          </ul>
         </div>
         <p>
           Designed and built a Web application to support HIV prevention in rural parts of the United States by allowing public-health workers to create posters tailored to local demographics. University of Kentucky faculty working with the <a href="http://www.indiana.edu/~aids/">Rural Center for AIDS/STD Prevention</a> asked us in May 2009 to take on the “poster maker” project with hopes of launching a pilot program in August. With the help of another developer, I designed and built the Flash-based frontend over the summer. When the pilot was delayed, we built a backend with PHP and Filemaker to store posters as they’re built and let participants order a favorite.
@@ -137,31 +160,38 @@
             <h1>Article Page Redesign</h1>
             <h2>Morris DigitalWorks</h2>
           </hgroup>
-          <figure>
-            <ul>
-              <li>
+          <ul class="images">
+            <li>
+              <figure>
+                <figcaption>The redesigned article page gives more space to both the copy and the photos. The larger font and smooth left edge are meant to make reading easier. The photos extend into the right rail to make use of the full page width, and to draw attention to the advertisements and promos in the rail.</figcaption>
                 <a href="images/story_page-full.png">
                   <noscript class="responsive">
-                    <img src="images/story_page-thumb-lo.png" alt="Cropped image of an article with photos on the Athens Banner-Herald site.">
+                    <img src="images/story_page-thumb-lo.png" alt="Screenshot of an article with photos on the Athens Banner-Herald website.">
                   </noscript>
                 </a>
-              </li>
-              <li>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <figcaption>An example of the previous design, where only one photo one visible at a time and the beginning of the story was crammed into a small slice of the page.</figcaption>
                 <a href="images/story_page-before-full.png">
                   <noscript class="responsive">
-                    <img src="images/story_page-before-lo.png" alt="Cropped image of an article on the Athens Banner-Herald site using the old template.">
+                    <img src="images/story_page-before-lo.png" alt="Screenshot of an article on the Athens Banner-Herald site using the old template, where photos and advertisements are on the left and push over the text.">
                   </noscript>
                 </a>
-              </li>
-              <li>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <figcaption>Clicking the byline of a staff writer shows more information about the author without leaving the article.</figcaption>
                 <a href="images/story_page-author-full.png">
                   <noscript class="responsive">
-                    <img src="images/story_page-author-lo.png" alt="Cropped image of a box on a story page showing details about the author.">
+                    <img src="images/story_page-author-lo.png" alt="Screenshot of a box on a story page showing details about the author, including a photograph, email address, and a list of other stories.">
                   </noscript>
                 </a>
-              </li>
-            </ul>
-          </figure>
+              </figure>
+            </li>
+          </ul>
         </div>
         <p>
           Collaborated with a developer at the Athens Banner-Herald on a redesign of the newspaper’s main article display that emphasizes the writing and photography. My role was to carefully review the prototype created by the newspaper’s developer and ensure that it would perform well on the live site.
@@ -173,17 +203,18 @@
             <h1>Single Sign&#8209;On</h1>
             <h2>Morris DigitalWorks</h2>
           </hgroup>
-          <figure>
-            <ul>
-              <li>
+          <ul class="images">
+            <li>
+              <figure>
+                <figcaption>Users on Athens Talks site were accustomed to logging in on that site, so the new authentication included an inline login form that could be served across domains. Besides the login form changing, existing users did not see many changes. The single sign-on included migrating their accounts to the new site and ensuring that session cookeis were synchronized after logging in.</figcaption>
                 <a href="images/talks-full.png">
                   <noscript class="responsive">
-                    <img src="images/talks-thumb-lo.png" alt="Cropped image of a cross-domain login screen from Athens Talks.">
+                    <img src="images/talks-thumb-lo.png" alt="Screenshot of the Athens Talks site with a dialog box showing a login form from the Online Athens site.">
                   </noscript>
                 </a>
-              </li>
-            </ul>
-          </figure>
+              </figure>
+            </li>
+          </ul>
         </div>
         <p>
           Built a shared-authentication system to integrate login and registration between the main <a href="http://onlineathens.com/">Athens Banner-Herald</a> site and the newspaper’s existing comments site, <a href="http://www.athenstalks.com/">AthensTalks</a>. While both sites were built on Drupal, they had significant differences in configuration and were hosted in physically different locations. My solution was designed to be resilient, so an outage on one site would only reduce functionality on the other but would not lose data or hurt performance. The system has been running since October 2011 and has required almost no manual intervention, even during periods of heavy traffic.
@@ -193,13 +224,13 @@
     <section id="kernel">
       <h1>Journalism</h1>
       <p>
-        During my year as editor in chief of the <a href="http://kykernel.com/">Kentucky Kernel</a>, the University of Kentucky’s student newspaper, we published several major projects and were <a href="http://studentpressblogs.org/acp/?p=26">recognized by the Associated Collegiate Press</a> as one of the top college papers in the country. Below are PDF versions of some of the projects I edited and designed.
+        During my year as editor in chief of the <a href="http://kykernel.com/">Kentucky Kernel</a>, the University of Kentucky’s student newspaper, we published several major projects and were <a href="http://studentpressblogs.org/acp/?p=26">recognized by the Associated Collegiate Press</a> as one of the top college papers in the country. These are PDF copies of some of the projects I edited and designed.
       </p>
       <article id="jou-vietnam">
         <figure>
           <a href="projects/vietnam.pdf">
             <noscript class="responsive">
-              <img src="images/vietnam-thumb-lo.png" alt="Cropped image of a newspaper cover showing the healdine &quot;Bridging past and present.&quot;">
+              <img src="images/vietnam-thumb-lo.png" alt="Front page of a newspaper showing the headline &quot;Bridging past and present.&quot;">
             </noscript>
           </a>
           <figcaption>PDF, 6.3&nbsp;MB</figcaption>
@@ -212,7 +243,7 @@
         <figure>
           <a href="projects/fuller_aids.pdf">
             <noscript class="responsive">
-              <img src="images/fuller-thumb-lo.png" alt="Partial image of the first page of the article about an AIDS patient with the headline &quot;Living through the nightmare.&quot;">
+              <img src="images/fuller-thumb-lo.png" alt="Partial image of the first page of the article about an AIDS patient, showing the headline &quot;Living through the nightmare.&quot;">
             </noscript>
           </a>
           <figcaption>PDF, 1.4&nbsp;MB</figcaption>
@@ -225,7 +256,7 @@
         <figure>
           <a href="projects/sg_guide.pdf">
             <noscript class="responsive">
-              <img src="images/sg_guide-thumb-lo.png" alt="Cropped image of a newspaper page showing the headline &quot;Voter’s Guide.&quot;">
+              <img src="images/sg_guide-thumb-lo.png" alt="Image of a newspaper page showing the headline &quot;Voter’s Guide.&quot;">
             </noscript>
           </a>
           <figcaption>PDF, 1&nbsp;MB</figcaption>
@@ -252,10 +283,16 @@
     <script>
     $(function() {
       $("#projects article").each(function() {
-        $("figure li > a", this).photoSwipe({
+        $("ul.images li figure", this).photoSwipe({
           loop: false,
           preventSlideshow: true,
-          imageScaleMethod: 'fitNoUpscale'
+          imageScaleMethod: 'fitNoUpscale',
+          getImageSource: function(element) {
+            return $(element).children('a').attr('href');
+          },
+          getImageCaption: function(element) {
+            return $(element).find('figcaption').html();
+          }
         });
       });
     });

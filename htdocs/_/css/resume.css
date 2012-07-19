@@ -221,13 +221,13 @@ body {
   /* 34 / 40px */
 
   font-size: 2.125em;
-  line-height: 1.1323529411764706em;
+  line-height: 1.1647058823529413em;
 }
 .huge {
   /* 42px / 48px */
 
   font-size: 2.625em;
-  line-height: 1.0476190476190477em;
+  line-height: 1.1392857142857142em;
 }
 .massive {
   /* 68px / 72px */
@@ -354,14 +354,14 @@ ul > li:before {
   margin-right: 0.3em;
 }
 /* Image lists are used for slideshows and should be plain. */
-figure ul > li,
-.fontface figure ul > li {
+ul.images > li,
+.fontface ul.images > li {
   list-style: none;
   margin: 0;
   text-indent: 0;
 }
-figure ul > li:before,
-.fontface figure ul > li:before {
+ul.images > li:before,
+.fontface ul.images > li:before {
   content: none;
 }
 address {
@@ -447,7 +447,7 @@ section#about header h1 {
   /* 42px / 48px */
 
   font-size: 2.625em;
-  line-height: 1.0476190476190477em;
+  line-height: 1.1392857142857142em;
   font-weight: bold;
 }
 .fontface section#about header h1 {
@@ -903,7 +903,7 @@ section#awards dd {
   /* 42px / 48px */
 
   font-size: 2.625em;
-  line-height: 1.0476190476190477em;
+  line-height: 1.1392857142857142em;
   font-weight: normal;
 }
 /* Plain bullets for IE7 */
@@ -922,7 +922,7 @@ section#awards dd {
     /* 34 / 40px */
   
     font-size: 2.125em;
-    line-height: 1.1323529411764706em;
+    line-height: 1.1647058823529413em;
     font-weight: normal;
   }
 }
@@ -934,7 +934,7 @@ section#awards dd {
     /* 42px / 48px */
   
     font-size: 2.625em;
-    line-height: 1.0476190476190477em;
+    line-height: 1.1392857142857142em;
   }
 }
 /* @media screen and (min-width: 888px) */
@@ -1130,7 +1130,7 @@ section#awards dd {
     /* 42px / 48px */
   
     font-size: 2.625em;
-    line-height: 1.0476190476190477em;
+    line-height: 1.1392857142857142em;
   }
   section#skills li {
     float: left;

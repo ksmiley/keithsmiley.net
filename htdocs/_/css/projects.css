@@ -354,14 +354,14 @@ ul > li:before {
   margin-right: 0.3em;
 }
 /* Image lists are used for slideshows and should be plain. */
-figure ul > li,
-.fontface figure ul > li {
+ul.images > li,
+.fontface ul.images > li {
   list-style: none;
   margin: 0;
   text-indent: 0;
 }
-figure ul > li:before,
-.fontface figure ul > li:before {
+ul.images > li:before,
+.fontface ul.images > li:before {
   content: none;
 }
 address {
@@ -695,19 +695,24 @@ section#projects hgroup h2 {
   font-size: 0.875em;
   font-weight: normal;
 }
-section#projects figure {
+section#projects ul.images {
   position: relative;
   width: 50%;
   float: left;
   margin-bottom: 1em;
   overflow: hidden;
   padding-right: 0.6875em;
+  /* Caption is only shown by the slideshow view. */
+
 }
-section#projects figure li {
+section#projects ul.images li {
   display: none;
 }
-section#projects figure li:first-child {
+section#projects ul.images li:first-child {
   display: block;
+}
+section#projects ul.images figure figcaption {
+  display: none;
 }
 section#projects p {
   clear: both;
@@ -764,14 +769,14 @@ section#kernel article p {
     text-align: right;
     width: 100%;
   }
-  section#projects article figure {
+  section#projects article ul.images {
     width: 100%;
     float: none;
     padding: 0;
     /* Secondary images become visible below the first, main image. */
   
   }
-  section#projects article figure li {
+  section#projects article ul.images li {
     display: block;
     width: 33.333333333333336%;
     padding-left: 1em;
@@ -780,16 +785,16 @@ section#kernel article p {
              than the image. */
   
   }
-  section#projects article figure li:first-child {
+  section#projects article ul.images li:first-child {
     width: 100%;
     padding: 0;
     margin-bottom: 1em;
   }
-  section#projects article figure li a {
+  section#projects article ul.images li a {
     display: block;
     text-align: right;
   }
-  section#projects article figure li a img {
+  section#projects article ul.images li a img {
     display: inline;
   }
   section#projects article p {
@@ -824,8 +829,6 @@ section#kernel article p {
          above main image) but extends all the way across and pushes the body
          down. */
   
-    /* Make thumbnails 4 to a line instead of 3. */
-  
   }
   section#projects article .column {
     width: 100%;
@@ -835,16 +838,17 @@ section#kernel article p {
     width: 100%;
     padding-right: 34%;
   }
-  section#projects article figure {
+  section#projects article ul.images {
     width: 66%;
     float: left;
+    /* Make thumbnails 4 to a line instead of 3. */
+  }
+  section#projects article ul.images li {
+    width: 25%;
   }
   section#projects article p {
     width: 34%;
     margin-top: 0;
-  }
-  section#projects article figure li {
-    width: 25%;
   }
   /* Change journalism section to one-column entries. */
   section#kernel article {
@@ -915,7 +919,7 @@ section#kernel article p {
     /* Keep some breathing room between images and about section. */
   
   }
-  section#projects article figure {
+  section#projects article ul.images {
     padding-left: 1em;
   }
   section#kernel {
