@@ -32,7 +32,7 @@
       </header>
       <article>
         <p>
-          I've worked in newsrooms and on development teams performing a variety of roles. Oftentimes I take on several roles in a project, whether it’s doing both front- and back-end development on software or doing both the editing and page design of a news project. Below is a selection of projects I had a substantial role in completing.
+          I’ve worked in newsrooms and on development teams performing a variety of roles. Oftentimes I take on several roles in a project, whether it’s doing both front- and back-end development on software or doing both the editing and page design of a news project. Here are some of the projects I had a substantial role in completing.
         </p>
       </article>
     </section>
@@ -98,7 +98,13 @@
           </ul>
         </div>
         <p>
-          Created a feature on Morris newspaper sites to push custom news updates to readers without requiring any action from editors. My colleague calls it “<a href="http://www.yelvington.com/content/follow-article-home-delivery-web">home delivery for the Web</a>.” The project came to the development team as a one-page proposal. Starting from that document, I designed much the user experience and built the feature on top of the <a href="http://www.opencalais.com/">Calais service</a>, and the Drupal <a href="http://drupal.org/project/messaging">Messaging</a> and <a href="http://drupal.org/project/notifications">Notifications</a> frameworks. A custom module implemented the interface and a second module funneled notifcations through our e-mail marketing provider, which allowed us to track open and clickthrough rates. The Follow feature has been operating on 10 sites for about a year. In that time more than 6,000 users have followed 17,000 topics.
+          Created a feature on Morris newspaper sites to push custom news updates to readers without requiring any action from editors. My colleague calls it “<a href="http://www.yelvington.com/content/follow-article-home-delivery-web">home delivery for the Web</a>.”
+        </p>
+        <p>
+          The project came to the development team as a one-page proposal. Starting from that document, I designed much the user experience and built the feature on top of the <a href="http://www.opencalais.com/">Calais service</a>, and the Drupal <a href="http://drupal.org/project/messaging">Messaging</a> and <a href="http://drupal.org/project/notifications">Notifications</a> frameworks. A custom module implemented the interface and a second module funneled notifcations through our e-mail marketing provider, which allowed us to track open and clickthrough rates.
+        </p>
+        <p>
+          The Follow feature has been operating on 10 sites for about a year. In that time more than 6,000 users have followed 17,000 topics.
         </p>
       </article>
       <article id="project-create">
@@ -151,7 +157,10 @@
           </ul>
         </div>
         <p>
-          Designed and built a Web application to support HIV prevention in rural parts of the United States by allowing public-health workers to create posters tailored to local demographics. University of Kentucky faculty working with the <a href="http://www.indiana.edu/~aids/">Rural Center for AIDS/STD Prevention</a> asked us in May 2009 to take on the “poster maker” project with hopes of launching a pilot program in August. With the help of another developer, I designed and built the Flash-based frontend over the summer. When the pilot was delayed, we built a backend with PHP and Filemaker to store posters as they’re built and let participants order a favorite.
+          Designed and built a Web application to support HIV prevention in rural parts of the United States by allowing public-health workers to create posters tailored to local demographics. University of Kentucky faculty working with the <a href="http://www.indiana.edu/~aids/">Rural Center for AIDS/STD Prevention</a> asked us in May 2009 to take on the “poster maker” project with hopes of launching a pilot program in August.
+        </p>
+        <p>
+          With the help of another developer, I coded the Flash-based frontend over the summer. When the pilot was delayed, we built a backend with PHP and Filemaker to store posters as they’re built and let participants order a favorite.
         </p>
       </article>
       <article id="project-article">
@@ -191,16 +200,29 @@
                 </a>
               </figure>
             </li>
+            <li>
+              <figure>
+                <figcaption>Where the old design pushed all photos into the same box, the new design adapts to the orientation of the main photo and the number of secondary photos.</figcaption>
+                <a href="images/story_page-photos-full.png">
+                  <noscript class="responsive">
+                    <img src="images/story_page-photos-lo.png" alt="Two screenshots of an article with photos that are displayed differently, where one has a horizontal photo and the other has a vertical photo.">
+                  </noscript>
+                </a>
+              </figure>
+            </li>
           </ul>
         </div>
         <p>
-          Collaborated with a developer at the Athens Banner-Herald on a redesign of the newspaper’s main article display that emphasizes the writing and photography. My role was to carefully review the prototype created by the newspaper’s developer and ensure that it would perform well on the live site.
+          Collaborated with a developer at the Athens Banner-Herald on a redesign of the newspaper’s main article display that emphasizes the writing and photography. The new design lets content extend across the full width of the page, which also helps draw reader’s eyes to the advertisments and promos that are usually ignored in the right rail.
+        </p>
+        <p>
+          The redesign added several features, including Web fonts for headlines, extended information about the author and links to other articles in the same section. As the design evolved, I reviewed each part to ensure it would perform well on the live site, which often meant tuning queries, adding caching and reordering assets so they would download faster.
         </p>
       </article>
       <article id="project-sso">
         <div class="column">
           <hgroup>
-            <h1>Single Sign&#8209;On</h1>
+            <h1>Single Sign&#8209;On</h1>.
             <h2>Morris DigitalWorks</h2>
           </hgroup>
           <ul class="images">
@@ -217,7 +239,10 @@
           </ul>
         </div>
         <p>
-          Built a shared-authentication system to integrate login and registration between the main <a href="http://onlineathens.com/">Athens Banner-Herald</a> site and the newspaper’s existing comments site, <a href="http://www.athenstalks.com/">AthensTalks</a>. While both sites were built on Drupal, they had significant differences in configuration and were hosted in physically different locations. My solution was designed to be resilient, so an outage on one site would only reduce functionality on the other but would not lose data or hurt performance. The system has been running since October 2011 and has required almost no manual intervention, even during periods of heavy traffic.
+          Built a shared-authentication system to integrate login and registration between the main <a href="http://onlineathens.com/">Athens Banner-Herald</a> site and the newspaper’s existing comments site, <a href="http://www.athenstalks.com/">AthensTalks</a>. While both sites were built on Drupal, they had significant differences in configuration and were hosted in physically different locations. My solution was designed to be resilient, so an outage on one site would only reduce functionality on the other but would not lose data or hurt performance.
+        </p>
+        <p>
+          The system has been running since October 2011 and has kept user accounts and session synchronized with almost no manual intervention, even during periods of heavy traffic.
         </p>
       </article>
     </section>
