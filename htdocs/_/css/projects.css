@@ -716,6 +716,10 @@ section#projects ul.images figure figcaption {
 }
 section#projects p {
   clear: both;
+  padding-bottom: 1em;
+}
+section#projects p:last-child {
+  padding-bottom: 0;
 }
 section#kernel  > p {
   margin-bottom: 1em;
@@ -759,7 +763,14 @@ section#kernel article p {
 }
 /* @media screen and (min-width: 640px) */
 @media screen and (min-width: 40em) {
+  section#projects article {
+    /* Space at top will move first line down to have roughly the same baseline
+         as the h1, which has negative margint to move it into that space. */
+  
+    padding-top: 1em;
+  }
   section#projects article .column {
+    margin-top: -1em;
     width: 50%;
     float: left;
     padding-right: 0.6875em;
@@ -802,9 +813,6 @@ section#kernel article p {
     clear: none;
     width: 50%;
     padding-left: 0.6875em;
-    /* Move first line down to have roughly the same baseline as the h1. */
-  
-    margin-top: 1em;
   }
   /* Journalism section gets too much whitespace but doesn't have enough
        space to switch layouts. Add margins for now. */

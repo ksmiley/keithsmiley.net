@@ -59,6 +59,11 @@ section#projects {
   
   p {
     clear: both;
+    padding-bottom: 1em;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
   }
 }
 
@@ -115,7 +120,12 @@ section#kernel {
 @media screen and (min-width: 40em) {
 
   section#projects article {
+    /* Space at top will move first line down to have roughly the same baseline
+       as the h1, which has negative margint to move it into that space. */
+    padding-top: 1em;
+    
     .column {
+      margin-top: -1em;
       width: 50%;
       float: left;
       .gutter-right;
@@ -163,8 +173,6 @@ section#kernel {
       clear: none;
       width: 50%;
       .gutter-left;
-      /* Move first line down to have roughly the same baseline as the h1. */
-      margin-top: 1em;
     }
   }
   
