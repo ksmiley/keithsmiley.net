@@ -353,6 +353,13 @@ ul > li:before {
   font-weight: normal;
   margin-right: 0.3em;
 }
+/* Responsive images are implemented as an img tag with class "responsive"
+   and no "src" attribute, plus a regular img tag inside a noscript block.
+   If JS is disabled, force hide the src-less tag so its alt value doesn't
+   show through. */
+.no-js img.responsive {
+  display: none !important;
+}
 /* Image lists are used for slideshows and should be plain. */
 ul.images > li,
 .fontface ul.images > li {

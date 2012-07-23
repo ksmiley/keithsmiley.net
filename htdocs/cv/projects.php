@@ -49,7 +49,8 @@
               <figure>
                 <figcaption>The Follow screen doesn’t require users to leave the article page. Most followable topics come from the OpenCalais service and are sorted by relevance.</figcaption>
                 <a href="images/follow-full.png">
-                  <noscript class="responsive">
+                  <img class="responsive" data-src="images/follow-thumb-lo.png" alt="Screenshot from the Follow News feature showing a list of names extracted from a news article.">
+                  <noscript>
                     <img src="images/follow-thumb-lo.png" alt="Screenshot from the Follow News feature showing a list of names extracted from a news article.">
                   </noscript>
                 </a>
@@ -59,7 +60,8 @@
               <figure>
                 <figcaption>An example email sent by Follow. Besides a headline and summary, the message has multiple ways to stop receiving the emails. We did want users to feel they were being spammed. The block on the right was reserved for a possible sponsor ad.</figcaption>
                 <a href="images/follow-email-full.png">
-                  <noscript class="responsive">
+                  <img class="responsive" data-src="images/follow-email-lo.png" alt="Email marked as a “News Update” with a story headline, summary, and “Read More” link.">
+                  <noscript>
                     <img src="images/follow-email-lo.png" alt="Email marked as a “News Update” with a story headline, summary, and “Read More” link.">
                   </noscript>
                 </a>
@@ -69,7 +71,8 @@
               <figure>
                 <figcaption>A tab on the account page shows users which topics and articles they are following. This screen is a rewrite of the one provided by the Drupal Notifications module, with the goal of streamlining the interface.</figcaption>
                 <a href="images/follow-manage-full.png">
-                  <noscript class="responsive">
+                  <img class="responsive" data-src="images/follow-manage-lo.png" alt="Screenshot of a table of topics and articles followed by a user. Each row of the table includes links to “Disable” or “Remove” a followed topic.">
+                  <noscript>
                     <img src="images/follow-manage-lo.png" alt="Screenshot of a table of topics and articles followed by a user. Each row of the table includes links to “Disable” or “Remove” a followed topic.">
                   </noscript>
                 </a>
@@ -79,7 +82,8 @@
               <figure>
                 <figcaption>The default interface provided by the Drupal Notifications framework. Most of the information on it was repetitive for our needs, since Follow only supported one message channel and one send interval.</figcaption>
                 <a href="images/follow-original-full.png">
-                  <noscript class="responsive">
+                  <img class="responsive" data-src="images/follow-original-lo.png" alt="Screenshot of a table of topics with additional labels such as “Send Interval: Immediately” and “Status: Active”.">
+                  <noscript>
                     <img src="images/follow-original-lo.png" alt="Screenshot of a table of topics with additional labels such as “Send Interval: Immediately” and “Status: Active”.">
                   </noscript>
                 </a>
@@ -89,7 +93,8 @@
               <figure>
                 <figcaption>The Follow dialog can present and process a login form instead of redirecting to a different page. An account on the site is required for Follow, but the button to activate it is shown to all visitors to increase its visibility.</figcaption>
                 <a href="images/follow-login-full.png">
-                  <noscript class="responsive">
+                  <img class="responsive" data-src="images/follow-login-lo.png" alt="Screenshot of a login form inside a dialog box, with the text “Follow this article and the topics in it to get future updates sent to your email. To get started, please log in to your account.”">
+                  <noscript>
                     <img src="images/follow-login-lo.png" alt="Screenshot of a login form inside a dialog box, with the text “Follow this article and the topics in it to get future updates sent to your email. To get started, please log in to your account.”">
                   </noscript>
                 </a>
@@ -118,7 +123,8 @@
               <figure>
                 <figcaption>After answering three questions about which demographic they want to target, users use this screen to build a poster. The images, layouts, fonts and messages are loaded dynamically from XML files. The design decisions for end-users are limited, but researchers have fine-grained control over where and how text will appear on each image.</figcaption>
                 <a href="images/poster-full.png">
-                  <noscript class="responsive">
+                  <img class="responsive" data-src="images/poster-thumb-lo.png" alt="Screenshot of the poster-maker software showing a stock photograph with text overlaid.">
+                  <noscript>
                     <img src="images/poster-thumb-lo.png" alt="Screenshot of the poster-maker software showing a stock photograph with text overlaid.">
                   </noscript>
                 </a>
@@ -128,8 +134,9 @@
               <figure>
                 <figcaption>During the pilot, users could create an unlimited number of poster designs but could order only one. The previews on this page were generated by the Flash application and uploaded to the server, along with metadata about the selected images and messages that would be needed to generate a high-resolution image.</figcaption>
                 <a href="images/poster-review-full.png">
-                  <noscript class="responsive">
-                    <img src="images/poster-review-lo.png" alt="Screenshot of a contact-sheet screen with thumbnails of posters..">
+                  <img class="responsive" data-src="images/poster-review-lo.png" alt="Screenshot of a contact-sheet screen with thumbnails of posters.">
+                  <noscript>
+                    <img src="images/poster-review-lo.png" alt="Screenshot of a contact-sheet screen with thumbnails of posters.">
                   </noscript>
                 </a>
               </figure>
@@ -138,7 +145,8 @@
               <figure>
                 <figcaption>Besides lists of prewritten messages and statistics, researchers could also add a free-text input to any poster template. As a user typed the preview would update dynamically, including adjusting the font size to make room for the text.</figcaption>
                 <a href="images/poster-custom-full.png">
-                  <noscript class="responsive">
+                  <img class="responsive" data-src="images/poster-custom-lo.png" alt="Image of a text input box on the poster-maker software.">
+                  <noscript>
                     <img src="images/poster-custom-lo.png" alt="Image of a text input box on the poster-maker software.">
                   </noscript>
                 </a>
@@ -148,7 +156,8 @@
               <figure>
                 <figcaption>The server component included some account management features even though they weren’t required for the short-duration pilot. The goal was to have code that was ready to scale up if the project had received additional funding.</figcaption>
                 <a href="images/poster-change-full.png">
-                  <noscript class="responsive">
+                  <img class="responsive" data-src="images/poster-change-lo.png" alt="Screenshot of forms for changing account information, including the password, the user’s address, and the user’s contact information.">
+                  <noscript>
                     <img src="images/poster-change-lo.png" alt="Screenshot of forms for changing account information, including the password, the user’s address, and the user’s contact information.">
                   </noscript>
                 </a>
@@ -174,7 +183,8 @@
               <figure>
                 <figcaption>The redesigned article page gives more space to both the copy and the photos. The larger font and smooth left edge are meant to make reading easier. The photos extend into the right rail to make use of the full page width, and to draw attention to the advertisements and promos in the rail.</figcaption>
                 <a href="images/story_page-full.png">
-                  <noscript class="responsive">
+                  <img class="responsive" data-src="images/story_page-thumb-lo.png" alt="Screenshot of an article with photos on the Athens Banner-Herald website.">
+                  <noscript>
                     <img src="images/story_page-thumb-lo.png" alt="Screenshot of an article with photos on the Athens Banner-Herald website.">
                   </noscript>
                 </a>
@@ -184,7 +194,8 @@
               <figure>
                 <figcaption>An example of the previous design, where only one photo one visible at a time and the beginning of the story was crammed into a small slice of the page.</figcaption>
                 <a href="images/story_page-before-full.png">
-                  <noscript class="responsive">
+                  <img class="responsive" data-src="images/story_page-before-lo.png" alt="Screenshot of an article on the Athens Banner-Herald site using the old template, where photos and advertisements are on the left and push over the text.">
+                  <noscript>
                     <img src="images/story_page-before-lo.png" alt="Screenshot of an article on the Athens Banner-Herald site using the old template, where photos and advertisements are on the left and push over the text.">
                   </noscript>
                 </a>
@@ -194,7 +205,8 @@
               <figure>
                 <figcaption>Clicking the byline of a staff writer shows more information about the author without leaving the article.</figcaption>
                 <a href="images/story_page-author-full.png">
-                  <noscript class="responsive">
+                  <img class="responsive" data-src="images/story_page-author-lo.png" alt="Screenshot of a box on a story page showing details about the author, including a photograph, email address, and a list of other stories.">
+                  <noscript>
                     <img src="images/story_page-author-lo.png" alt="Screenshot of a box on a story page showing details about the author, including a photograph, email address, and a list of other stories.">
                   </noscript>
                 </a>
@@ -204,7 +216,8 @@
               <figure>
                 <figcaption>Where the old design pushed all photos into the same box, the new design adapts to the orientation of the main photo and the number of secondary photos.</figcaption>
                 <a href="images/story_page-photos-full.png">
-                  <noscript class="responsive">
+                  <img class="responsive" data-src="images/story_page-photos-lo.png" alt="Two screenshots of an article with photos that are displayed differently, where one has a horizontal photo and the other has a vertical photo.">
+                  <noscript>
                     <img src="images/story_page-photos-lo.png" alt="Two screenshots of an article with photos that are displayed differently, where one has a horizontal photo and the other has a vertical photo.">
                   </noscript>
                 </a>
@@ -230,7 +243,8 @@
               <figure>
                 <figcaption>Users on Athens Talks site were accustomed to logging in on that site, so the new authentication included an inline login form that could be served across domains. Besides the login form changing, existing users did not see many changes. The single sign-on included migrating their accounts to the new site and ensuring that session cookeis were synchronized after logging in.</figcaption>
                 <a href="images/talks-full.png">
-                  <noscript class="responsive">
+                  <img class="responsive" data-src="images/talks-thumb-lo.png" alt="Screenshot of the Athens Talks site with a dialog box showing a login form from the Online Athens site.">
+                  <noscript>
                     <img src="images/talks-thumb-lo.png" alt="Screenshot of the Athens Talks site with a dialog box showing a login form from the Online Athens site.">
                   </noscript>
                 </a>
@@ -254,8 +268,9 @@
       <article id="jou-vietnam">
         <figure>
           <a href="projects/vietnam.pdf">
-            <noscript class="responsive">
-              <img src="images/vietnam-thumb-lo.png" alt="Front page of a newspaper showing the headline &quot;Bridging past and present.&quot;">
+            <img class="responsive" data-src="images/vietnam-thumb-lo.png" alt="Front page of a newspaper showing the headline “Bridging past and present.”">
+            <noscript>
+              <img src="images/vietnam-thumb-lo.png" alt="Front page of a newspaper showing the headline “Bridging past and present.”">
             </noscript>
           </a>
           <figcaption>PDF, 6.3&nbsp;MB</figcaption>
@@ -267,8 +282,9 @@
       <article id="jou-aids">
         <figure>
           <a href="projects/fuller_aids.pdf">
-            <noscript class="responsive">
-              <img src="images/fuller-thumb-lo.png" alt="Partial image of the first page of the article about an AIDS patient, showing the headline &quot;Living through the nightmare.&quot;">
+            <img class="responsive" data-src="images/fuller-thumb-lo.png" alt="Partial image of the first page of the article about an AIDS patient, showing the headline “Living through the nightmare.”">
+            <noscript>
+              <img src="images/fuller-thumb-lo.png" alt="Partial image of the first page of the article about an AIDS patient, showing the headline “Living through the nightmare.”">
             </noscript>
           </a>
           <figcaption>PDF, 1.4&nbsp;MB</figcaption>
@@ -280,8 +296,9 @@
       <article id="jou-sg">
         <figure>
           <a href="projects/sg_guide.pdf">
-            <noscript class="responsive">
-              <img src="images/sg_guide-thumb-lo.png" alt="Image of a newspaper page showing the headline &quot;Voter’s Guide.&quot;">
+            <img class="responsive" data-src="images/sg_guide-thumb-lo.png" alt="Image of a newspaper page showing the headline “Voter’s Guide.”">
+            <noscript>
+              <img src="images/sg_guide-thumb-lo.png" alt="Image of a newspaper page showing the headline “Voter’s Guide.”">
             </noscript>
           </a>
           <figcaption>PDF, 1&nbsp;MB</figcaption>
@@ -293,7 +310,8 @@
       <article id="jou-gov">
         <figure>
           <a href="projects/gov_guide_reordered.pdf">
-            <noscript class="responsive">
+            <img class="responsive" data-src="images/gov_guide-thumb-lo.png" alt="Cover of a newspaper election guide with an illustration of two candidates arm wrestling.">
+            <noscript>
               <img src="images/gov_guide-thumb-lo.png" alt="Cover of a newspaper election guide with an illustration of two candidates arm wrestling.">
             </noscript>
           </a>
@@ -324,13 +342,13 @@
 
     (function(){
       /*
-      Simple responsive images using the noscript method. Pretty much zero
-      IE support in this version. Based on this approach:
+      Simple responsive images using the noscript method. Based on this approach:
       http://www.headlondon.com/our-thoughts/technology/posts/creating-responsive-images-using-the-noscript-tag
       
       Expected markup:
-        <noscript class="responsive">
-          <img src="imagefilename-thumb.png" alt="Other attributes will be copied." title="A picture.">
+        <img class="responsive" data-src="imagefilename-thumb.png" alt="Alternate text" title="A picture.">
+        <noscript>
+          <img src="imagefilename-thumb.png" alt="Alternate text." title="A picture.">
         </noscript>
       
       Requires responsive images to have filenames that follow a consistent
@@ -348,28 +366,7 @@
             [888, 'hi']
           ],
           // 
-          triggerClass = 'responsive',
-          processedClass = 'responsive-image-processed',
-          /**
-           * Create semi-empty elements for each responsive image.
-           *
-           * Must be called before setImageSize() can be used, and must be
-           * called only once.
-           */
-          setupImages = function() {
-            $('.' + triggerClass)
-              .each(function() {
-                var $this = $(this),
-                    $tmp = $($this.text()),
-                    $img = $tmp.is('img') ? $tmp.eq(0) : $tmp.find('img').eq(0),
-                    curSrc = $img.attr('src');
-                $img.attr('data-orig-src', curSrc).removeAttr('src');
-                $img.addClass(processedClass);
-                $this.before($img);
-              })
-              .remove()
-            ;
-          },
+          triggerSelector = 'img.responsive',
           /**
            * Set all responsive images on the page to given size.
            *
@@ -381,15 +378,15 @@
           setImageSize = function(sizeName) {
             var before = '-' + defaultSize + '.',
                 after = '-' + sizeName + '.';
-            $('.' + processedClass).each(function() {
+            $(triggerSelector).each(function() {
               var $this = $(this),
-                  baseSrc = $this.attr('data-orig-src'),
+                  baseSrc = $this.attr('data-src'),
                   curSrc = $this.attr('src'),
                   newSrc = baseSrc.replace(before, after);
               // Don't bother loading images that aren't visible on the page.
               // Some images are hidden on smaller screens so it would be
               // a waste of time to download them.
-              if ($this.parent().is(":visible")) {
+              if ($this.is(":visible")) {
                 if (!curSrc || curSrc !== newSrc) {
                   $this.attr('src', newSrc);
                 }
@@ -401,8 +398,15 @@
           /**
            * Compare viewport size to the breakpoints list and update images.
            */
+          prevWidth = -1, // Invalid value forces resizeImages() to run once.
           resizeImages = function() {
             var curWidth = $(window).width();
+            // Ignore window.resize events that IE fires when the body
+            // contents change.
+            if (curWidth === prevWidth) {
+              return;
+            }
+            prevWidth = curWidth;
             // Loop over breakpoints list in reverse to find the largest match.
             for (var i = breakpoints.length - 1; i >= 0; i--) {
               if (curWidth >= breakpoints[i][0]) {
@@ -410,7 +414,7 @@
                 break;
               }
             }
-          }
+          },
           /**
            * Helper function to prevent rapid-fire events from causing a
            * performance problem.
@@ -437,7 +441,6 @@
             };
           };
       $(function() {
-        setupImages();
         resizeImages();
         // Use debounce on the resize event so that changing the browser size
         // doesn't trigger excessive breakpoint checks.
