@@ -1,7 +1,7 @@
 <?php $state = include './info.inc.php'; ?>
 <!DOCTYPE html>
-<!--[if lt IE 9]><html class="ie"><![endif]-->
-<!--[if gte IE 9]><!--><html><!--<![endif]-->
+<!--[if lt IE 9]><html class="no-js ie"><![endif]-->
+<!--[if gte IE 9]><!--><html class="no-js"><!--<![endif]-->
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -160,7 +160,7 @@
           Designed and built a Web application to support HIV prevention in rural parts of the United States by allowing public-health workers to create posters tailored to local demographics. University of Kentucky faculty working with the <a href="http://www.indiana.edu/~aids/">Rural Center for AIDS/STD Prevention</a> asked us in May 2009 to take on the “poster maker” project with hopes of launching a pilot program in August.
         </p>
         <p>
-          With the help of another developer, I coded the Flash-based frontend over the summer. When the pilot was delayed, we built a backend with PHP and Filemaker to store posters as they’re built and let participants order a favorite.
+          With the help of another developer, I coded the Flash-based frontend over the summer. When the pilot was delayed, we built a backend with PHP and FileMaker Pro to store posters as they’re built and let participants order a favorite.
         </p>
       </article>
       <article id="project-article">
