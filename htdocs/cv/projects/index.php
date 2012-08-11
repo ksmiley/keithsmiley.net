@@ -1,4 +1,4 @@
-<?php $state = include './info.inc.php'; ?>
+<?php $state = include '../info.inc.php'; ?>
 <!DOCTYPE html>
 <!--[if lt IE 9]><html class="no-js ie"><![endif]-->
 <!--[if gte IE 9]><!--><html class="no-js"><!--<![endif]-->
@@ -448,6 +448,6 @@
       });
     }());
     </script>
-<?php include "../js-footer.inc.php"; ?>
+<?php include "../../js-footer.inc.php"; ?>
   </body>
 </html>
