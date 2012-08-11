@@ -1,0 +1,340 @@
+@charset "UTF-8";
+
+@import "GGS.less";
+//@import "font-awesome.less";
+@import "font-awesome.subset.less";
+
+@link-color: #143352;
+@body-color: #000;
+
+// Cleafix mixin from http://forrst.com/posts/CSS_vs_SASS_vs_LessCSS-DPV
+.cf() {
+  content: "\0020";
+  display: table;
+  height: 0;
+  overflow: hidden;
+}
+
+.clearfix {
+  &:before { .cf(); }
+  &:after { .cf(); clear: both; }
+  zoom: 1;
+}
+
+ul > li {
+  list-style: none;
+  margin: 0.2em 0 0.2em 0.6em;
+  text-indent: -0.6em;
+  
+  &:before {
+    content: '›';
+    font-size: 4/3em;
+    font-weight: bold;
+    color: lighten(@body-color, 45%);
+    margin-right: 0.1em;
+  }
+}
+
+.fontface ul > li {
+  margin-left: 0.65em;
+  text-indent: -0.63em;
+  
+  &:before {
+    content: "\f054";
+    font-size: 3/4em;
+    vertical-align: top;
+    font-family: FontAwesome;
+    font-weight: normal;
+    margin-right: 0.3em;
+  }
+}
+
+/* Responsive images are implemented as an img tag with class "responsive"
+   and no "src" attribute, plus a regular img tag inside a noscript block.
+   If JS is disabled, force hide the src-less tag so its alt value doesn't
+   show through. */
+.no-js img.responsive {
+	display: none !important;
+}
+
+/* Image lists are used for slideshows and should be plain. */
+ul.images > li,
+.fontface ul.images > li {
+  list-style: none;
+  margin: 0;
+  text-indent: 0;
+  
+  &:before {
+    content: none;
+  }
+}
+
+address {
+  font-style: normal;
+}
+
+a {
+  color: @link-color;
+  text-decoration: none;
+}
+
+address abbr[title], .location abbr[title] {
+  border-bottom: 0;
+}
+
+body {
+	font-family: Helmet, Freesans, sans-serif;
+  color: @body-color;
+  margin: 1em @column;
+  padding-bottom: 1em;
+  .clearfix;
+}
+
+h1 {
+  .large;
+  font-family: georgia, serif;
+  font-weight: bold;
+
+  .fontface & {
+    font-family: Kreon;
+    font-weight: 700;  
+  }
+}
+
+section {
+  margin-bottom: 0.5em;
+
+  & > h1,
+  .fontface & > h1 {
+    border-bottom: 1px solid lighten(@body-color, 45%);
+    color: lighten(@body-color, 30%);
+    padding: 0 1em;
+    margin: 3/2em 0 1em;
+    .normal;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+}
+
+article {
+  margin-bottom: 1em;
+}
+
+/* Header block has name and contact information. */
+section#about header {
+  padding-bottom: 3/4em;
+  margin-bottom: 1em;
+  border-bottom: 4px double lighten(@body-color, 33%);
+  
+  /* Half the text in the header are links, which looks odd with color.
+     Remove color from the links but do apply it to the social icons. */
+  a {
+    color: inherit;
+  }
+  
+  i[class*="icon-"] {
+    color: @link-color;
+  }
+
+  h1 {
+    .huge;
+    font-weight: bold;
+  }
+
+  .fontface & h1 {
+    font-family: 'Kreon', serif;
+    font-weight: 700;
+  }
+
+  address {
+    .clearfix;
+    .small;
+  	padding: 1/4em 3/2em 0;
+  }
+
+  .type {
+    display: none;
+  }
+
+  .adr {
+    margin-bottom: 1/4em;
+  }
+  
+  .tel, .email {
+    font-weight: bold;
+  }
+
+  .social {
+    .clearfix;
+    margin-top: 0.5em;
+    
+    div {
+      margin-right: 1em;
+      float: left;
+    }
+    
+    div:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+section#about article {
+  /* Fixup separator icons within paragraph, which otherwise seem want to
+     float away. Also shrink and fade them to be less intrusive. */
+  i[class^="icon-"]:before,
+  i[class*=" icon-"]:before {
+    display: inline;
+    font-size: 0.6em;
+    vertical-align: top;
+    color: lighten(@body-color, 45%);
+  }
+}
+
+/*
+*
+*  Four-column grid active
+*  ----------------------------------------
+*  Margin   | #  1   2   3   4   |   Margin
+*  5.55555% | %  25  50  75  100 | 5.55555%
+*
+*/
+
+/*
+*  Fixes for IE6-8
+*  http://jonikorpi.com/leaving-old-IE-behind/
+*
+*/
+
+.ie body {
+  width: 800px;
+  margin: 1em auto;
+
+  section#about article {
+    .largeish;
+  }
+}
+
+/* Plain bullets for IE7 */
+.no-generatedcontent ul > li {
+  list-style: inside disc;
+  text-indent: 0;
+  margin: 0;
+}
+
+/* @media screen and (min-width: 480px) */
+@media screen and (min-width: 30em) {
+  section#about header h1 {
+    .massive;
+    font-weight: 400;
+  }
+}
+
+/* @media screen and (min-width: 640px) */
+@media screen and (min-width: 40em) {
+	body {
+		/* Zoom baseline grid to 17/16 = 1.0625 */
+		font-size: (@font-size + 1) / @em;
+	}
+}
+
+/*
+*
+*  Eight-column grid active
+*  ----------------------------------------------------------------------
+*  Margin   | #  1     2     3     4     5     6     7     8   |   Margin
+*  5.55555% | %  12.5  25.0  37.5  50.0  62.5  75.0  87.5  100 | 5.55555%
+*	
+*
+*/
+
+/* @media screen and (min-width: 720px) */
+@media screen and (min-width: 45em) {
+	
+  body {
+    /* Reset baseline grid to 16/16 = 1 */
+    font-size: (@font-size) / @em;
+    margin: 1em 5.55555%;
+  }
+
+  section#about article {
+    .largeish;
+  }
+}
+
+/* @media screen and (min-width: 888px) */
+@media screen and (min-width: 55.5em) {
+  body {
+    /* Zoom baseline grid to 17/16 = 1.0625 */
+    font-size: (@font-size + 1) / @em;
+    margin-top: 2em;
+  }
+}
+
+/* @media screen and (min-width: 984px) */
+@media screen and (min-width: 61.5em) {
+  body {
+    /* Reset baseline grid to 16/16 = 1.0 */
+    font-size: (@font-size) / @em;
+	}
+}
+
+/* @media screen and (min-width: 1200px) */
+@media screen and (min-width: 75em) {	
+	body {
+		/* Zoom baseline grid to 17/16 = 1.0625 */
+		font-size: (@font-size + 1) / @em;
+	}
+}
+
+/* @media screen and (min-width: 1392px) */
+@media screen and (min-width: 87em) {	
+	body {
+		/* Reset baseline grid to 16/16 = 1.0 */
+		font-size: (@font-size) / @em;
+	}
+}
+
+/* @media screen and (min-width: 1680px) */
+@media screen and (min-width: 105em) {
+	body {
+		/* Zoom baseline grid to 17/16 = 1.0625 */
+		font-size: (@font-size + 1) / @em;
+    margin-top: 3em;
+	}
+}
+
+/*
+*
+*  Sixteen-column grid active
+*  ----------------------------------------------------------------------------------------------------------------------
+*  Margin   | #  1     2     3     4     5     6     7     8     9     10    11    12    13    14    15    16  |   Margin
+*  5.55555% | %  6.25  12.5  18.75 25.0  31.25 37.5  43.75 50.0  56.25 62.5  68.75 75.0  81.25 87.5  93.75 100 | 5.55555%
+*	
+*
+*/
+
+/* @media screen and (min-width: 1872px) */
+@media screen and (min-width: 117em) {
+  /* Not currently used. */
+}
+
+/* @media screen and (min-width: 2080px) */
+@media screen and (min-width: 130em) {
+
+	body {
+		/* Zoom baseline grid to 18/16 = 1.125 */
+		font-size: (@font-size + 2) / @em;
+    /* Cap page width. */
+		max-width: 2560/@em;
+    margin-top: 4em;
+	}
+	
+}
+
+@media screen and (min-width: 180em) {
+  /* Switch from percentage-based margin to centered. */
+  body {
+    margin: 4em auto;
+  }
+}

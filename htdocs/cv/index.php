@@ -9,7 +9,7 @@
     <meta name="robots" content="noindex">
 <?php endif; ?>
     <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0">
-    <meta name="cleartype" value="true">
+    <meta http-equiv="cleartype" content="on">
     <title>Keith Smiley’s Résumé</title>
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Kreon:400,700">
     <link rel="stylesheet" type="text/css" href="/_/css/resume.css">
@@ -234,23 +234,6 @@
         Latest version always available&nbsp;at <a href="<?php echo $state->url; ?>"><?php echo $state->url; ?></a>
       </footer>
     </div>
-    <!--
-      E-mail address is obfuscated to (hopefully) deter spam. But if you’ve made
-      it this far, you probably know how to decipher it. Why not drop me a note?
-    -->
-    <script>
-      var c=':', u='k', h='keithsmiley.net', a='@', p='mailto',
-        e = document.getElementById("email");
-      e.attributes.href.value = p+c+u+a+h;
-      e.innerHTML = u+a+h;
-
-      var _gaq = [['_setAccount', 'UA-19711479-2'], ['_trackPageview']];
-      (function(d, t) {
-        var g = d.createElement(t),
-            s = d.getElementsByTagName(t)[0];
-        g.async = g.src = '//www.google-analytics.com/ga.js';
-        s.parentNode.insertBefore(g, s);
-      }(document, 'script'));
-    </script>
+<?php include "../js-footer.inc.php"; ?>
   </body>
 </html>

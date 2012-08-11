@@ -134,6 +134,16 @@ table {
     border-spacing: 0;
 }
 
+/*
+* All border-box, all the time.
+* http://paulirish.com/2012/box-sizing-border-box-ftw/
+*
+*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 /*
 *
@@ -153,6 +163,18 @@ img {
 	-ms-interpolation-mode: bicubic;
 }
 
+// Simple elastic gutters
+// Note: box-sizing will not work in IE6-7
+.gutter-left {
+  padding-left: (@line/2)/@em;
+}
+.gutter-right {
+  padding-right: (@line/2)/@em;
+}
+.gutters {
+  .gutter-left;
+  .gutter-right;
+}
 
 /*
 *
@@ -165,6 +187,12 @@ body {
 	/* 16px / 22px */
 	font-size: @font-size / 16 * 1em; 
 	line-height: @line / @em;
+}
+
+.tiny {
+	/* 12px / 16px */
+	font-size: (@font-size - 4) / @em;
+	line-height: (@line*0.8) / (@font-size - 4) * 1em;	
 }
 
 .small {
@@ -194,13 +222,13 @@ body {
 .hefty {
 	/* 34 / 40px */
 	font-size: 34 / @em;
-	line-height: (@line*1.5) / 34 * 1em;
+	line-height: (@line*1.8) / 34 * 1em;
 }
 
 .huge {
 	/* 42px / 48px */
 	font-size: 42 / @em;
-	line-height: (@line*2) / 42 * 1em;
+	line-height: (@line*2.175) / 42 * 1em;
 }
 
 .massive {

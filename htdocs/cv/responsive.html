@@ -11,7 +11,8 @@ body { margin: 20px; font-family: sans-serif; overflow-x: scroll; }
 .frame { float: left; }
 h2 { margin: 0 0 5px 0; }
 iframe { margin: 0 20px 20px 0; border: 1px solid #666; }
-</style>	
+</style>
+
 </head>
 
 <body>
@@ -41,5 +42,16 @@ iframe { margin: 0 20px 20px 0; border: 1px solid #666; }
 <iframe src="./" sandbox="allow-scripts allow-same-origin allow-forms" seamless width="1200" height="800"></iframe>
 </div>
 </div>
+
+<script>
+  var h = location.hash;
+  if (h && h.substr(1)) {
+    var p = location.hash.substr(1),
+        f = document.getElementsByTagName('iframe');
+    for (var i = 0, fl = f.length; i < fl; i++) {
+      f[i].src = p;
+    }
+  }
+</script>
 </body>
 </html>

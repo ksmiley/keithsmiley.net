@@ -1,0 +1,345 @@
+@import "base.less";
+
+article figure img {
+  border: 1px solid lighten(@body-color, 75%);
+}
+
+section#projects,
+section#kernel {
+  article {
+    padding-bottom: 1em;
+    border-bottom: 1px solid lighten(@body-color, 45%);
+    overflow: hidden;
+    clear: both;
+    
+    &:last-child {
+      border-bottom: 0;
+    }
+  }  
+}
+
+section#projects {
+  
+  hgroup {
+    width: 50%;
+    float: right;
+    margin-bottom: 1em;
+    .gutter-left;
+    
+    h2 {
+      color: lighten(@body-color, 45%);
+      font-size: (@font-size - 2)/@em; 
+      font-weight: normal;   
+    }
+  }
+
+  /* At the narrow width, float the main project image to the side of the
+     heading and hide the other images. */
+  ul.images {
+    position: relative;
+    width: 50%;
+    float: left;
+    margin-bottom: 1em;
+    overflow: hidden;
+    .gutter-right;
+    
+    li {
+      display: none;
+
+      &:first-child {
+        display: block;
+      }
+    }
+
+    /* Caption is only shown by the slideshow view. */
+    figure figcaption {
+      display: none;
+    }
+  }
+  
+  p {
+    clear: both;
+    padding-bottom: 1em;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+}
+
+section#kernel {
+  & > p {
+    margin-bottom: 1em;
+  }
+  
+  article {
+    
+    figure {
+      text-align: center;
+      width: 50%;
+      float: left;
+      .gutter-right;
+      
+      img {
+        margin: 1/5em auto;
+      }
+      
+      figcaption {
+        color: lighten(@body-color, 45%);
+        .tiny;
+        
+        &:before {
+          content: '(';
+        }
+        
+        &:after {
+          content: ')';
+        }
+      }
+    }
+
+    p {
+      width: 50%;
+      float: left;
+      .gutter-left;
+    }
+
+  }
+  
+}
+
+/* @media screen and (min-width: 480px) */
+@media screen and (min-width: 30em) {
+
+  h1, .fontface h1 {
+    .hefty;
+  }
+}
+
+/* @media screen and (min-width: 640px) */
+@media screen and (min-width: 40em) {
+
+  section#projects article {
+    /* Space at top will move first line down to have roughly the same baseline
+       as the h1, which has negative margint to move it into that space. */
+    padding-top: 1em;
+    
+    .column {
+      margin-top: -1em;
+      width: 50%;
+      float: left;
+      .gutter-right;
+    }
+    
+    hgroup {
+      float: none;
+      text-align: right;
+      width: 100%;
+    }
+    
+    ul.images {
+      width: 100%;
+      float: none;
+      padding: 0;
+      
+      /* Secondary images become visible below the first, main image. */
+      li {
+        display: block;
+        width: 100%/3;
+        padding-left: 1em;
+        float: right;
+
+        &:first-child {
+          width: 100%;
+          padding: 0;
+          margin-bottom: 1em;
+        }
+        
+        /* Keep image against right gutter even if the columns get bigger
+           than the image. */
+        a {
+          display: block;
+          text-align: right;
+          
+          img {
+            display: inline;
+          }
+        }
+      }
+    }
+    
+    p {
+      float: right;
+      clear: none;
+      width: 50%;
+      .gutter-left;
+    }
+  }
+  
+  /* Journalism section gets too much whitespace but doesn't have enough
+     space to switch layouts. Add margins for now. */
+  section#kernel article {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* @media screen and (min-width: 888px) */
+@media screen and (min-width: 55.5em) {
+
+  h1, .fontface h1 {
+    .huge;
+    font-weight: normal;
+  }
+  
+  section#projects article {
+    /* Adjust article header so it's positioned the same as before (right-align
+       above main image) but extends all the way across and pushes the body
+       down. */
+    .column {
+      width: 100%;
+      float: none;
+    }
+    
+    hgroup {
+      width: 100%;
+      padding-right: 34%;
+    }
+    
+    ul.images {
+      width: 66%;
+      float: left;
+
+      /* Make thumbnails 4 to a line instead of 3. */ 
+      li {
+        width: 25%;
+      }
+    }
+
+    p {
+      width: 34%;
+      margin-top: 0;
+    }
+  }
+  
+  /* Change journalism section to one-column entries. */
+  section#kernel article {
+    width: 25%;
+    margin-left: 0;
+    margin-right: 0;
+    border-bottom: 0;
+    float: left;
+    clear: none;
+    .gutters;
+    
+    figure, p {
+      float: none;
+      padding: 0;
+      width: 100%;
+      margin-bottom: 1em;
+    }
+  }
+}
+
+/* @media screen and (min-width: 984px) */
+@media screen and (min-width: 61.5em) {
+
+  /* Make contents of experience section narrower to keep line length manageable. */
+  section#projects article {
+    width: 87.5%;
+    margin-left: 6.25%;
+  }
+}
+
+/* @media screen and (min-width: 1200px) */
+@media screen and (min-width: 75em) {	
+  /* Sit this one out. */
+}
+
+/* @media screen and (min-width: 1392px) */
+@media screen and (min-width: 87em) {	
+  
+  /* Switch about block to stacked from side-by-side. Requires resetting gutter
+     to be on container. */
+  section#about {
+    .gutters;
+    width: 25%;
+    float: left;
+
+    header {
+      border-bottom: 4px double lighten(@body-color, 33%);
+    
+      h1 {
+        /* Force name to two lines. */
+        margin-right: 2em;
+      }
+    
+      address {
+        border-top: 0;
+      }
+    }
+
+    article p {
+      text-indent: 0;
+    }
+  }
+
+  section#projects {
+    width: 75%;
+    float: right;
+    padding-right: 0;
+    .gutter-left;
+
+    /* Remove narrowing margins from projets. */
+    article {
+      width: 100%;
+      margin-left: 0;
+      
+      /* Keep some breathing room between images and about section. */
+      ul.images {
+        padding-left: 1em;
+      }
+    }
+  }
+  
+  section#kernel {
+    width: 75%;
+    float: right;
+    .gutter-left;
+  }
+}
+
+/* @media screen and (min-width: 1680px) */
+@media screen and (min-width: 105em) {
+  /* No change */
+}
+
+/* @media screen and (min-width: 1872px) */
+@media screen and (min-width: 117em) {
+  /* Change journalis to a column down the right. */
+  section#projects {
+    width: 56.25%;
+    float: left;
+    .gutters;
+  }
+  
+  section#kernel {
+    width: 18.75%;
+    float: right;
+    .gutter-left;
+    
+    & > p {
+      padding: 0 1em;
+      .small;
+    }
+    
+    article {
+      .small;
+      float: none;
+      padding: 0;
+      width: 62.5%;
+      margin-left: 18.75%;
+    }
+  }
+}
