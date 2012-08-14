@@ -267,7 +267,7 @@
       </p>
       <article id="jou-vietnam">
         <figure>
-          <a href="projects/vietnam.pdf">
+          <a href="vietnam.pdf">
             <img class="responsive" data-src="images/vietnam-thumb-lo.png" alt="Front page of a newspaper showing the headline “Bridging past and present.”">
             <noscript>
               <img src="images/vietnam-thumb-lo.png" alt="Front page of a newspaper showing the headline “Bridging past and present.”">
@@ -281,7 +281,7 @@
       </article>
       <article id="jou-aids">
         <figure>
-          <a href="projects/fuller_aids.pdf">
+          <a href="fuller_aids.pdf">
             <img class="responsive" data-src="images/fuller-thumb-lo.png" alt="Partial image of the first page of the article about an AIDS patient, showing the headline “Living through the nightmare.”">
             <noscript>
               <img src="images/fuller-thumb-lo.png" alt="Partial image of the first page of the article about an AIDS patient, showing the headline “Living through the nightmare.”">
@@ -295,7 +295,7 @@
       </article>
       <article id="jou-sg">
         <figure>
-          <a href="projects/sg_guide.pdf">
+          <a href="sg_guide.pdf">
             <img class="responsive" data-src="images/sg_guide-thumb-lo.png" alt="Image of a newspaper page showing the headline “Voter’s Guide.”">
             <noscript>
               <img src="images/sg_guide-thumb-lo.png" alt="Image of a newspaper page showing the headline “Voter’s Guide.”">
@@ -309,7 +309,7 @@
       </article>
       <article id="jou-gov">
         <figure>
-          <a href="projects/gov_guide_reordered.pdf">
+          <a href="gov_guide_reordered.pdf">
             <img class="responsive" data-src="images/gov_guide-thumb-lo.png" alt="Cover of a newspaper election guide with an illustration of two candidates arm wrestling.">
             <noscript>
               <img src="images/gov_guide-thumb-lo.png" alt="Cover of a newspaper election guide with an illustration of two candidates arm wrestling.">
