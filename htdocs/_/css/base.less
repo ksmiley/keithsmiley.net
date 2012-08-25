@@ -5,7 +5,13 @@
 @import "font-awesome.subset.less";
 
 @link-color: #143352;
-@body-color: #000;
+@body-color: #333;
+
+//@body-lighter: lighten(@body-color, 33%);
+//@body-extralight: lighten(@body-color, 45%);
+@body-darker: darken(@body-color, 10%);
+@body-lighter: lighten(@body-color, 15%);
+@body-extralight: lighten(@body-color, 25%);
 
 // Cleafix mixin from http://forrst.com/posts/CSS_vs_SASS_vs_LessCSS-DPV
 .cf() {
@@ -30,7 +36,7 @@ ul > li {
     content: '›';
     font-size: 4/3em;
     font-weight: bold;
-    color: lighten(@body-color, 45%);
+    color: @body-extralight;
     margin-right: 0.1em;
   }
 }
@@ -106,8 +112,8 @@ section {
 
   & > h1,
   .fontface & > h1 {
-    border-bottom: 1px solid lighten(@body-color, 45%);
-    color: lighten(@body-color, 30%);
+    border-bottom: 1px solid @body-extralight;
+    color: @body-lighter;
     padding: 0 1em;
     margin: 3/2em 0 1em;
     .normal;
@@ -124,7 +130,7 @@ article {
 section#about header {
   padding-bottom: 3/4em;
   margin-bottom: 1em;
-  border-bottom: 4px double lighten(@body-color, 33%);
+  border-bottom: 4px double @body-lighter;
   
   /* Half the text in the header are links, which looks odd with color.
      Remove color from the links but do apply it to the social icons. */
@@ -139,6 +145,7 @@ section#about header {
   h1 {
     .huge;
     font-weight: bold;
+	color: @body-darker;
   }
 
   .fontface & h1 {
@@ -187,7 +194,7 @@ section#about article {
     display: inline;
     font-size: 0.6em;
     vertical-align: top;
-    color: lighten(@body-color, 45%);
+    color: @body-extralight;
   }
 }
 

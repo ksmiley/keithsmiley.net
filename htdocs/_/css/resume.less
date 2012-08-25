@@ -1,7 +1,7 @@
 @import "base.less";
 
 article .location {
-  color: lighten(@body-color, 45%);
+  color: @body-extralight;
   font-size: (@font-size - 2)/@em;
 }
 
@@ -9,7 +9,7 @@ article .location {
 footer {
   display: none;
 /*  clear: both;*/
-  border-top: 1px solid lighten(@body-color, 45%);
+  border-top: 1px solid @body-extralight;
   padding-top: 3px;
   margin-top: 2em;
   text-align: center;
@@ -20,6 +20,7 @@ footer {
 }
 
 section#experience {
+
   header {
     margin-bottom: 1/2em;
   }
@@ -151,7 +152,7 @@ section#awards {
   }
 
   ul > li:before {
-    color: lighten(@body-color, 33%);
+    color: @body-lighter;
   }
 
   section#about {
@@ -317,7 +318,7 @@ section#awards {
     address {
       margin-top: 1/3em;
       padding: 1em;
-      border-top: 4px double lighten(@body-color, 33%);
+      border-top: 4px double @body-lighter;
     }
   
     h1 {
@@ -456,7 +457,7 @@ section#awards {
   }
   
   section#about header {
-    border-bottom: 4px double lighten(@body-color, 33%);
+    border-bottom: 4px double @body-lighter;
     
     address {
       border-top: 0;

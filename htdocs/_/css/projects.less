@@ -6,9 +6,10 @@ article figure img {
 
 section#projects,
 section#kernel {
+
   article {
     padding-bottom: 1em;
-    border-bottom: 1px solid lighten(@body-color, 45%);
+    border-bottom: 1px solid @body-extralight;
     overflow: hidden;
     clear: both;
     
@@ -27,7 +28,7 @@ section#projects {
     .gutter-left;
     
     h2 {
-      color: lighten(@body-color, 45%);
+      color: @body-extralight;
       font-size: (@font-size - 2)/@em; 
       font-weight: normal;   
     }
@@ -85,7 +86,7 @@ section#kernel {
       }
       
       figcaption {
-        color: lighten(@body-color, 45%);
+        color: @body-extralight;
         .tiny;
         
         &:before {
@@ -268,7 +269,7 @@ section#kernel {
     float: left;
 
     header {
-      border-bottom: 4px double lighten(@body-color, 33%);
+      border-bottom: 4px double @body-lighter;
     
       h1 {
         /* Force name to two lines. */

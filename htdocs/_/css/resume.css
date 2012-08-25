@@ -353,6 +353,13 @@ ul > li:before {
   font-weight: normal;
   margin-right: 0.3em;
 }
+/* Responsive images are implemented as an img tag with class "responsive"
+   and no "src" attribute, plus a regular img tag inside a noscript block.
+   If JS is disabled, force hide the src-less tag so its alt value doesn't
+   show through. */
+.no-js img.responsive {
+  display: none !important;
+}
 /* Image lists are used for slideshows and should be plain. */
 ul.images > li,
 .fontface ul.images > li {
@@ -377,7 +384,7 @@ address abbr[title],
 }
 body {
   font-family: Helmet, Freesans, sans-serif;
-  color: #000000;
+  color: #333333;
   margin: 1em 5.555555555555555%;
   padding-bottom: 1em;
   zoom: 1;
@@ -413,7 +420,7 @@ section {
 section  > h1,
 .fontface section  > h1 {
   border-bottom: 1px solid #737373;
-  color: #4d4d4d;
+  color: #595959;
   padding: 0 1em;
   margin: 1.5em 0 1em;
   /* 16px / 22px */
@@ -432,7 +439,7 @@ article {
 section#about header {
   padding-bottom: 0.75em;
   margin-bottom: 1em;
-  border-bottom: 4px double #545454;
+  border-bottom: 4px double #595959;
   /* Half the text in the header are links, which looks odd with color.
      Remove color from the links but do apply it to the social icons. */
 
@@ -449,6 +456,7 @@ section#about header h1 {
   font-size: 2.625em;
   line-height: 1.1392857142857142em;
   font-weight: bold;
+  color: #1a1a1a;
 }
 .fontface section#about header h1 {
   font-family: 'Kreon', serif;
@@ -813,7 +821,7 @@ section#awards dd {
     font-size: 0.6875em;
   }
   ul > li:before {
-    color: #545454;
+    color: #595959;
   }
   section#about {
     margin: 0;
@@ -839,7 +847,7 @@ section#awards dd {
   }
   a,
   section#about header i[class*="icon-"] {
-    color: #000000;
+    color: #333333;
   }
   section article {
     margin-bottom: 0.5em;
@@ -963,7 +971,7 @@ section#awards dd {
   section#about header address {
     margin-top: 0.3333333333333333em;
     padding: 1em;
-    border-top: 4px double #545454;
+    border-top: 4px double #595959;
   }
   section#about header h1 {
     /* Arbitrary margin to force name to break to two lines at all widths. */
@@ -1093,7 +1101,7 @@ section#awards dd {
     text-shadow: none;
   }
   section#about header {
-    border-bottom: 4px double #545454;
+    border-bottom: 4px double #595959;
   }
   section#about header address {
     border-top: 0;

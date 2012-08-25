@@ -384,7 +384,7 @@ address abbr[title],
 }
 body {
   font-family: Helmet, Freesans, sans-serif;
-  color: #000000;
+  color: #333333;
   margin: 1em 5.555555555555555%;
   padding-bottom: 1em;
   zoom: 1;
@@ -420,7 +420,7 @@ section {
 section  > h1,
 .fontface section  > h1 {
   border-bottom: 1px solid #737373;
-  color: #4d4d4d;
+  color: #595959;
   padding: 0 1em;
   margin: 1.5em 0 1em;
   /* 16px / 22px */
@@ -439,7 +439,7 @@ article {
 section#about header {
   padding-bottom: 0.75em;
   margin-bottom: 1em;
-  border-bottom: 4px double #545454;
+  border-bottom: 4px double #595959;
   /* Half the text in the header are links, which looks odd with color.
      Remove color from the links but do apply it to the social icons. */
 
@@ -456,6 +456,7 @@ section#about header h1 {
   font-size: 2.625em;
   line-height: 1.1392857142857142em;
   font-weight: bold;
+  color: #1a1a1a;
 }
 .fontface section#about header h1 {
   font-family: 'Kreon', serif;
@@ -673,7 +674,7 @@ section#about article i[class*=" icon-"]:before {
   }
 }
 article figure img {
-  border: 1px solid #bfbfbf;
+  border: 1px solid #f2f2f2;
 }
 section#projects article,
 section#kernel article {
@@ -907,7 +908,7 @@ section#kernel article p {
     float: left;
   }
   section#about header {
-    border-bottom: 4px double #545454;
+    border-bottom: 4px double #595959;
   }
   section#about header h1 {
     /* Force name to two lines. */
