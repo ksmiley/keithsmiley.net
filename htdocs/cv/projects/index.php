@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="/_/css/projects.css">
     <link rel="stylesheet" type="text/css" href="/_/css/photoswipe.css">
     <script src="/_/js/modernizr-2.5.3.min.js"></script>
-    <script src="/_/js/GGS.js"></script>
+    <!--<script src="/_/js/GGS.js"></script>-->
   </head>
   <body lang="en">
     <section id="about">
