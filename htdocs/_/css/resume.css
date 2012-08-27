@@ -680,12 +680,15 @@ article .location {
 /* Footer has source URL and should only be visible when printing. */
 footer {
   display: none;
-  /*  clear: both;*/
-
+  clear: both;
   border-top: 1px solid #737373;
   padding-top: 3px;
   margin-top: 2em;
   text-align: center;
+  /* 14px / 18px */
+
+  font-size: 0.875em;
+  line-height: 1.2571428571428573em;
 }
 footer a {
   font-weight: bold;
@@ -756,8 +759,12 @@ section#education article .time-range {
 
   font-size: 0.875em;
   line-height: 1.2571428571428573em;
-  /*    font-size: (@font-size - 2)/@em;*/
+}
+section#education article .time-range time {
+  /* Force break to happen around dash instead of between month and year.
+         Mostly for the narrow column of print view. */
 
+  white-space: nowrap;
 }
 .floated-skills {
   float: left;
@@ -813,9 +820,10 @@ section#awards dd {
 /* Format for printer. Reveal footer with permalink and darken some colors. */
 @media print {
   @page  {
-    margin: 0.4in 0.5in 0.3in 0.5in;
+    margin: 0.3in 0.5in 0.1in 0.5in;
   }
   body {
+    color: #000;
     padding: 0;
     margin: 0;
     font-size: 0.6875em;
@@ -847,7 +855,7 @@ section#awards dd {
   }
   a,
   section#about header i[class*="icon-"] {
-    color: #333333;
+    color: #000;
   }
   section article {
     margin-bottom: 0.5em;
@@ -859,10 +867,13 @@ section#awards dd {
   .fontface section > h1 {
     margin-top: 0.75em;
     margin-bottom: 0.5em;
+    /* Tweak indent so "Awards and Honors" doesn't wrap. */
+  
+    padding: 0 0 0 0.5em;
   }
   section#experience {
     clear: left;
-    width: 75%;
+    width: 80%;
     float: left;
   }
   section#experience header {
@@ -888,7 +899,7 @@ section#awards dd {
         }
       }*/
   div.rail {
-    width: 25%;
+    width: 20%;
     float: left;
     /* Fake gutter. */
   
