@@ -58,7 +58,7 @@
             </li>
             <li>
               <figure>
-                <figcaption>An example email sent by Follow. Besides a headline and summary, the message has multiple ways to stop receiving the emails. We did want users to feel they were being spammed. The block on the right was reserved for a possible sponsor ad.</figcaption>
+                <figcaption>An example email sent by Follow. Besides a headline and summary, the message has multiple ways to stop receiving the emails. We did not want users to feel they were being spammed. The block on the right was reserved for a possible sponsor ad.</figcaption>
                 <a href="images/follow-email-full.png">
                   <img class="responsive" data-src="images/follow-email-lo.png" alt="Email marked as a “News Update” with a story headline, summary, and “Read More” link.">
                   <noscript>
@@ -235,7 +235,7 @@
       <article id="project-sso">
         <div class="column">
           <hgroup>
-            <h1>Single Sign&#8209;On</h1>.
+            <h1>Single Sign&#8209;On</h1>
             <h2>Morris DigitalWorks</h2>
           </hgroup>
           <ul class="images">
