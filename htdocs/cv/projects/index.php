@@ -111,6 +111,9 @@
         <p>
           The Follow feature has been operating on 10 sites for about a year. In that time more than 6,000 users have followed 17,000 topics.
         </p>
+        <p class="github">
+          <a href="https://github.com/ksmiley/notifications_subscribe" title="notifcations_subscribe repository on GitHub"><i class="icon-github-sign"></i> notifcations_subscribe</a>
+        </p>
       </article>
       <article id="project-create">
         <div class="column">
@@ -170,6 +173,9 @@
         </p>
         <p>
           With the help of another developer, I coded the Flash-based frontend over the summer. When the pilot was delayed, we built a backend with PHP and FileMaker Pro to store posters as they’re built and let participants order a favorite.
+        </p>
+        <p class="github">
+          <a href="https://github.com/ksmiley/project-create" title="project-create repository on GitHub"><i class="icon-github-sign"></i> project-create</a>
         </p>
       </article>
       <article id="project-article">

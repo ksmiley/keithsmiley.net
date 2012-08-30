@@ -692,13 +692,13 @@ section#projects {
      heading and hide the other images. */
 
 }
-section#projects hgroup {
+section#projects article hgroup {
   width: 50%;
   float: right;
   margin-bottom: 1em;
   padding-left: 0.6875em;
 }
-section#projects hgroup h2 {
+section#projects article hgroup h2 {
   color: #737373;
   font-size: 0.875em;
   font-weight: normal;
@@ -818,7 +818,7 @@ section#kernel article p {
   }
   section#projects article p {
     float: right;
-    clear: none;
+    clear: right;
     width: 50%;
     padding-left: 0.6875em;
   }
