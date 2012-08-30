@@ -32,7 +32,7 @@
       </header>
       <article>
         <p>
-          I’ve worked in newsrooms and on development teams performing a variety of roles. Oftentimes I take on several roles in a project, whether it’s doing both front- and back-end development on software or doing both the editing and page design of a news project. Here are some of the projects I had a substantial role in completing.
+          I’ve worked in newsrooms and on development teams performing a variety of roles. This page describes some of the projects I’ve completed. Oftentimes I work on small teams that require me to take on several roles, whether it’s doing front- and back-end development on software or the editing and page design of a news package.
         </p>
       </article>
     </section>
